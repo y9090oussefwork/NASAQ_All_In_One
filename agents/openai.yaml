@@ -1,0 +1,4 @@
+interface:
+  display_name: "نَسَق — Nasaq"
+  short_description: "Install Nasaq from GitHub and coordinate web projects"
+  default_prompt: "ثبّت مهارة نَسَق من هذا المستودع، ثم استخدم المهارة المثبتة لتنسيق مشروع الويب وفق الموافقات والأدلة."

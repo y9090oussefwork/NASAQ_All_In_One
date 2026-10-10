@@ -1,0 +1,30 @@
+test_all_features_at_once_are_preserved (test_project_session.SessionTests.test_all_features_at_once_are_preserved) ... ok
+test_arabic_and_english_start_ask_missing_only (test_project_session.SessionTests.test_arabic_and_english_start_ask_missing_only) ... ok
+test_assumptions_and_deferred_distinct (test_project_session.SessionTests.test_assumptions_and_deferred_distinct) ... ok
+test_blocking_question_prevents_approval (test_project_session.SessionTests.test_blocking_question_prevents_approval) ... ok
+test_changed_delegation_revokes_delegated_selection (test_project_session.SessionTests.test_changed_delegation_revokes_delegated_selection) ... ok
+test_delegated_choice_is_bounded (test_project_session.SessionTests.test_delegated_choice_is_bounded) ... ok
+test_duplicate_messages_not_reapplied (test_project_session.SessionTests.test_duplicate_messages_not_reapplied) ... ok
+test_existing_project_routes_to_read_only_audit (test_project_session.SessionTests.test_existing_project_routes_to_read_only_audit) ... ok
+test_high_risk_actions_rejected_even_with_all_mode (test_project_session.SessionTests.test_high_risk_actions_rejected_even_with_all_mode) ... ok
+test_host_cannot_invent_approval (test_project_session.SessionTests.test_host_cannot_invent_approval) ... ok
+test_influential_revision_invalidates_only_current_planning (test_project_session.SessionTests.test_influential_revision_invalidates_only_current_planning) ... ok
+test_manual_choice_supported (test_project_session.SessionTests.test_manual_choice_supported) ... ok
+test_modes_and_boundaries (test_project_session.SessionTests.test_modes_and_boundaries) ... ok
+test_persistent_pause_blocks_execution_until_resume (test_project_session.SessionTests.test_persistent_pause_blocks_execution_until_resume) ... ok
+test_recommendation_status_does_not_promote_candidates (test_project_session.SessionTests.test_recommendation_status_does_not_promote_candidates) ... ok
+test_rejected_recommendation_blocks_planning (test_project_session.SessionTests.test_rejected_recommendation_blocks_planning) ... ok
+test_resume_reads_persisted_state_in_new_dispatch (test_project_session.SessionTests.test_resume_reads_persisted_state_in_new_dispatch) ... ok
+test_revised_summary_rejects_stale_digest (test_project_session.SessionTests.test_revised_summary_rejects_stale_digest) ... ok
+test_same_answers_and_language_do_not_revoke_approval (test_project_session.SessionTests.test_same_answers_and_language_do_not_revoke_approval) ... ok
+test_same_proposal_keeps_existing_approval (test_project_session.SessionTests.test_same_proposal_keeps_existing_approval) ... ok
+test_scope_cannot_be_widened_in_approval (test_project_session.SessionTests.test_scope_cannot_be_widened_in_approval) ... ok
+test_selection_is_not_execution_approval (test_project_session.SessionTests.test_selection_is_not_execution_approval) ... ok
+test_source_alternative_can_be_reviewed_but_not_run (test_project_session.SessionTests.test_source_alternative_can_be_reviewed_but_not_run) ... ok
+test_technology_revision_keeps_requirements_but_revokes_selection (test_project_session.SessionTests.test_technology_revision_keeps_requirements_but_revokes_selection) ... ok
+test_unapproved_advance_never_calls_bridge (test_project_session.SessionTests.test_unapproved_advance_never_calls_bridge) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.670s
+
+OK

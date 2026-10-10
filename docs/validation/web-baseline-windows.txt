@@ -1,0 +1,43 @@
+test_adapter_not_tested (test_selection.SelectionTests.test_adapter_not_tested) ... ok
+test_arabic_write_path (test_selection.SelectionTests.test_arabic_write_path) ... ok
+test_bad_components (test_selection.SelectionTests.test_bad_components) ... ok
+test_bad_digest (test_selection.SelectionTests.test_bad_digest) ... ok
+test_bad_registry (test_selection.SelectionTests.test_bad_registry) ... ok
+test_boolean_schema_not_integer (test_selection.SelectionTests.test_boolean_schema_not_integer) ... ok
+test_catalog_integrity (test_selection.SelectionTests.test_catalog_integrity) ... ok
+test_changed_plan_invalidates_approval (test_selection.SelectionTests.test_changed_plan_invalidates_approval) ... ok
+test_cli_ar_and_en_and_exit_codes (test_selection.SelectionTests.test_cli_ar_and_en_and_exit_codes) ... ok
+test_cli_does_not_modify_input (test_selection.SelectionTests.test_cli_does_not_modify_input) ... ok
+test_conflict_resolution_requires_evidence (test_selection.SelectionTests.test_conflict_resolution_requires_evidence) ... ok
+test_declared_conflict_evidence (test_selection.SelectionTests.test_declared_conflict_evidence) ... ok
+test_different_phases_do_not_imply_simultaneous_writes (test_selection.SelectionTests.test_different_phases_do_not_imply_simultaneous_writes) ... ok
+test_draft_not_ready (test_selection.SelectionTests.test_draft_not_ready) ... ok
+test_duplicate_id (test_selection.SelectionTests.test_duplicate_id) ... ok
+test_duplicate_json_keys_rejected (test_selection.SelectionTests.test_duplicate_json_keys_rejected) ... ok
+test_duplicate_primary (test_selection.SelectionTests.test_duplicate_primary) ... ok
+test_false_and_integer_are_not_approval (test_selection.SelectionTests.test_false_and_integer_are_not_approval) ... ok
+test_float_pin_rejected (test_selection.SelectionTests.test_float_pin_rejected) ... ok
+test_invalid_mode_type (test_selection.SelectionTests.test_invalid_mode_type) ... ok
+test_locale_keys_match (test_selection.SelectionTests.test_locale_keys_match) ... ok
+test_missing_contract (test_selection.SelectionTests.test_missing_contract) ... ok
+test_missing_required_owner (test_selection.SelectionTests.test_missing_required_owner) ... ok
+test_nonfinite_json_rejected (test_selection.SelectionTests.test_nonfinite_json_rejected) ... ok
+test_output_overlap_exact_and_directory_and_case (test_selection.SelectionTests.test_output_overlap_exact_and_directory_and_case) ... ok
+test_ready_checks_declared_fields_only (test_selection.SelectionTests.test_ready_checks_declared_fields_only) ... ok
+test_reference_needs_adaptation (test_selection.SelectionTests.test_reference_needs_adaptation) ... ok
+test_related_designers (test_selection.SelectionTests.test_related_designers) ... ok
+test_reviewer_cannot_be_primary (test_selection.SelectionTests.test_reviewer_cannot_be_primary) ... ok
+test_reviewer_read_only (test_selection.SelectionTests.test_reviewer_read_only) ... ok
+test_size_bounded (test_selection.SelectionTests.test_size_bounded) ... ok
+test_stack_mismatch (test_selection.SelectionTests.test_stack_mismatch) ... ok
+test_tool_not_policy_owner (test_selection.SelectionTests.test_tool_not_policy_owner) ... ok
+test_unknown_provider (test_selection.SelectionTests.test_unknown_provider) ... ok
+test_unresolved_activation_conflict (test_selection.SelectionTests.test_unresolved_activation_conflict) ... ok
+test_unsafe_path_variants (test_selection.SelectionTests.test_unsafe_path_variants) ... ok
+test_unsupported_capability (test_selection.SelectionTests.test_unsupported_capability) ... ok
+test_valid_example (test_selection.SelectionTests.test_valid_example) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 1.362s
+
+OK

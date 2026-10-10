@@ -1,0 +1,15 @@
+{
+  "skills/nasaq/assets/capabilities.json": "b28c69df9b287f641a6a02ee19764e123efee6995378f01328ba003b5642af2b",
+  "skills/nasaq/assets/examples/conflicting-design.draft.json": "ffe085bf956a947d097d38f4dee9fdcf2a3e55d495106ea36d44992e4fe0bb9b",
+  "skills/nasaq/assets/examples/web-selection.draft.json": "579a532d1c4ee884422a780d55933cfc9e0819e83af86992a2fe6d5523e72ac0",
+  "skills/nasaq/assets/providers.json": "9a5cf68d4919457e6dac839370570d2dd4cfc5062d9ca891a4ba741f6b722d62",
+  "skills/nasaq/assets/validator_messages.json": "95c37c48af8e2116c2acb6e69f8347cc981bf8970b55834af1497e15df715c93",
+  "skills/nasaq/assets/web-coverage.json": "22ad6861dd342b0a2624947fe28242d2e7fb2afc38c76d8a82906aa61100a772",
+  "skills/nasaq/assets/web-source-map.json": "c2c40843fd9194c953f2acf616b782534ea4048051dce30c38d586d012a94447",
+  "skills/nasaq/scripts/check_selection.py": "02470ece6af73e5735e758a30cc6101ff1956b885f5835ec7eb6922122e31a6e",
+  "skills/nasaq/scripts/check_web_catalog.py": "cfde542074923be81980e9a2dddc5fe4aa405d331859c7f92f621d4fc774fdb0",
+  "skills/nasaq/scripts/spec_kit_bridge.py": "c9fb49f2f7d93340fdc83ef4334593a3fb14311737c555e86c6757ed83b443c2",
+  "skills/nasaq/tests/test_selection.py": "bb63f787da2888b3c173d55171acd71ec905bb9551f290dbcb02f5445b854558",
+  "skills/nasaq/tests/test_spec_kit_bridge.py": "25ebdb91efdfb2e062046d81f0e0b1baf6e6330dd27d92078d4f2264486c6f92",
+  "skills/nasaq/tests/test_web_catalog.py": "f35950309843a8aeced9c578d1c0776db6c5718c2e0e4668936925a9594fe39c"
+}

@@ -1,0 +1,972 @@
+{
+  "schema_version": 1,
+  "plan_id": "NASAQ-WEB-RELEASE-1",
+  "review_date": "2026-10-09",
+  "approval_status": "pending",
+  "scope": "Planning metadata only; not a tested integration registry or install lock.",
+  "sources": [
+    {
+      "id": "spec-kit",
+      "repository": "https://github.com/github/spec-kit",
+      "version": "v1.1.2",
+      "commit": "959e866caa3618bf3dc290d5dca33394365af9c6",
+      "purpose": "planning",
+      "integration_mode": "workflow-reference",
+      "status": "existing_scoped_planning_evidence"
+    },
+    {
+      "id": "impeccable",
+      "repository": "https://github.com/pbakaus/impeccable",
+      "version": "package 4.5.2",
+      "commit": "d631a8827f99414d2b6daba4ef08b7f8701751d7",
+      "purpose": "design",
+      "integration_mode": "workflow-reference",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "vercel-react",
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "version": "commit",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "purpose": "react implementation guidance only",
+      "integration_mode": "workflow-reference",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "django",
+      "repository": "https://github.com/django/django",
+      "version": "5.2.18",
+      "commit": "3ae618c745df5b87053ad91588c72a4c8e646853",
+      "purpose": "backend/templates/ORM/tests",
+      "integration_mode": "reviewed-cli/library",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "react",
+      "repository": "https://github.com/facebook/react",
+      "version": "19.3.0",
+      "commit": "1d34f91dfde6bba84d08b683aaba164c7194dacb",
+      "purpose": "conditional frontend",
+      "integration_mode": "library",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "vite",
+      "repository": "https://github.com/vitejs/vite",
+      "version": "8.3.4",
+      "commit": "b6c20f6a8126d8561891e5fb9368e8fc9da37538",
+      "purpose": "conditional frontend build",
+      "integration_mode": "reviewed-cli",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "playwright",
+      "repository": "https://github.com/microsoft/playwright-python",
+      "version": "1.63.0",
+      "commit": "8cb967b3e4199bef5ce38e1cf34df1bf79cb8a8d",
+      "purpose": "browser acceptance",
+      "integration_mode": "library",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "postgres",
+      "repository": "https://github.com/postgres/postgres",
+      "version": "18.6",
+      "commit": "724edf9bde9d356724ad384a2e196edc3c9f80f7",
+      "purpose": "conditional database",
+      "integration_mode": "container",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "psycopg",
+      "repository": "https://github.com/psycopg/psycopg",
+      "version": "3.3.6",
+      "commit": "a67654d1e7afbf9b3a619557838f62de1c790e7c",
+      "purpose": "postgres driver",
+      "integration_mode": "library",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "schemathesis",
+      "repository": "https://github.com/schemathesis/schemathesis",
+      "version": "4.30.0",
+      "commit": "513c71637466516c553836c7496eb2fd446feb85",
+      "purpose": "API contract tests",
+      "integration_mode": "reviewed-cli",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "axe",
+      "repository": "https://github.com/dequelabs/axe-core",
+      "version": "4.14.0",
+      "commit": "e797173108eadfa4355fe06af331791734e1757f",
+      "purpose": "accessibility checks",
+      "integration_mode": "library",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "k6",
+      "repository": "https://github.com/grafana/k6",
+      "version": "2.3.0",
+      "commit": "e0887846143ab176d4b5483c9d52cf3b3e009f1a",
+      "purpose": "local load tests",
+      "integration_mode": "reviewed-cli",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "gitleaks",
+      "repository": "https://github.com/gitleaks/gitleaks",
+      "version": "8.30.1",
+      "commit": "83d9cd684c87d95d656c1458ef04895a7f1cbd8e",
+      "purpose": "secret scan",
+      "integration_mode": "reviewed-cli",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "bandit",
+      "repository": "https://github.com/PyCQA/bandit",
+      "version": "1.9.4",
+      "commit": "92ae8b82fb422a639f0ed8d99e96cea769594e08",
+      "purpose": "Python static security checks",
+      "integration_mode": "reviewed-cli",
+      "status": "proposed_metadata_reviewed_not_run"
+    },
+    {
+      "id": "pip-audit",
+      "repository": "https://github.com/pypa/pip-audit",
+      "version": "2.10.1",
+      "commit": "8894eb8cee033531a1fbd9f2fb160892531c14e3",
+      "purpose": "dependency advisories",
+      "integration_mode": "reviewed-cli",
+      "status": "proposed_metadata_reviewed_not_run"
+    }
+  ],
+  "python_packages": [
+    {
+      "name": "Django",
+      "version": "5.2.18",
+      "metadata_url": "https://pypi.org/pypi/Django/5.2.18/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "asgiref>=3.8.1",
+        "sqlparse>=0.3.1",
+        "tzdata; sys_platform == \"win32\"",
+        "argon2-cffi>=19.1.0; extra == \"argon2\"",
+        "bcrypt; extra == \"bcrypt\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "django-5.2.18-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d6/01/6568ec52b26548ca1b83d33249f7274db3bf74698f42c0da42ec9db1a24a/django-5.2.18-py3-none-any.whl",
+          "sha256": "92ed81d500be6408ecd704d7bd1366c534f30427bffcc63c5fefb129561aec7c",
+          "size": 8316071
+        }
+      ]
+    },
+    {
+      "name": "asgiref",
+      "version": "3.12.1",
+      "metadata_url": "https://pypi.org/pypi/asgiref/3.12.1/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "typing_extensions>=4; python_version < \"3.11\"",
+        "pytest; extra == \"tests\"",
+        "pytest-asyncio; extra == \"tests\"",
+        "mypy>=1.14.0; extra == \"mypy\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "asgiref-3.12.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/c0/1b/54f4ad77cd8a584fa70746c47df988e002cf1ee1eba43364d46f87803647/asgiref-3.12.1-py3-none-any.whl",
+          "sha256": "fe386d1c2bff7259ea95929266d12a8cf9a8b5a1c2598402967d8792e7a7c094",
+          "size": 25478
+        }
+      ]
+    },
+    {
+      "name": "sqlparse",
+      "version": "0.6.0",
+      "metadata_url": "https://pypi.org/pypi/sqlparse/0.6.0/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "build; extra == \"dev\"",
+        "furo; extra == \"doc\"",
+        "sphinx; extra == \"doc\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "sqlparse-0.6.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d9/50/f00935da0ec7cbf325f8dc4f772ae46fbc7b672dd62876e73f0a94adda57/sqlparse-0.6.0-py3-none-any.whl",
+          "sha256": "b861c0288ce2fa56209a9a6412d2e066ac664b3873b89c26c9d8415e8e32996f",
+          "size": 50070
+        }
+      ]
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "metadata_url": "https://pypi.org/pypi/tzdata/2026.5/json",
+      "requires_python": ">=2",
+      "declared_requirements": [],
+      "candidate_wheels": [
+        {
+          "filename": "tzdata-2026.5-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl",
+          "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+          "size": 347996
+        }
+      ]
+    },
+    {
+      "name": "playwright",
+      "version": "1.63.0",
+      "metadata_url": "https://pypi.org/pypi/playwright/1.63.0/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "pyee<14,>=13",
+        "greenlet<4.0.0,>=3.1.1"
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "playwright-1.63.0-py3-none-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/76/eb/d6b8d92658038e260dbc7dd69fb3fdbe245aac283953de8b50b02bfe5f61/playwright-1.63.0-py3-none-win_amd64.whl",
+          "sha256": "2f9a707a6c6c91157ed77bff2b8caeb04b3c8d46e70d585fc134298cbe4b5cc6",
+          "size": 38606082
+        }
+      ]
+    },
+    {
+      "name": "pyee",
+      "version": "13.0.0",
+      "metadata_url": "https://pypi.org/pypi/pyee/13.0.0/json",
+      "requires_python": ">=3.8",
+      "declared_requirements": [
+        "typing-extensions",
+        "build; extra == \"dev\"",
+        "flake8; extra == \"dev\"",
+        "flake8-black; extra == \"dev\"",
+        "pytest; extra == \"dev\"",
+        "pytest-asyncio; python_version >= \"3.4\" and extra == \"dev\"",
+        "pytest-trio; python_version >= \"3.7\" and extra == \"dev\"",
+        "black; extra == \"dev\"",
+        "isort; extra == \"dev\"",
+        "jupyter-console; extra == \"dev\"",
+        "mkdocs; extra == \"dev\"",
+        "mkdocs-include-markdown-plugin; extra == \"dev\"",
+        "mkdocstrings[python]; extra == \"dev\"",
+        "mypy; extra == \"dev\"",
+        "sphinx; extra == \"dev\"",
+        "toml; extra == \"dev\"",
+        "tox; extra == \"dev\"",
+        "trio; extra == \"dev\"",
+        "trio; python_version > \"3.6\" and extra == \"dev\"",
+        "trio-typing; python_version > \"3.6\" and extra == \"dev\"",
+        "twine; extra == \"dev\"",
+        "twisted; extra == \"dev\"",
+        "validate-pyproject[all]; extra == \"dev\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "pyee-13.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/9b/4d/b9add7c84060d4c1906abe9a7e5359f2a60f7a9a4f67268b2766673427d8/pyee-13.0.0-py3-none-any.whl",
+          "sha256": "48195a3cddb3b1515ce0695ed76036b5ccc2ef3a9f963ff9f77aec0139845498",
+          "size": 15730
+        }
+      ]
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.6",
+      "metadata_url": "https://pypi.org/pypi/greenlet/3.5.6/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "Sphinx; extra == \"docs\"",
+        "furo; extra == \"docs\"",
+        "objgraph; extra == \"test\"",
+        "psutil; extra == \"test\"",
+        "setuptools; extra == \"test\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "greenlet-3.5.6-cp310-cp310-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/7a/33/c57855a6abada0c7bfb9c6c0f33df1fbed8e5224708478dbcdff6c5db490/greenlet-3.5.6-cp310-cp310-win_amd64.whl",
+          "sha256": "dad3d233d441a022c1f7155f0fb9d5aff7b97c1ea8c7dfa02cce586b16ab2d0b",
+          "size": 322896
+        },
+        {
+          "filename": "greenlet-3.5.6-cp311-cp311-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/ce/6c/019d2ef898f4b9ac845167f1c6f73229e9a4e2439362a5e2ce50205a19b0/greenlet-3.5.6-cp311-cp311-win_amd64.whl",
+          "sha256": "a6b4ff33f7e011bbaa148238d131c4fd4f8afbab3c104ddfbdb2b12b74ff7016",
+          "size": 323317
+        },
+        {
+          "filename": "greenlet-3.5.6-cp312-cp312-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/c3/71/d79f1791f824f8ff15c2978746640467ae932a2365e0201069f7f272395f/greenlet-3.5.6-cp312-cp312-win_amd64.whl",
+          "sha256": "7ac4abb3877c43af320392c664774eef6fa2cc063c79a55fc02d844a3cbe7395",
+          "size": 324203
+        },
+        {
+          "filename": "greenlet-3.5.6-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/86/da/b7669b09586365654083a62bd0724cf06cb74bd5085a15cdd161271f992f/greenlet-3.5.6-cp313-cp313-win_amd64.whl",
+          "sha256": "5b602b4201b965a8354d74e232364a66ff243dd142e350d035f46169bb36e13d",
+          "size": 324086
+        },
+        {
+          "filename": "greenlet-3.5.6-cp314-cp314t-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/08/a5/1f48fe647473a2dcccfd1839b2ff2c78eb57009be776b4da071e901c9bff/greenlet-3.5.6-cp314-cp314t-win_amd64.whl",
+          "sha256": "886bcf1870af74c32bc310fd00a6b803445e17e51b7d5a107c7b35c0f362cc16",
+          "size": 331574
+        },
+        {
+          "filename": "greenlet-3.5.6-cp314-cp314-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/c9/9e/019642432e6ae283301df1361227d47610709d2dc69a38f95edef266d713/greenlet-3.5.6-cp314-cp314-win_amd64.whl",
+          "sha256": "f8f0bd690e1a41294ac87905e8121c81a3761ec2583c768f13467428606c8c7a",
+          "size": 327473
+        },
+        {
+          "filename": "greenlet-3.5.6-cp315-cp315t-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/ed/69/6ec22ac9351e474d2a134d0ff9400dc80362d1c20f0721088ffffdfc205b/greenlet-3.5.6-cp315-cp315t-win_amd64.whl",
+          "sha256": "2ab5f42ac6c238eb71770715e6e909ad9a1a92b6c681ccb64cd5a0f07edb953f",
+          "size": 331845
+        },
+        {
+          "filename": "greenlet-3.5.6-cp315-cp315-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/de/56/12941ed2711400451c89d544e10f831800a2770f19dd55eac8f0f7f2003b/greenlet-3.5.6-cp315-cp315-win_amd64.whl",
+          "sha256": "7969bffa322c097bd46ae595ada6a931cefda613f18ba64587e9cff4cb320756",
+          "size": 327739
+        }
+      ]
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "metadata_url": "https://pypi.org/pypi/typing-extensions/4.16.0/json",
+      "requires_python": ">=3.9",
+      "declared_requirements": [],
+      "candidate_wheels": [
+        {
+          "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+          "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "size": 45571
+        }
+      ]
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.6",
+      "metadata_url": "https://pypi.org/pypi/psycopg/3.3.6/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "typing-extensions>=4.6; python_version < \"3.13\"",
+        "tzdata; sys_platform == \"win32\"",
+        "psycopg-c==3.3.6; implementation_name != \"pypy\" and extra == \"c\"",
+        "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\"",
+        "psycopg-pool; extra == \"pool\"",
+        "anyio>=4.0; extra == \"test\"",
+        "mypy>=2.1.0; implementation_name != \"pypy\" and extra == \"test\"",
+        "pproxy>=2.7; extra == \"test\"",
+        "pytest>=6.2.5; extra == \"test\"",
+        "pytest-cov>=3.0; extra == \"test\"",
+        "pytest-randomly>=3.5; extra == \"test\"",
+        "ast-comments>=1.1.2; extra == \"dev\"",
+        "black>=26.1.0; extra == \"dev\"",
+        "codespell>=2.2; extra == \"dev\"",
+        "cython-lint>=0.21; extra == \"dev\"",
+        "dnspython>=2.1; extra == \"dev\"",
+        "flake8>=4.0; extra == \"dev\"",
+        "isort[colors]>=6.0; extra == \"dev\"",
+        "isort-psycopg>=0.0.3; extra == \"dev\"",
+        "mypy>=2.1.0; extra == \"dev\"",
+        "pre-commit>=4.0.1; extra == \"dev\"",
+        "types-setuptools>=57.4; extra == \"dev\"",
+        "types-shapely>=2.0; extra == \"dev\"",
+        "wheel>=0.37; extra == \"dev\"",
+        "Sphinx>=9.1; extra == \"docs\"",
+        "furo==2025.12.19; extra == \"docs\"",
+        "sphinx-autobuild>=2025.8.25; extra == \"docs\"",
+        "sphinx-autodoc-typehints>=3.10.2; extra == \"docs\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "psycopg-3.3.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/4e/de/748bd7609c71cae5d737f0ba9192f19329f70180ecda8fff3cac02c5abe3/psycopg-3.3.6-py3-none-any.whl",
+          "sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+          "size": 215490
+        }
+      ]
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "metadata_url": "https://pypi.org/pypi/psycopg-binary/3.3.6/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [],
+      "candidate_wheels": [
+        {
+          "filename": "psycopg_binary-3.3.6-cp310-cp310-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/08/89/4424e62a944eef40bd9326ada4ae23802b28eab6502af91e84ef7bba74fb/psycopg_binary-3.3.6-cp310-cp310-win_amd64.whl",
+          "sha256": "cbd5f73073ed19c378d4c35499db1e3e703a5b1a324e521204065967bfaa7a18",
+          "size": 3674362
+        },
+        {
+          "filename": "psycopg_binary-3.3.6-cp311-cp311-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/f7/dc/45386530ceb2a8c789a226de9b9b34eca8fccf1feba2e4ef68a6aca50c56/psycopg_binary-3.3.6-cp311-cp311-win_amd64.whl",
+          "sha256": "c7f92daa0d2a1c76f07264abddf8cbabd30152a2f09c3270e50f0c7efdf5dcac",
+          "size": 3675638
+        },
+        {
+          "filename": "psycopg_binary-3.3.6-cp312-cp312-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/1a/9b/94ff7fce53a64d5b286e2ec454e0a025cf3d6e6b4a9189bef16aa5de98b2/psycopg_binary-3.3.6-cp312-cp312-win_amd64.whl",
+          "sha256": "e23a66a763fbe83fcc210bc77c27e5a5ea380ebf091c06f34d8561b695e5a40f",
+          "size": 3658864
+        },
+        {
+          "filename": "psycopg_binary-3.3.6-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/55/7f/e350e1cf498ba2565c3f87b12f429d2012eb86b76c2b3845a19ee5fbb4d6/psycopg_binary-3.3.6-cp313-cp313-win_amd64.whl",
+          "sha256": "0ebfad5d131de9f892ae9e70cc7616207768b6714b66a52d4612b8ceaf78b372",
+          "size": 3658179
+        },
+        {
+          "filename": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/f1/3e/0a753a74fbd7aef120f286c016e09d3cc3f1daf7688f4a145d27281260b2/psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+          "sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+          "size": 3755671
+        },
+        {
+          "filename": "psycopg_binary-3.3.6-cp315-cp315-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/98/33/e2a5b36edf8aa422f6fa4b894756eb33dc93b36df5f65121280bb8b929c4/psycopg_binary-3.3.6-cp315-cp315-win_amd64.whl",
+          "sha256": "2f122603f36050937982abf9668d8bc4769a79f7c93a65013b1c49f1cab7b56b",
+          "size": 3756154
+        }
+      ]
+    },
+    {
+      "name": "schemathesis",
+      "version": "4.30.0",
+      "metadata_url": "https://pypi.org/pypi/schemathesis/4.30.0/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "anyio<5,>=4.5",
+        "click<9,>=8.0",
+        "harfile<1.0,>=0.5.0",
+        "hypothesis-graphql<1,>=0.13.2",
+        "hypothesis<7,>=6.130.12",
+        "jsonschema-rs<0.59.0,>=0.58.6",
+        "pyrate-limiter<5.0,>=4.0",
+        "pytest<10,>=8.4",
+        "pyyaml<7.0,>=5.1",
+        "requests<3,>=2.22",
+        "rich>=13.9.4",
+        "tomli>=2.2.1; python_version < \"3.11\"",
+        "typing-extensions>=4.12.2",
+        "werkzeug<4,>=0.16.0",
+        "allure-python-commons>=2.13.0; extra == \"allure\"",
+        "pytest-codspeed==5.0.3; extra == \"bench\"",
+        "coverage-enable-subprocess; extra == \"cov\"",
+        "coverage[toml]>=5.3; extra == \"cov\"",
+        "allure-pytest>=2.13.0; extra == \"dev\"",
+        "allure-python-commons>=2.13.0; extra == \"dev\"",
+        "coverage-enable-subprocess; extra == \"dev\"",
+        "coverage>=6; extra == \"dev\"",
+        "coverage[toml]>=5.3; extra == \"dev\"",
+        "django<6,>=5.2; extra == \"dev\"",
+        "fastapi>=0.86.0; extra == \"dev\"",
+        "flask<4.0,>=2.1.1; extra == \"dev\"",
+        "httpx2<3.0,>=2.12.0; extra == \"dev\"",
+        "httpx<1.0,>=0.22.0; extra == \"dev\"",
+        "mkdocs-material; extra == \"dev\"",
+        "mkdocstrings[python]; extra == \"dev\"",
+        "pydantic>=1.10.2; extra == \"dev\"",
+        "pytest-asyncio<2.0,>=1.0; extra == \"dev\"",
+        "pytest-codspeed==5.0.3; extra == \"dev\"",
+        "pytest-httpserver<2.0,>=1.0; extra == \"dev\"",
+        "pytest-mock<4.0,>=3.7.0; extra == \"dev\"",
+        "pytest-trio<1.0,>=0.8; extra == \"dev\"",
+        "pytest-xdist<4.0,>=3; extra == \"dev\"",
+        "seaborn>=0.13; extra == \"dev\"",
+        "strawberry-graphql[fastapi]>=0.109.0; extra == \"dev\"",
+        "syrupy<5.5,>=5.4; extra == \"dev\"",
+        "tomli-w>=1.2.0; extra == \"dev\"",
+        "tracecov>=0.21; extra == \"dev\"",
+        "trustme<2.0,>=0.9.0; extra == \"dev\"",
+        "uvicorn<1.0,>=0.20; extra == \"dev\"",
+        "webfuzzing-commons==0.11.0; extra == \"dev\"",
+        "mkdocs-material; extra == \"docs\"",
+        "mkdocstrings[python]; extra == \"docs\"",
+        "pyinstrument>=5.1; extra == \"profiling\"",
+        "seaborn>=0.13; extra == \"scripts\"",
+        "tracecov>=0.21; extra == \"scripts\"",
+        "allure-pytest>=2.13.0; extra == \"tests\"",
+        "allure-python-commons>=2.13.0; extra == \"tests\"",
+        "coverage>=6; extra == \"tests\"",
+        "django<6,>=5.2; extra == \"tests\"",
+        "fastapi>=0.86.0; extra == \"tests\"",
+        "flask<4.0,>=2.1.1; extra == \"tests\"",
+        "httpx2<3.0,>=2.12.0; extra == \"tests\"",
+        "httpx<1.0,>=0.22.0; extra == \"tests\"",
+        "pydantic>=1.10.2; extra == \"tests\"",
+        "pytest-asyncio<2.0,>=1.0; extra == \"tests\"",
+        "pytest-httpserver<2.0,>=1.0; extra == \"tests\"",
+        "pytest-mock<4.0,>=3.7.0; extra == \"tests\"",
+        "pytest-trio<1.0,>=0.8; extra == \"tests\"",
+        "pytest-xdist<4.0,>=3; extra == \"tests\"",
+        "strawberry-graphql[fastapi]>=0.109.0; extra == \"tests\"",
+        "syrupy<5.5,>=5.4; extra == \"tests\"",
+        "tomli-w>=1.2.0; extra == \"tests\"",
+        "trustme<2.0,>=0.9.0; extra == \"tests\"",
+        "uvicorn<1.0,>=0.20; extra == \"tests\"",
+        "webfuzzing-commons==0.11.0; extra == \"tests\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "schemathesis-4.30.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/c6/4f/918f79c3d4c05ec92ba05cbc86cb2a8ea2ad7871d431d560b8c54cb204c6/schemathesis-4.30.0-py3-none-any.whl",
+          "sha256": "941496576ebf68437581a09a00562016e01058da7fe6cb3ffe4244b0096f26c3",
+          "size": 1049958
+        }
+      ]
+    },
+    {
+      "name": "bandit",
+      "version": "1.9.4",
+      "metadata_url": "https://pypi.org/pypi/bandit/1.9.4/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "PyYAML>=5.3.1",
+        "stevedore>=1.20.0",
+        "rich",
+        "colorama>=0.3.9; platform_system == \"Windows\"",
+        "PyYAML; extra == \"yaml\"",
+        "tomli>=1.1.0; python_version < \"3.11\" and extra == \"toml\"",
+        "GitPython>=3.1.30; extra == \"baseline\"",
+        "sarif-om>=1.0.4; extra == \"sarif\"",
+        "jschema-to-python>=1.2.3; extra == \"sarif\"",
+        "coverage>=4.5.4; extra == \"test\"",
+        "fixtures>=3.0.0; extra == \"test\"",
+        "flake8>=4.0.0; extra == \"test\"",
+        "stestr>=2.5.0; extra == \"test\"",
+        "testscenarios>=0.5.0; extra == \"test\"",
+        "testtools>=2.3.0; extra == \"test\"",
+        "beautifulsoup4>=4.8.0; extra == \"test\"",
+        "pylint==1.9.4; extra == \"test\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "bandit-1.9.4-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/05/a4/a26d5b25671d27e03afb5401a0be5899d94ff8fab6a698b1ac5be3ec29ef/bandit-1.9.4-py3-none-any.whl",
+          "sha256": "f89ffa663767f5a0585ea075f01020207e966a9c0f2b9ef56a57c7963a3f6f8e",
+          "size": 134741
+        }
+      ]
+    },
+    {
+      "name": "pip-audit",
+      "version": "2.10.1",
+      "metadata_url": "https://pypi.org/pypi/pip-audit/2.10.1/json",
+      "requires_python": ">=3.10",
+      "declared_requirements": [
+        "CacheControl[filecache]>=0.13.0",
+        "cyclonedx-python-lib<12,>=5",
+        "packaging>=23.0.0",
+        "pip-api>=0.0.28",
+        "pip-requirements-parser>=32.0.0",
+        "requests>=2.31.0",
+        "rich>=12.4",
+        "tomli>=2.2.1",
+        "tomli-w>=1.2.0",
+        "platformdirs>=4.2.0",
+        "coverage[toml]!=7.3.3,~=7.0; extra == \"cov\"",
+        "build; extra == \"dev\"",
+        "pip-audit[doc,lint,test]; extra == \"dev\"",
+        "pdoc; extra == \"doc\"",
+        "ruff>=0.14; extra == \"lint\"",
+        "interrogate~=1.6; extra == \"lint\"",
+        "mypy; extra == \"lint\"",
+        "types-requests; extra == \"lint\"",
+        "types-toml; extra == \"lint\"",
+        "typos; extra == \"lint\"",
+        "pretend; extra == \"test\"",
+        "pytest; extra == \"test\"",
+        "pip-audit[cov]; extra == \"test\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "pip_audit-2.10.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a3/a7/b0c504148114047bd1bc9d97447453c6850ca176bb2f3c0038835994e8b7/pip_audit-2.10.1-py3-none-any.whl",
+          "sha256": "99ef3f600a317c1945f1e89e227ef26e1c2d618429b8bd3fa6f4f7c440c4611a",
+          "size": 62023
+        }
+      ]
+    }
+  ],
+  "npm_packages": [
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "metadata_url": "https://registry.npmjs.org/react/19.3.0",
+      "git_commit": "1d34f91dfde6bba84d08b683aaba164c7194dacb",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "dependencies": {},
+      "peer_dependencies": {},
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "e20aa3a14687075ce863351b5878b0608c3fbfb2",
+        "tarball": "https://registry.npmjs.org/react/-/react-19.3.0.tgz",
+        "fileCount": 27,
+        "integrity": "sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==",
+        "signatures": [
+          {
+            "sig": "MEUCIALru2uJjzTwQTeh/ax6FRZSyVBDySuUEr4k+TiaANpDAiEAgJVCX1upjcvo4FzKCrJW9vcVnWVJwMbuM4Wsc4UM61o=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQCLRI5uegHedldoJjX7BioMz8AnR5jZmFZB2+1PMyrFagIhAMlHH0dBWncX0Nq4vSqkVKZtP7Jolgae2aodnOtIRrQK",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/react@19.3.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 178663
+      },
+      "peer_dependencies_meta": {}
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "metadata_url": "https://registry.npmjs.org/react-dom/19.3.0",
+      "git_commit": "1d34f91dfde6bba84d08b683aaba164c7194dacb",
+      "engines": {},
+      "dependencies": {
+        "scheduler": "^0.28.0"
+      },
+      "peer_dependencies": {
+        "react": "^19.3.0"
+      },
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "a0ff19161d7f4e9be5469a07278b0c06e00f9001",
+        "tarball": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.0.tgz",
+        "fileCount": 43,
+        "integrity": "sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDl7gfoVlOoqKLgPU325X6EcrNHIYuFJJX0R9PHDs9KygIgAQaRzlBCG57IDn6XBjaOL/adBCuf/oiguaTixpmBBjw=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIBJlBwP9e+XpqYfXpAJxCFTZ2i9tt8XCm9JYmuFMXsm1AiEAi9g3MN8fg6vModu7alAeUKmJ6iWO6untLGlvHfX1mb4=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/react-dom@19.3.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 8063782
+      },
+      "peer_dependencies_meta": {}
+    },
+    {
+      "name": "vite",
+      "version": "8.3.4",
+      "metadata_url": "https://registry.npmjs.org/vite/8.3.4",
+      "git_commit": null,
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "dependencies": {
+        "postcss": "^8.5.29",
+        "rolldown": "~1.2.12",
+        "picomatch": "^4.0.7",
+        "tinyglobby": "^0.2.17",
+        "lightningcss": "^1.33.0"
+      },
+      "peer_dependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1"
+      },
+      "optional_dependencies": {
+        "fsevents": "~2.3.3"
+      },
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "ba08678ba41ba53f41c251b1772946c27b1c874e",
+        "tarball": "https://registry.npmjs.org/vite/-/vite-8.3.4.tgz",
+        "fileCount": 37,
+        "integrity": "sha512-IftLE8phJhdNRIGNEV4JCCvfNScoZQVfcXaN8TQropWGJtOHcu+iAB9pHcuGvmEb/kddw0LBe/jS8ztdC6xdiQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCeAXB/HwdxpjsWJtL4xB1XW4EQghm8FuRmtk5k3Ok9+AIgIFJBcqIWVFWx5JeaTOpO/Noixu1/SIVjcexDfJ4S5PU=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDtkEePcVc6vZxhoADsFqkp0VBbSgevSPxwgXXoG/UidQIgLb5bHn+iddppIY99rGaeeiM+n0AMTnlfU1QwNL/lwig=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/vite@8.3.4",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 2376813
+      },
+      "peer_dependencies_meta": {
+        "tsx": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "esbuild": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "@vitejs/devtools": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "metadata_url": "https://registry.npmjs.org/typescript/5.9.3",
+      "git_commit": "c63de15a992d37f0d6cec03ac7631872838602cb",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "dependencies": {},
+      "peer_dependencies": {},
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "5b4f59e15310ab17a216f5d6cf53ee476ede670f",
+        "tarball": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+        "fileCount": 132,
+        "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+        "signatures": [
+          {
+            "sig": "MEYCIQC5ifNi1il+zAZC19ov+Q5oSrhOwlpOpghAaAAXYA0RpAIhAKdcZ6pMNZGuprpke8Zi3OPB1zol9c88KVW+apJNVjTy",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 23625066
+      },
+      "peer_dependencies_meta": {}
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.2",
+      "metadata_url": "https://registry.npmjs.org/@vitejs/plugin-react/6.1.2",
+      "git_commit": "ac47648e17674299accb51816e9e33b8a7b07b05",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "dependencies": {
+        "@rolldown/pluginutils": "^1.0.1"
+      },
+      "peer_dependencies": {
+        "vite": "^8.0.0",
+        "oxc-transform-react": "^0.152.0",
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0"
+      },
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "924d47e890a78cdf2b72f3f41fe8ab98e089b81e",
+        "tarball": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.1.2.tgz",
+        "fileCount": 8,
+        "integrity": "sha512-fhJNGUdscQa4HkI0xFxwonWyhnVReCPDbXI7FH7jmzpnVCrFQI7PRrhWecO263610vOrs9tr2Y4xcf8uAdFxbw==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCgpYsgjqTlOLHoKHGebF/CVGDeZXj631NLMep/SKoPxwIgQWZS4mOR+zKRUVL7FUDOOFDZyuMuywEGKrwry5GdV1Q=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDLH4vCHenzBgP8wEYtZ9kCyKB71ErIPflGwaTlK1x9UwIgD2g6OSfhpU2OeghhDhPrAlwcunG8FMKXva4cki2sYlM=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@vitejs%2fplugin-react@6.1.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 46296
+      },
+      "peer_dependencies_meta": {
+        "oxc-transform-react": {
+          "optional": true
+        },
+        "@rolldown/plugin-babel": {
+          "optional": true
+        },
+        "babel-plugin-react-compiler": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "axe-core",
+      "version": "4.14.0",
+      "metadata_url": "https://registry.npmjs.org/axe-core/4.14.0",
+      "git_commit": null,
+      "engines": {
+        "node": ">=4"
+      },
+      "dependencies": {},
+      "peer_dependencies": {},
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "a9819d3932a8198fbe935d8cbd8afcdfecbcf31d",
+        "tarball": "https://registry.npmjs.org/axe-core/-/axe-core-4.14.0.tgz",
+        "fileCount": 31,
+        "integrity": "sha512-9WTZxEjsZ7b13TH8JPmbV2z8CHbl80/2hm3XPEG4JgNdQLK81IBRXmSxHfMAOkSqQeRxT/0dwNDz2GOm3zzpcQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIBvYv287Ez39WwyGIZeT3qb0y81cYqF8jZBey6897iecAiEAl51gJ3TRL1qCo5Cs6aDt7OnuKg8CvU6RRUT14NVLAcY=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIFOTtufsMLhMG6z2JCs3qIRw8oigIhFAwRxLgOdZhu5sAiALHT3+jIIglEIHWnTg0Dhr/X2pyJsTcIlzbL2fA4nWKA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/axe-core@4.14.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 3430531
+      },
+      "peer_dependencies_meta": {}
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "metadata_url": "https://registry.npmjs.org/@types/react/19.3.0",
+      "git_commit": null,
+      "engines": {},
+      "dependencies": {
+        "csstype": "^3.2.2"
+      },
+      "peer_dependencies": {},
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "3b3ce8d8c1627fb5ccd4dadd57ef445c5a153b77",
+        "tarball": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+        "fileCount": 18,
+        "integrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==",
+        "signatures": [
+          {
+            "sig": "MEQCICO9E9W9sN+6oHDGno2fJYJ8YEsNOa01MoJJmauunAjGAiAVusL8FBYYoRgnVrnz0RY2KMSjP1OlJ7GunY0YhIr0GA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQCG/2kbQCjMBz9wJNsFnPRUQFtQzxGIbkrwTxQ3ZYlQrwIhAKZAxRpE46wtsHz27OGDgRmXLV83Q5GivNToLaMzF7Q2",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 408108
+      },
+      "peer_dependencies_meta": {}
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "metadata_url": "https://registry.npmjs.org/@types/react-dom/19.3.0",
+      "git_commit": null,
+      "engines": {},
+      "dependencies": {},
+      "peer_dependencies": {
+        "@types/react": "^19.3.0"
+      },
+      "optional_dependencies": {},
+      "lifecycle_scripts": {},
+      "dist": {
+        "shasum": "90294a9266efd928a5266f2110d60d5dba5015d2",
+        "tarball": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz",
+        "fileCount": 19,
+        "integrity": "sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDeggFlao9be7yHQ/b9bEJ/aNUgA9ewpLiMScDNunzitAIhAKh8Ct2ZYAjnfZI/KeuIMkZ0Qz2vlOS1C1PkdT2UacvQ",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQDfRDroOzjwBEz1yqXRbBWKCYOt7p/DKB+WIMPoMWCfUAIhAMPChj/cPQOALZVIGvV0h+QYQERrlQ5RJZb3dptWvQFV",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 32862
+      },
+      "peer_dependencies_meta": {}
+    }
+  ],
+  "resolution_policy": {
+    "direct_pins": "exact",
+    "transitive": "Resolve only required runtime closure of these pins; no extras except psycopg binary and CacheControl filecache required upstream. Freeze every version/hash before installation. Stop on new service, git URL, unsafe lifecycle script, unavailable wheel or wider permission.",
+    "install_permission": "NOT GRANTED",
+    "source_archive_permission": "NOT GRANTED",
+    "registry_metadata_read": true
+  },
+  "postgres_image": {
+    "name": "docker.io/library/postgres:18.6-bookworm",
+    "platform": "linux/amd64",
+    "manifest_list_digest": "sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c",
+    "platform_digest": "sha256:9551dd5bf356409a21b31248f49b33bba9bb1877365f3a7e933aecd9af3cf52d",
+    "metadata_url": "https://hub.docker.com/v2/repositories/library/postgres/tags/18.6-bookworm",
+    "reported_size_bytes": 159561485,
+    "note": "Registry metadata only; no pull performed. Docker storage is outside workspace and needs explicit scope approval."
+  }
+}

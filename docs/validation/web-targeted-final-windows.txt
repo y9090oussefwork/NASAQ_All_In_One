@@ -1,0 +1,6 @@
+test_complementary_api_tools_can_coexist (test_web_catalog.WebCatalogTests.test_complementary_api_tools_can_coexist) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK

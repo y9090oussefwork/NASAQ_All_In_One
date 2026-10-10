@@ -1,0 +1,19 @@
+{
+  "package": "NASAQ_All_In_One",
+  "assembled_on": "2026-10-09",
+  "build_spec": "1.1.0-draft",
+  "skill_prototype": "0.2.0",
+  "status": "conversational-web-planning-slice-completed",
+  "primary_files": [
+    "START_HERE_AR.md",
+    "CODEX_PROMPT_AR.md",
+    "docs/NASAQ_BUILD_SPEC_AR_v1_1.md",
+    "docs/NASAQ_PROVIDER_CATALOG_AR.md",
+    "skills/nasaq/SKILL.md",
+    "release/skill.zip"
+  ],
+  "legacy_is_non_active": true,
+  "notes": "Reusable host conversation and approvals use existing Spec Kit workflow-reference bridge; 114 local tests passed. Catalogs remain candidates. No application implementation or native host certification.",
+  "local_revision": "conversation-planning-1",
+  "release_archive_status": "unchanged historical 0.2.0; does not include local web preparation"
+}

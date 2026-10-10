@@ -1,0 +1,1456 @@
+{
+  "schema_version": 1,
+  "status": "local_integration_preparation",
+  "scope": [
+    "web"
+  ],
+  "research_namespace": "web",
+  "original_provider_ids": [
+    "nasaq-core",
+    "pm-skills",
+    "spec-kit",
+    "openspec",
+    "bmad",
+    "superpowers",
+    "arc42",
+    "c4",
+    "serena",
+    "codeboarding",
+    "mermaid",
+    "repomix",
+    "context7",
+    "impeccable",
+    "frontend-design",
+    "ui-ux-pro-max",
+    "agency-ui-review",
+    "wcag",
+    "axe",
+    "vercel-react",
+    "angular",
+    "vue-community",
+    "antfu-vue",
+    "laravel-boost",
+    "dotnet",
+    "fastapi-docs",
+    "django-docs",
+    "nestjs-docs",
+    "android",
+    "flutter",
+    "expo",
+    "swiftui",
+    "aiogram-docs",
+    "grammy-docs",
+    "postgres",
+    "mongodb",
+    "redis",
+    "sqlite-docs",
+    "mysql-docs",
+    "spectral",
+    "schemathesis",
+    "better-auth",
+    "tea",
+    "playwright-agents",
+    "playwright-cli",
+    "maestro",
+    "flaui",
+    "testcontainers",
+    "k6",
+    "web-vitals",
+    "trail-of-bits",
+    "semgrep",
+    "osv",
+    "gitleaks",
+    "betterleaks",
+    "trufflehog",
+    "zap",
+    "asvs",
+    "masvs",
+    "knip",
+    "dependency-cruiser",
+    "otel",
+    "hashicorp",
+    "cloudflare",
+    "stripe",
+    "promptfoo",
+    "renovate",
+    "seo-google"
+  ],
+  "research_provenance": {
+    "path": "docs/research/web/NASAQ_WEB_REGISTRY.json",
+    "sha256": "dcf436190e684ad3e34bf16c0559d6b4f1e9998847608b4ca68f0e006b003a67",
+    "scope_attachment_available": false
+  },
+  "automatic_activation_allowed": false,
+  "sources": [
+    {
+      "id": "web.s01",
+      "research_id": "S01",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "pm-skills",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/phuryn/pm-skills/blob/main/pm-market-research/skills/competitor-analysis/SKILL.md",
+        "https://raw.githubusercontent.com/phuryn/pm-skills/main/pm-product-discovery/skills/identify-assumptions-new/SKILL.md",
+        "https://raw.githubusercontent.com/phuryn/pm-skills/main/pm-execution/skills/create-prd/SKILL.md",
+        "https://raw.githubusercontent.com/phuryn/pm-skills/main/pm-market-research/skills/customer-journey-map/SKILL.md",
+        "https://raw.githubusercontent.com/phuryn/pm-skills/main/pm-execution/skills/outcome-roadmap/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s02",
+      "research_id": "S02",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "spec-kit",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/github/spec-kit/blob/main/README.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s03",
+      "research_id": "S03",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "openspec",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/Fission-AI/OpenSpec/blob/main/skills/openspec-propose/SKILL.md",
+        "https://github.com/Fission-AI/OpenSpec"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s04",
+      "research_id": "S04",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "superpowers",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+        "https://github.com/obra/superpowers"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s05",
+      "research_id": "S05",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "impeccable",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/pbakaus/impeccable/main/.agents/skills/impeccable/SKILL.md",
+        "https://github.com/pbakaus/impeccable"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s06",
+      "research_id": "S06",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "frontend-design",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+        "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/LICENSE.txt"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s07",
+      "research_id": "S07",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "ui-ux-pro-max",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/ui-ux-pro-max/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s08",
+      "research_id": "S08",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "chrome-web-guidance",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance/main/skills/modern-web-guidance/SKILL.md",
+        "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/README.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s09",
+      "research_id": "S09",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "vercel-react",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
+        "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/AGENTS.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s10",
+      "research_id": "S10",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "angular",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/angular/skills/blob/main/angular-developer/SKILL.md",
+        "https://angular.dev/ai/agent-skills"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s11",
+      "research_id": "S11",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "vue-community",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/vuejs-ai/skills/blob/main/skills/vue-best-practices/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s12",
+      "research_id": "S12",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "laravel-boost",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/laravel/boost/blob/main/.ai/laravel/skill/laravel-best-practices/SKILL.md",
+        "https://github.com/laravel/docs/blob/13.x/boost.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s13",
+      "research_id": "S13",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "dotnet",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/dotnet/skills/blob/main/plugins/dotnet-aspnetcore/skills/dotnet-webapi/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s14",
+      "research_id": "S14",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "wordpress",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/WordPress/agent-skills/trunk/skills/wordpress-router/SKILL.md",
+        "https://raw.githubusercontent.com/WordPress/agent-skills/trunk/skills/wp-rest-api/SKILL.md",
+        "https://github.com/WordPress/agent-skills"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s15",
+      "research_id": "S15",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "better-auth",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/better-auth/skills/blob/main/better-auth/best-practices/SKILL.md",
+        "https://github.com/better-auth/skills/blob/main/better-auth/organization/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s16",
+      "research_id": "S16",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "auth0",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/auth0/agent-skills/main/plugins/auth0/skills/auth0/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s17",
+      "research_id": "S17",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "postgres",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/supabase/agent-skills/blob/main/skills/supabase-postgres-best-practices/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s18",
+      "research_id": "S18",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "mongodb",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/mongodb/agent-skills/main/skills/mongodb-schema-design/SKILL.md",
+        "https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-connection/SKILL.md",
+        "https://github.com/mongodb/agent-skills/blob/main/skills/mongodb-natural-language-querying/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s19",
+      "research_id": "S19",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "redis",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/redis/agent-skills/blob/main/skills/redis-core/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s20",
+      "research_id": "S20",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "elastic-esql",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/elastic/agent-skills/main/skills/elasticsearch/elasticsearch-esql/SKILL.md",
+        "https://github.com/elastic/agent-skills/blob/main/skills/elasticsearch/elasticsearch-esql/references/esql-search.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s21",
+      "research_id": "S21",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "clickhouse",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/ClickHouse/agent-skills/blob/main/skills/clickhouse-best-practices/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s22",
+      "research_id": "S22",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "dbt",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/dbt-labs/dbt-agent-skills/blob/main/skills/dbt/skills/using-dbt-for-analytics-engineering/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s23",
+      "research_id": "S23",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "inngest",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/inngest/inngest-skills/blob/main/skills/inngest-steps/SKILL.md",
+        "https://github.com/inngest/inngest-skills/blob/main/skills/inngest-setup/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s24",
+      "research_id": "S24",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "trigger-dev",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/triggerdotdev/skills/blob/main/skills/trigger-tasks/SKILL.md",
+        "https://github.com/triggerdotdev/skills/blob/main/skills/trigger-setup/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review.",
+      "entrypoint_corrections": [
+        "https://github.com/triggerdotdev/skills/blob/main/trigger-tasks/SKILL.md",
+        "https://github.com/triggerdotdev/skills/blob/main/trigger-setup/SKILL.md"
+      ],
+      "correction_status": "Repository layout reviewed; exact pinned files still require review."
+    },
+    {
+      "id": "web.s25",
+      "research_id": "S25",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "resend",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/resend/resend-skills/main/skills/email-best-practices/SKILL.md",
+        "https://github.com/resend/resend-skills/blob/main/skills/resend/references/sending/best-practices.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s26",
+      "research_id": "S26",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "stripe",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/stripe/ai/blob/main/skills/stripe-best-practices/SKILL.md",
+        "https://docs.stripe.com/connect"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s27",
+      "research_id": "S27",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "medusa",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/medusajs/medusa-agent-skills/main/plugins/medusa-dev/skills/building-with-medusa/SKILL.md",
+        "https://raw.githubusercontent.com/medusajs/medusa-agent-skills/main/plugins/medusa-dev/skills/building-admin-dashboard-customizations/SKILL.md",
+        "https://raw.githubusercontent.com/medusajs/medusa-agent-skills/main/plugins/ecommerce-storefront/skills/storefront-best-practices/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s28",
+      "research_id": "S28",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "trail-of-bits",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/trailofbits/skills/blob/main/plugins/differential-review/skills/differential-review/SKILL.md",
+        "https://github.com/trailofbits/skills"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s29",
+      "research_id": "S29",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "playwright-agents",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://playwright.dev/docs/test-agents"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s30",
+      "research_id": "S30",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "k6",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/grafana/skills/blob/main/skills/grafana-k6/k6/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s31",
+      "research_id": "S31",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "tea",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/bmad-code-org/bmad-method-test-architecture-enterprise/blob/main/src/workflows/testarch/bmad-testarch-test-design/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s32",
+      "research_id": "S32",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "hashicorp",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/hashicorp/agent-skills/main/plugins/terraform/skills/terraform-style-guide/SKILL.md",
+        "https://raw.githubusercontent.com/hashicorp/agent-skills/main/plugins/terraform/skills/terraform-test/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s33",
+      "research_id": "S33",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "cloudflare",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/cloudflare/skills/blob/main/skills/cloudflare/SKILL.md",
+        "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md",
+        "https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s34",
+      "research_id": "S34",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "docker-guidance",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/docker/skills/main/skills/docker-build-strategies/SKILL.md",
+        "https://raw.githubusercontent.com/docker/skills/main/skills/docker-compose-patterns/SKILL.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s35",
+      "research_id": "S35",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "agency-ui-review",
+          "role": "reviewer"
+        },
+        {
+          "provider_id": "agency-code-onboarding",
+          "role": "primary"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://raw.githubusercontent.com/msitarzewski/agency-agents/main/design/design-ui-finish-gate-reviewer.md",
+        "https://raw.githubusercontent.com/msitarzewski/agency-agents/main/engineering/engineering-codebase-onboarding-engineer.md",
+        "https://raw.githubusercontent.com/msitarzewski/agency-agents/main/LICENSE"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.s36",
+      "research_id": "S36",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "svelte-guidance",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://svelte.dev/docs/cli/ai-tools"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r01",
+      "research_id": "R01",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "c4",
+          "role": "reference"
+        },
+        {
+          "provider_id": "arc42",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://c4model.com/diagrams",
+        "https://arc42.org/overview/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r02",
+      "research_id": "R02",
+      "relation": "alternatives",
+      "targets": [
+        {
+          "provider_id": "zalando-api-guidelines",
+          "role": "reference"
+        },
+        {
+          "provider_id": "microsoft-api-guidelines",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://opensource.zalando.com/restful-api-guidelines/",
+        "https://github.com/microsoft/api-guidelines"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r03",
+      "research_id": "R03",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "openapi",
+          "role": "reference"
+        },
+        {
+          "provider_id": "asyncapi",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://spec.openapis.org/oas/latest.html",
+        "https://www.asyncapi.com/docs/reference/specification/latest"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r04",
+      "research_id": "R04",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "oauth-bcp",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.rfc-editor.org/rfc/rfc9700.html"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r05",
+      "research_id": "R05",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "wcag",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.w3.org/WAI/standards-guidelines/wcag/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r06",
+      "research_id": "R06",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "w3c-bidi",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.w3.org/International/articles/inline-bidi-markup/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r07",
+      "research_id": "R07",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "seo-google",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r08",
+      "research_id": "R08",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "asvs",
+          "role": "reference"
+        },
+        {
+          "provider_id": "owasp-cheatsheets",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://owasp.org/projects/asvs",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r09",
+      "research_id": "R09",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "multitenancy-guidance",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview",
+        "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/resource-organization"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r10",
+      "research_id": "R10",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "postgres-manual",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.postgresql.org/docs/current/using-explain.html",
+        "https://www.postgresql.org/docs/current/backup.html"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r11",
+      "research_id": "R11",
+      "relation": "alternatives",
+      "targets": [
+        {
+          "provider_id": "django-docs",
+          "role": "reference"
+        },
+        {
+          "provider_id": "fastapi-docs",
+          "role": "reference"
+        },
+        {
+          "provider_id": "nestjs-docs",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://docs.djangoproject.com/en/stable/topics/security/",
+        "https://fastapi.tiangolo.com/deployment/concepts/",
+        "https://docs.nestjs.com/security/authorization"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r12",
+      "research_id": "R12",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "google-sre",
+          "role": "reference"
+        },
+        {
+          "provider_id": "aws-well-architected",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://sre.google/workbook/implementing-slos/",
+        "https://sre.google/workbook/table-of-contents/",
+        "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r13",
+      "research_id": "R13",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "otel",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://opentelemetry.io/docs/concepts/signals/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r14",
+      "research_id": "R14",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "finops",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.finops.org/framework/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r15",
+      "research_id": "R15",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "s3-guidance",
+          "role": "reference"
+        },
+        {
+          "provider_id": "sharp-docs",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html",
+        "https://sharp.pixelplumbing.com/api-output/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r16",
+      "research_id": "R16",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "aws-toolkit-research",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/",
+        "https://github.com/awslabs/agent-plugins"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r17",
+      "research_id": "R17",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "github-actions-security",
+          "role": "reference"
+        },
+        {
+          "provider_id": "openfeature",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://docs.github.com/en/actions/reference/security/secure-use",
+        "https://openfeature.dev/docs/reference/intro/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r18",
+      "research_id": "R18",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "keycloak-docs",
+          "role": "reference",
+          "responsibility": "identity"
+        },
+        {
+          "provider_id": "openfga-docs",
+          "role": "reference",
+          "responsibility": "authorization"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.keycloak.org/securing-apps/overview",
+        "https://openfga.dev/docs/modeling/getting-started"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r19",
+      "research_id": "R19",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "celery-docs",
+          "role": "reference",
+          "responsibility": "jobs"
+        },
+        {
+          "provider_id": "rabbitmq-docs",
+          "role": "reference",
+          "responsibility": "message-broker"
+        },
+        {
+          "provider_id": "socketio-docs",
+          "role": "reference",
+          "responsibility": "realtime"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://docs.celeryq.dev/en/stable/userguide/tasks.html",
+        "https://www.rabbitmq.com/docs/reliability",
+        "https://socket.io/docs/v4/delivery-guarantees"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.r20",
+      "research_id": "R20",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "kubernetes-docs",
+          "role": "reference"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://kubernetes.io/docs/setup/production-environment/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t01",
+      "research_id": "T01",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "playwright-test",
+          "role": "executor"
+        },
+        {
+          "provider_id": "axe",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://playwright.dev/docs/accessibility-testing",
+        "https://playwright.dev/docs/test-snapshots"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t02",
+      "research_id": "T02",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "spectral",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/stoplightio/spectral",
+        "https://github.com/stoplightio/spectral/blob/develop/docs/reference/openapi-rules.md"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t03",
+      "research_id": "T03",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "schemathesis",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://schemathesis.readthedocs.io/en/stable/quick-start/",
+        "https://schemathesis.readthedocs.io/en/stable/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t04",
+      "research_id": "T04",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "testcontainers",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://testcontainers.com/getting-started/",
+        "https://testcontainers.com/guides/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t05",
+      "research_id": "T05",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "semgrep",
+          "role": "executor"
+        },
+        {
+          "provider_id": "codeql",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://docs.semgrep.dev/",
+        "https://codeql.github.com/docs/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t06",
+      "research_id": "T06",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "osv",
+          "role": "executor"
+        },
+        {
+          "provider_id": "gitleaks",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/google/osv-scanner",
+        "https://github.com/gitleaks/gitleaks"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t07",
+      "research_id": "T07",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "knip",
+          "role": "executor"
+        },
+        {
+          "provider_id": "dependency-cruiser",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/webpro-nl/knip",
+        "https://github.com/sverweij/dependency-cruiser"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t08",
+      "research_id": "T08",
+      "relation": "alternatives",
+      "targets": [
+        {
+          "provider_id": "vitest",
+          "role": "executor"
+        },
+        {
+          "provider_id": "pytest",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://vitest.dev/guide/",
+        "https://docs.pytest.org/en/stable/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t09",
+      "research_id": "T09",
+      "relation": "single",
+      "targets": [
+        {
+          "provider_id": "zap",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://www.zaproxy.org/docs/docker/baseline-scan/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    },
+    {
+      "id": "web.t10",
+      "research_id": "T10",
+      "relation": "scoped-complements",
+      "targets": [
+        {
+          "provider_id": "serena",
+          "role": "executor"
+        },
+        {
+          "provider_id": "context7",
+          "role": "executor"
+        },
+        {
+          "provider_id": "mermaid",
+          "role": "executor"
+        }
+      ],
+      "reviewed_urls_from_research": [
+        "https://github.com/oraios/serena",
+        "https://github.com/upstash/context7",
+        "https://mermaid.js.org/intro/"
+      ],
+      "status": "research_candidate",
+      "installed": false,
+      "runtime_tested": false,
+      "provenance_note": "Supplied research, not a new exhaustive upstream review."
+    }
+  ],
+  "state_crosswalk": {
+    "research_candidate": {
+      "catalog_status": "catalog_only",
+      "runtime_status": "not_run"
+    },
+    "selected_for_pilot": {
+      "workflow_stage": "selected",
+      "does_not_grant_permission": true
+    },
+    "source_and_license_reviewed": {
+      "workflow_stage": "reviewed",
+      "requires_evidence": true
+    },
+    "pinned_and_approved": {
+      "workflow_stage": "approved",
+      "requires_resolution": true
+    },
+    "configured": {
+      "workflow_stage": "configured",
+      "runtime_status": "not_run"
+    },
+    "pilot_passed": {
+      "workflow_stage": "integration_tested",
+      "requires_run_and_usefulness_evidence": true
+    },
+    "accepted_for_declared_scope": {
+      "workflow_stage": "integration_tested",
+      "scope_bound": true
+    }
+  },
+  "state_crosswalk_note": "Interpret research labels only; never advance live state or approvals from research metadata.",
+  "applicability_crosswalk": {
+    "unresolved": "unknown"
+  }
+}

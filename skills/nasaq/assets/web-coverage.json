@@ -1,0 +1,5094 @@
+{
+  "schema_version": 1,
+  "scope": [
+    "web"
+  ],
+  "status": "integration_preparation_not_execution",
+  "rows": [
+    {
+      "id": "web.w01-01",
+      "research_id": "W01-01",
+      "section": 1,
+      "label": "Product Discovery",
+      "description_ar": "فهم الفكرة والأهداف والمستخدمين والمشاكل اللي بيحلها المشروع",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [
+        "web.r01"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مشكلة وجمهور ونطاق ومقاييس نجاح",
+      "proposed_check_ar": "مقابلات/أدلة حقيقية أو افتراضات معلنة، بلا اختراع احتياجات.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          4,
+          4
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-02",
+      "research_id": "W01-02",
+      "section": 1,
+      "label": "Market & Competitor Research",
+      "description_ar": "تحليل المنافسين والمميزات والأسعار ونقاط القوة والضعف",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مصفوفة منافسين بروابط وتاريخ ومنصة/خطة",
+      "proposed_check_ar": "كل ميزة منسوبة لمصدر؛ غياب الدليل ليس إثبات الغياب.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          5,
+          5
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-03",
+      "research_id": "W01-03",
+      "section": 1,
+      "label": "Requirements Engineering",
+      "description_ar": "تجميع المتطلبات الوظيفية وغير الوظيفية وتوضيحها",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s02",
+        "web.s03"
+      ],
+      "supporting_source_refs": [
+        "web.s01",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "متطلبات وظيفية وغير وظيفية بمعرفات ومعايير قبول",
+      "proposed_check_ar": "متطلب مهم لا يسقط من المهام/الاختبارات، ومرجع واحد.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          6,
+          6
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-04",
+      "research_id": "W01-04",
+      "section": 1,
+      "label": "Feature Architecture",
+      "description_ar": "تقسيم المميزات لموديولات وربط اعتمادياتها",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s02",
+        "web.s03"
+      ],
+      "supporting_source_refs": [
+        "web.r01"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "وحدات مميزات واعتماديات وتسلسل تنفيذ",
+      "proposed_check_ar": "كل مهمة لها سبب وحدود، ولا اعتماد دائري غير مفسر.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          7,
+          7
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-05",
+      "research_id": "W01-05",
+      "section": 1,
+      "label": "User Roles & Journeys",
+      "description_ar": "تحديد أنواع المستخدمين ورحلة كل نوع",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.s05"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "أدوار ورحلات ونتائج وحالات رفض",
+      "proposed_check_ar": "رحلة لكل دور بما في ذلك صلاحيات سلبية.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          8,
+          8
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-06",
+      "research_id": "W01-06",
+      "section": 1,
+      "label": "Product Roadmap",
+      "description_ar": "تقسيم المميزات إلى إصدارات ومراحل وأولويات",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [
+        "web.s02",
+        "web.s03"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "Roadmap نتائج وأولويات ومراحل",
+      "proposed_check_ar": "القيود الأساسية قبل الكماليات، لا دمج قائمة تمنيات غير قابلة للتسليم.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          9,
+          9
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-07",
+      "research_id": "W01-07",
+      "section": 1,
+      "label": "System Architecture",
+      "description_ar": "رسم مكونات النظام والحدود والعلاقات بينها",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r01"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "خرائط نظام وحدود وثقة وADRs",
+      "proposed_check_ar": "تجربة صغيرة لأعلى مخاطرة ومراجعة مصادر الرسم.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          10,
+          10
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-08",
+      "research_id": "W01-08",
+      "section": 1,
+      "label": "Technology Selection",
+      "description_ar": "اختيار اللغات والأطر والتقنيات بناءً على متطلبات المشروع",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r01"
+      ],
+      "supporting_source_refs": [
+        "web.r11",
+        "web.s09",
+        "web.s10",
+        "web.s12",
+        "web.s13",
+        "web.s36",
+        "web.r14"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مقارنة 2–3 خيارات تلبي احتياجات المنتج",
+      "proposed_check_ar": "إثبات أعلى خطر بقياس، واحترام مهارات الصيانة والكلفة.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          11,
+          11
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w01-09",
+      "research_id": "W01-09",
+      "section": 1,
+      "label": "Risk & Feasibility Analysis",
+      "description_ar": "تحديد المخاطر والتكلفة والقيود والتجارب المطلوبة لإثبات جدوى القرارات",
+      "capability_ids": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [
+        "web.r12",
+        "web.r14"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "افتراضات ومخاطر وتجارب وتكلفة",
+      "proposed_check_ar": "كل افتراض حرج له اختبار أو قرار ومجهول صريح.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          12,
+          12
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-01",
+      "research_id": "W02-01",
+      "section": 2,
+      "label": "UX Research",
+      "description_ar": "فهم احتياجات المستخدمين وسلوكهم",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [
+        "web.r05"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "خطة بحث UX ورحلات ومشكلات",
+      "proposed_check_ar": "لا تصنيف نموذجية كأنها مقابلة أو دراسة مستخدم حقيقية.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          18,
+          18
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-02",
+      "research_id": "W02-02",
+      "section": 2,
+      "label": "Information Architecture",
+      "description_ar": "تنظيم الصفحات والأقسام والمعلومات",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s06",
+        "web.s07"
+      ],
+      "supporting_source_refs": [
+        "web.s01"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "تنظيم الصفحات والمعلومات حسب المهمة",
+      "proposed_check_ar": "المستخدم يجد وظيفته دون أن تختفي وراء عناصر شكلية.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          19,
+          19
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-03",
+      "research_id": "W02-03",
+      "section": 2,
+      "label": "User Flows",
+      "description_ar": "رسم خطوات كل عملية داخل الموقع",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s01"
+      ],
+      "supporting_source_refs": [
+        "web.s05",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "تدفقات نجاح وفشل وتراجع",
+      "proposed_check_ar": "اكتمال الرحلات مع الصلاحيات والأخطاء والبيانات القديمة.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          20,
+          20
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-04",
+      "research_id": "W02-04",
+      "section": 2,
+      "label": "Wireframing",
+      "description_ar": "تصميم هيكل الشاشات قبل الشكل النهائي",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s07",
+        "web.s06"
+      ],
+      "supporting_source_refs": [
+        "web.s01"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "هيكل شاشات ونموذج قابل للمراجعة",
+      "proposed_check_ar": "اختبار رحلة ممثلة قبل بناء جميع الشاشات.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          21,
+          21
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-05",
+      "research_id": "W02-05",
+      "section": 2,
+      "label": "Visual UI Design",
+      "description_ar": "تصميم واجهات احترافية وهوية مميزة",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s06",
+        "web.s07"
+      ],
+      "supporting_source_refs": [
+        "web.r05",
+        "web.r06"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "اتجاه بصري معتمد لهوية المشروع",
+      "proposed_check_ar": "مقارنة نماذج بنفس brief وتقييم عربي فعلي، لا ترند فقط.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          22,
+          22
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-06",
+      "research_id": "W02-06",
+      "section": 2,
+      "label": "Design System",
+      "description_ar": "توحيد الألوان والخطوط والمكونات والمسافات",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s07",
+        "web.s06"
+      ],
+      "supporting_source_refs": [
+        "web.r05",
+        "web.r06"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "Design tokens ومكونات وحالات ودليل",
+      "proposed_check_ar": "مصدر وحيد للألوان/الخطوط؛ لا ثلاثة مالكين بصريين.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          23,
+          23
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-07",
+      "research_id": "W02-07",
+      "section": 2,
+      "label": "Responsive Design",
+      "description_ar": "دعم الكمبيوتر والتابلت والموبايل",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s07",
+        "web.s06"
+      ],
+      "supporting_source_refs": [
+        "web.s08",
+        "web.r05",
+        "web.t01"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "استجابة تتبع أولويات المحتوى",
+      "proposed_check_ar": "اختبارات narrow/wide/touch/zoom ومحتوى طويل.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          24,
+          24
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-08",
+      "research_id": "W02-08",
+      "section": 2,
+      "label": "Accessibility",
+      "description_ar": "دعم قارئ الشاشة والتنقل بلوحة المفاتيح والتباين",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r05"
+      ],
+      "supporting_source_refs": [
+        "web.t01"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مستوى إتاحة ونطاق ومتطلبات",
+      "proposed_check_ar": "فحص آلي مع تجربة keyboard/screen reader؛ لا شهادة تلقائية.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          25,
+          25
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-09",
+      "research_id": "W02-09",
+      "section": 2,
+      "label": "Localization",
+      "description_ar": "العربية والإنجليزية وRTL واللغات الأخرى",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r06"
+      ],
+      "supporting_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s12",
+        "web.s13",
+        "web.s36"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "سياسة لغات واتجاه وترجمة وتنسيق",
+      "proposed_check_ar": "أرقام وتواريخ وSKU وروابط مختلطة؛ لا ترجمة identifiers.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          26,
+          26
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-10",
+      "research_id": "W02-10",
+      "section": 2,
+      "label": "Interaction Design",
+      "description_ar": "الحركات والتفاعلات وحالات الخطأ والتحميل",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s06",
+        "web.s07"
+      ],
+      "supporting_source_refs": [
+        "web.r05",
+        "web.t01"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "تفاعل وانتقالات وتحميل وفراغ وفشل",
+      "proposed_check_ar": "لا حركة تعوق إنجاز المهمة؛ دعم reduced motion.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          27,
+          27
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w02-11",
+      "research_id": "W02-11",
+      "section": 2,
+      "label": "Design QA",
+      "description_ar": "التأكد إن التصميم المنفذ مطابق للتصميم المعتمد",
+      "capability_ids": [
+        "ui.direction",
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s35"
+      ],
+      "supporting_source_refs": [
+        "web.s05",
+        "web.r05",
+        "web.t01"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "تقرير مراجعة مقابل اتفاق التصميم",
+      "proposed_check_ar": "لا إعادة تصميم ذاتية؛ أدلة بحالات وviewports، والتعديلات بإذن.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          28,
+          28
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-01",
+      "research_id": "W03-01",
+      "section": 3,
+      "label": "Public Website",
+      "description_ar": "الموقع العام وصفحات التعريف والمحتوى",
+      "capability_ids": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s12",
+        "web.s14",
+        "web.s36"
+      ],
+      "supporting_source_refs": [
+        "web.s05",
+        "web.r07"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "واجهة عامة ومحتوى وطريقة rendering",
+      "proposed_check_ar": "صفحات قابلة للوصول والفهرسة حسب النطاق وأداء مقاس.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          40,
+          40
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-02",
+      "research_id": "W03-02",
+      "section": 3,
+      "label": "User Application",
+      "description_ar": "واجهة المستخدم العادي وحسابه وعملياته",
+      "capability_ids": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s12",
+        "web.s36"
+      ],
+      "supporting_source_refs": [
+        "web.s15",
+        "web.s16",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "واجهة حساب المستخدم ورحلاته",
+      "proposed_check_ar": "لا تسرب بيانات ولا اعتماد على إخفاء الزر للتفويض.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          41,
+          41
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-03",
+      "research_id": "W03-03",
+      "section": 3,
+      "label": "Admin Dashboard",
+      "description_ar": "إدارة النظام بالكامل",
+      "capability_ids": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s12",
+        "web.s13"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.s05"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "لوحة إدارة ذات صلاحيات وكثافة معلومات",
+      "proposed_check_ar": "صلاحيات سلبية وعمليات خطرة مؤكدة وسجل تدقيق.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          42,
+          42
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-04",
+      "research_id": "W03-04",
+      "section": 3,
+      "label": "Seller Dashboard",
+      "description_ar": "إدارة البائعين لمنتجاتهم وطلباتهم",
+      "capability_ids": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": "seller-dashboard",
+      "output_ar": "لوحة بائع مع مجال بيانات واضح",
+      "proposed_check_ar": "لا طلب أو ملف أو تقرير لبائع آخر؛ S27 فقط إن اختير Medusa.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          43,
+          43
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-05",
+      "research_id": "W03-05",
+      "section": 3,
+      "label": "Customer Storefront",
+      "description_ar": "واجهة متجر مستقل لكل بائع عند الحاجة",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.s05",
+        "web.r07",
+        "web.r09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "واجهة متجر ومحتوى وهوية وربط متجر",
+      "proposed_check_ar": "عزل النطاق/الcache والمحتوى والعميل.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          44,
+          44
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-06",
+      "research_id": "W03-06",
+      "section": 3,
+      "label": "Frontend Architecture",
+      "description_ar": "تنظيم المكونات والصفحات وإدارة الحالة",
+      "capability_ids": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s12",
+        "web.s36"
+      ],
+      "supporting_source_refs": [
+        "web.r01",
+        "web.t07"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "هيكل صفحات ومكونات وحالة وحدود",
+      "proposed_check_ar": "تغيير محلي لا يعيد ترتيب التطبيق كله، ولا coupling غير لازم.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          45,
+          45
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-07",
+      "research_id": "W03-07",
+      "section": 3,
+      "label": "API Integration Layer",
+      "description_ar": "تنظيم اتصال الواجهة بالخادم والأخطاء والتخزين المؤقت",
+      "capability_ids": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s12",
+        "web.s36"
+      ],
+      "supporting_source_refs": [
+        "web.r02",
+        "web.r03",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "طبقة اتصال وأخطاء وإلغاء وإعادة محاولة",
+      "proposed_check_ar": "فشل/بطء/طلبات متكررة، لا retries تضاعف أثرًا حساسًا.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          46,
+          46
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-08",
+      "research_id": "W03-08",
+      "section": 3,
+      "label": "SEO & Rendering Strategy",
+      "description_ar": "اختيار أسلوب عرض الصفحات وفهرستها",
+      "capability_ids": [
+        "public-web.discovery"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r07"
+      ],
+      "supporting_source_refs": [
+        "web.s08",
+        "web.s09",
+        "web.s14"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "Rendering وفهرسة ولغات وcanonical",
+      "proposed_check_ar": "فهرسة المحتوى المقصود وعدم كشف الخاص.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          47,
+          47
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w03-09",
+      "research_id": "W03-09",
+      "section": 3,
+      "label": "Frontend Performance",
+      "description_ar": "تقليل JavaScript والطلبات والصور والخطوط والتأخير",
+      "capability_ids": [
+        "testing.performance"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s08",
+        "web.s09"
+      ],
+      "supporting_source_refs": [
+        "web.r12",
+        "web.t01"
+      ],
+      "source_relation": "complements",
+      "shared_contract_id": null,
+      "output_ar": "ميزانية حزمة/صور/خطوط/تفاعل وقياسات",
+      "proposed_check_ar": "مقارنة قبل/بعد على جهاز وشبكة ممثلين، لا التخمين من الكود.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          48,
+          48
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-01",
+      "research_id": "W04-01",
+      "section": 4,
+      "label": "Backend Architecture",
+      "description_ar": "تقسيم الخدمات والموديولات وحدود المسؤولية",
+      "capability_ids": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s12",
+        "web.s13",
+        "web.r11"
+      ],
+      "supporting_source_refs": [
+        "web.r01"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "Backend modules وحدود الاعتماد",
+      "proposed_check_ar": "لا خلط قواعد الأعمال بالنقل/التخزين، مع اختبار حدود.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          54,
+          54
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-02",
+      "research_id": "W04-02",
+      "section": 4,
+      "label": "Business Logic",
+      "description_ar": "تنفيذ قواعد العمل والتحقق من صحة العمليات",
+      "capability_ids": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s12",
+        "web.s13",
+        "web.r11",
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.s02",
+        "web.s03",
+        "web.t08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "قواعد عمل ومعاملات وinvariants",
+      "proposed_check_ar": "اختبارات من المتطلبات تشمل الفشل والتزامن والمدخلات الحدية.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          55,
+          55
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-03",
+      "research_id": "W04-03",
+      "section": 4,
+      "label": "Authentication",
+      "description_ar": "تسجيل الدخول وإدارة الجلسات واستعادة الحساب وMFA عند الحاجة",
+      "capability_ids": [
+        "auth.identity"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s15",
+        "web.s16",
+        "web.r18"
+      ],
+      "supporting_source_refs": [
+        "web.r04",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": "identity",
+      "output_ar": "هوية وجلسات واسترجاع/MFA عند الحاجة",
+      "proposed_check_ar": "دخول وخروج وانتهاء وسحب جلسات، دون مزودين متنافسين.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          56,
+          56
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-04",
+      "research_id": "W04-04",
+      "section": 4,
+      "label": "Authorization",
+      "description_ar": "تحديد صلاحيات المستخدمين والأدوار والأذونات على مستوى البيانات",
+      "capability_ids": [
+        "auth.identity"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08",
+        "web.r18"
+      ],
+      "supporting_source_refs": [
+        "web.s15",
+        "web.s16",
+        "web.t03"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "مصفوفة وصول للأدوار والكائنات والحقول",
+      "proposed_check_ar": "محاولات مباشرة إلى API بكائن غير مملوك ترفض.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          57,
+          57
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-05",
+      "research_id": "W04-05",
+      "section": 4,
+      "label": "Multi-Tenancy",
+      "description_ar": "عزل البائعين أو المؤسسات عن بعضهم",
+      "capability_ids": [
+        "auth.identity",
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r09"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.s15",
+        "web.s16"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "نموذج مستأجر ومصدر هوية وحدود عزل",
+      "proposed_check_ar": "تسرب عبر DB/cache/search/files/jobs/reports/domains.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          58,
+          58
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-06",
+      "research_id": "W04-06",
+      "section": 4,
+      "label": "Transaction Management",
+      "description_ar": "ضمان سلامة العمليات التي تشمل عدة تغييرات",
+      "capability_ids": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s17",
+        "web.s18",
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.r10",
+        "web.t04"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "حدود معاملات وتزامن وتعويض",
+      "proposed_check_ar": "تحديثان متزامنان وفشل نصف العملية لا يفسدان القيد.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          59,
+          59
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-07",
+      "research_id": "W04-07",
+      "section": 4,
+      "label": "Background Processing",
+      "description_ar": "تنفيذ المهام الطويلة خارج طلب المستخدم",
+      "capability_ids": [
+        "backend.durable-jobs"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s23",
+        "web.s24",
+        "web.r19"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.r12"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "مهام وحدود تواز/مهلات/إعادة محاولة",
+      "proposed_check_ar": "استئناف بعد قتل عامل، وعدم مضاعفة الأثر الخارجي.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          60,
+          60
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-08",
+      "research_id": "W04-08",
+      "section": 4,
+      "label": "Event & Message Processing",
+      "description_ar": "تنظيم الأحداث والرسائل وإعادة المحاولة والتكرار",
+      "capability_ids": [
+        "backend.cache-jobs"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r19"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.s23",
+        "web.s24"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "عقود أحداث وترتيب وإعادة تسليم وDLQ",
+      "proposed_check_ar": "تكرار وإعادة ترتيب ورسالة فاسدة؛ لا exactly-once وهمية.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          61,
+          61
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-09",
+      "research_id": "W04-09",
+      "section": 4,
+      "label": "Realtime Services",
+      "description_ar": "إشعارات مباشرة أو تحديثات فورية عند الحاجة",
+      "capability_ids": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r19"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "قنوات realtime وتفويض وإعادة اتصال",
+      "proposed_check_ar": "اتصال يعاد أو token يسحب، ودليل استكمال/فقد معروف.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          62,
+          62
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-10",
+      "research_id": "W04-10",
+      "section": 4,
+      "label": "Integration Services",
+      "description_ar": "التعامل مع الأنظمة الخارجية",
+      "capability_ids": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02",
+        "web.r03"
+      ],
+      "supporting_source_refs": [
+        "web.s26",
+        "web.s25",
+        "web.r19"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "عقود أنظمة خارجية وحدود وثقة",
+      "proposed_check_ar": "timeouts/retries ومزود غير متاح بلا انهيار متسلسل.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          63,
+          63
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-11",
+      "research_id": "W04-11",
+      "section": 4,
+      "label": "Notifications",
+      "description_ar": "إدارة البريد والإشعارات والرسائل والقوالب",
+      "capability_ids": [
+        "communication.email"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s25"
+      ],
+      "supporting_source_refs": [
+        "web.r19",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "قنوات تواصل وقوالب وتفضيلات وأحداث تسليم",
+      "proposed_check_ar": "duplicates/bounces وإلغاء اشتراك وعدم إرسال حقيقي للاختبار.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          64,
+          64
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w04-12",
+      "research_id": "W04-12",
+      "section": 4,
+      "label": "Audit Trail",
+      "description_ar": "تسجيل العمليات الحساسة للمراجعة والمحاسبة",
+      "capability_ids": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r13",
+        "web.s12",
+        "web.s13"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "أحداث تدقيق مع فاعل وزمن وسياق ونزاهة",
+      "proposed_check_ar": "عملية حساسة قابلة للتتبع بلا أسرار؛ audit ليس debug log.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          65,
+          65
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-01",
+      "research_id": "W05-01",
+      "section": 5,
+      "label": "Internal APIs",
+      "description_ar": "الاتصال بين تطبيقاتك ومكوناتك الداخلية",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.s12",
+        "web.s13"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "عقود داخلية ونطاق اعتماد وتوافق",
+      "proposed_check_ar": "تغيير مكون لا يكسر مستهلكًا غير ظاهر.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          72,
+          72
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-02",
+      "research_id": "W05-02",
+      "section": 5,
+      "label": "Public APIs",
+      "description_ar": "السماح للبرامج الخارجية بالتكامل",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.r04",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "API عامة موثقة وتحكم وصول وحصص",
+      "proposed_check_ar": "عميل مستقل ينجز رحلة ويتعامل مع الأخطاء والإصدارات.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          73,
+          73
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-03",
+      "research_id": "W05-03",
+      "section": 5,
+      "label": "Partner APIs",
+      "description_ar": "صلاحيات وعقود خاصة بشركاء محددين",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.r04",
+        "web.r09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "API شريك بصلاحيات وحصص واتفاق خدمة",
+      "proposed_check_ar": "عزل حساب الشريك ونطاق بياناته وسحب الاعتماد.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          74,
+          74
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-04",
+      "research_id": "W05-04",
+      "section": 5,
+      "label": "API Authentication",
+      "description_ar": "مفاتيح API أو OAuth حسب نوع العميل",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s15",
+        "web.s16",
+        "web.r18"
+      ],
+      "supporting_source_refs": [
+        "web.r04",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": "identity",
+      "output_ar": "نوع اعتماد لكل client وتدوير وإلغاء",
+      "proposed_check_ar": "public-client لا يخزن secret، وانتهاء/سحب صحيح.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          75,
+          75
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-05",
+      "research_id": "W05-05",
+      "section": 5,
+      "label": "API Authorization",
+      "description_ar": "تحديد الموارد والعمليات المسموح بها لكل عميل",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08",
+        "web.r18"
+      ],
+      "supporting_source_refs": [
+        "web.r04",
+        "web.r09",
+        "web.t03"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "scopes وobject/field/tenant authorization",
+      "proposed_check_ar": "قراءة/كتابة مورد غير مملوك وحقول غير مصرح بها ترفض.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          76,
+          76
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-06",
+      "research_id": "W05-06",
+      "section": 5,
+      "label": "API Versioning",
+      "description_ar": "إدارة التوافق عند تعديل العقود",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.t03"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "سياسة توافق وإهمال وإعلان ترحيل",
+      "proposed_check_ar": "عميل قديم لا يكسر بلا قرار أو مسار ترحيل.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          77,
+          77
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-07",
+      "research_id": "W05-07",
+      "section": 5,
+      "label": "Rate Limiting & Quotas",
+      "description_ar": "منع الإفراط في الطلبات وتحديد حصص الاستخدام",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.s19",
+        "web.r09",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "حصص وتحديد معدلات وأولوية وعدالة",
+      "proposed_check_ar": "noisy tenant وburst وسقوط cache؛ لا bypass صامت.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          78,
+          78
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-08",
+      "research_id": "W05-08",
+      "section": 5,
+      "label": "Pagination & Filtering",
+      "description_ar": "التعامل مع البيانات الكثيرة بكفاءة",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.s17",
+        "web.s18",
+        "web.s09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "pagination/filter/sort وحدود نتائج",
+      "proposed_check_ar": "عدم تكرار/فقد غير مفهوم عند تحديث البيانات وحجم مقيد.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          79,
+          79
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-09",
+      "research_id": "W05-09",
+      "section": 5,
+      "label": "Webhooks",
+      "description_ar": "إخطار الأنظمة الخارجية بالأحداث المهمة",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r19"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.s26"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "توقيع webhooks وسجل وتكرار وإعادة محاولة",
+      "proposed_check_ar": "توقيع فاسد/replay وترتيب مختلف وتلقي endpoint غير موثوق.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          80,
+          80
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-10",
+      "research_id": "W05-10",
+      "section": 5,
+      "label": "Idempotency",
+      "description_ar": "منع تكرار الأثر عند إعادة إرسال طلب حساس",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r19"
+      ],
+      "supporting_source_refs": [
+        "web.s26",
+        "web.s23",
+        "web.s24"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مفاتيح idempotency ونطاق وعمر ونتيجة",
+      "proposed_check_ar": "نفس المفتاح مع نفس/مختلف المدخلات وتزامن طلبين.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          81,
+          81
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-11",
+      "research_id": "W05-11",
+      "section": 5,
+      "label": "API Documentation",
+      "description_ar": "توثيق الطلبات والنتائج والأخطاء والأمثلة",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r03"
+      ],
+      "supporting_source_refs": [
+        "web.r02",
+        "web.t02"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مرجع API وأمثلة وأخطاء وصلاحيات",
+      "proposed_check_ar": "تطابق الأمثلة والعقد مع تنفيذ النسخة المستهدفة.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          82,
+          82
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-12",
+      "research_id": "W05-12",
+      "section": 5,
+      "label": "API Testing",
+      "description_ar": "اختبار العقود والصلاحيات والتوافق وحالات الفشل",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t03"
+      ],
+      "supporting_source_refs": [
+        "web.t02",
+        "web.t04",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "اختبارات مخطط وسلوك وصلاحيات وتوافق",
+      "proposed_check_ar": "لا تحويل HTTP 200 إلى نجاح دون تحقق النتيجة.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          83,
+          83
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w05-13",
+      "research_id": "W05-13",
+      "section": 5,
+      "label": "Developer Portal",
+      "description_ar": "بوابة للمطورين ومفاتيحهم وإحصاءاتهم عند الحاجة",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r03"
+      ],
+      "supporting_source_refs": [
+        "web.r04",
+        "web.r02",
+        "web.s05"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "بوابة توثيق ومفاتيح وusage وsandbox",
+      "proposed_check_ar": "سحب مفتاح وسجل آمن ومثال قابل للتنفيذ.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          84,
+          84
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-01",
+      "research_id": "W06-01",
+      "section": 6,
+      "label": "Database Architecture",
+      "description_ar": "اختيار المحركات وتقسيم مسؤوليات التخزين",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s17",
+        "web.s18"
+      ],
+      "supporting_source_refs": [
+        "web.r01",
+        "web.r10"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "اختيار محرك ومصدر بيانات وتوزيع مسؤوليات",
+      "proposed_check_ar": "حمل القراءة/الكتابة والقيود والتكلفة مبررة قبل إضافة محرك آخر.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          95,
+          95
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-02",
+      "research_id": "W06-02",
+      "section": 6,
+      "label": "Data Modeling",
+      "description_ar": "تصميم الكيانات والعلاقات والقيود",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s17",
+        "web.s18"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.t04"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "كيانات وعلاقات وقيود وملكية وحذف",
+      "proposed_check_ar": "قواعد اتساق وقيود مطبقة لا مجرد رسم ERD.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          96,
+          96
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-03",
+      "research_id": "W06-03",
+      "section": 6,
+      "label": "Query Optimization",
+      "description_ar": "تحسين الاستعلامات وتجنب القراءة غير الضرورية",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s17",
+        "web.s18"
+      ],
+      "supporting_source_refs": [
+        "web.r10",
+        "web.s21"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "استعلامات مهمة وخطط تنفيذ وقياس",
+      "proposed_check_ar": "بيانات ممثلة ومقارنة نتائج صحيحة قبل/بعد.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          97,
+          97
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-04",
+      "research_id": "W06-04",
+      "section": 6,
+      "label": "Indexing Strategy",
+      "description_ar": "تصميم الفهارس بناءً على أنماط الاستخدام",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s17",
+        "web.s18"
+      ],
+      "supporting_source_refs": [
+        "web.r10"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "فهارس مستندة للاستعلامات وتكلفة الكتابة",
+      "proposed_check_ar": "لا مؤشر لكل عمود؛ اختبر المسار والذاكرة والكتابة.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          98,
+          98
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-05",
+      "research_id": "W06-05",
+      "section": 6,
+      "label": "Database Migrations",
+      "description_ar": "تطوير المخطط دون كسر البيانات أو الإصدارات",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s17",
+        "web.s18",
+        "web.s12",
+        "web.s13"
+      ],
+      "supporting_source_refs": [
+        "web.r10",
+        "web.t04"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "ترحيل مخطط وتوافق نشر ورجوع/إصلاح أمامي",
+      "proposed_check_ar": "ترحيل على بيانات كبيرة نسبيًا واختبار قفل/توقف وتوافق.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          99,
+          99
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-06",
+      "research_id": "W06-06",
+      "section": 6,
+      "label": "Caching Layer",
+      "description_ar": "تقليل الحمل عند وجود بيانات قابلة للتخزين المؤقت",
+      "capability_ids": [
+        "backend.cache-jobs"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s19"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "ماذا نخزن ومتى نبطل وماذا يحدث عند الفشل",
+      "proposed_check_ar": "stale/eviction/restart وعزل مفاتيح وصحة authorization.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          100,
+          100
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-07",
+      "research_id": "W06-07",
+      "section": 6,
+      "label": "Search Engine",
+      "description_ar": "بحث وفهرسة متقدمة عند الحاجة",
+      "capability_ids": [
+        "data.search"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s20",
+        "web.s18",
+        "web.s17"
+      ],
+      "supporting_source_refs": [
+        "web.r09"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "محرك بحث وفهرسة وتحديث وrelevance",
+      "proposed_check_ar": "مجموعة بحث عربي وحقوق وصول وإزالة بيانات بسرعة.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          101,
+          101
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-08",
+      "research_id": "W06-08",
+      "section": 6,
+      "label": "File/Object Storage",
+      "description_ar": "تخزين الملفات والصور والفيديوهات",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r15"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.r09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": "object-storage",
+      "output_ar": "تخزين ملفات بسياسات وURLs مؤقتة وحدود",
+      "proposed_check_ar": "لا public bucket أو path يتيح ملف عميل آخر.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          102,
+          102
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-09",
+      "research_id": "W06-09",
+      "section": 6,
+      "label": "Media Processing",
+      "description_ar": "ضغط وتحويل الصور والفيديوهات عند الحاجة",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r15"
+      ],
+      "supporting_source_refs": [
+        "web.s23",
+        "web.s24",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "تحويل صور/وسائط بميزانية وqueues",
+      "proposed_check_ar": "ملفات ضارة/ضخمة وعدد بكسلات وtimeouts وحذف مؤقت.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          103,
+          103
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-10",
+      "research_id": "W06-10",
+      "section": 6,
+      "label": "Analytics & Reporting",
+      "description_ar": "تجميع وتحليل البيانات والتقارير",
+      "capability_ids": [
+        "data.warehouse",
+        "data.transformations"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s22",
+        "web.s21"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r13"
+      ],
+      "source_relation": "complements",
+      "shared_contract_id": null,
+      "output_ar": "تعريف مقاييس وتقارير ومصدر وتأخر",
+      "proposed_check_ar": "إجماليات متطابقة وعزل وأثر معلوم على OLTP.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          104,
+          104
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-11",
+      "research_id": "W06-11",
+      "section": 6,
+      "label": "Data Warehouse",
+      "description_ar": "فصل التحليلات الثقيلة عن العمليات اليومية عند الحاجة",
+      "capability_ids": [
+        "data.warehouse"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s21"
+      ],
+      "supporting_source_refs": [
+        "web.s22",
+        "web.r14",
+        "web.r09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مبرر warehouse وتدفق بيانات/lineage",
+      "proposed_check_ar": "لا إضافة لمجرد كبر الاسم؛ تكلفة وصحة وتوقيت البيانات.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          105,
+          105
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-12",
+      "research_id": "W06-12",
+      "section": 6,
+      "label": "Backup & Recovery",
+      "description_ar": "النسخ الاحتياطي وتجربة الاستعادة",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r10"
+      ],
+      "supporting_source_refs": [
+        "web.t04",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "backup/retention/restore وRTO/RPO",
+      "proposed_check_ar": "استعادة فعلية مستقلة واختبار بيانات وتطبيق.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          106,
+          106
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w06-13",
+      "research_id": "W06-13",
+      "section": 6,
+      "label": "Data Governance",
+      "description_ar": "سياسات الوصول والاحتفاظ والحذف والخصوصية",
+      "capability_ids": [
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08",
+        "web.r09"
+      ],
+      "supporting_source_refs": [
+        "web.s22",
+        "web.r14"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "ملكية بيانات وصلاحيات واحتفاظ وحذف",
+      "proposed_check_ar": "الحذف يصل نسخ العمل/الفهارس/المشتقات وفق سياسة معتمدة.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          107,
+          107
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-01",
+      "research_id": "W07-01",
+      "section": 7,
+      "label": "Hosting & Compute",
+      "description_ar": "تشغيل تطبيقات الويب والخوادم والعمال",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r16",
+        "web.s33"
+      ],
+      "supporting_source_refs": [
+        "web.r12",
+        "web.r14"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "خيار compute وتكلفة ونمط تشغيل",
+      "proposed_check_ar": "اختبار حمل/فشل في بيئة مطابقة دون شراء موارد تلقائيًا.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          118,
+          118
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-02",
+      "research_id": "W07-02",
+      "section": 7,
+      "label": "DNS & Domains",
+      "description_ar": "إدارة النطاقات والنطاقات الفرعية",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s33",
+        "web.r16"
+      ],
+      "supporting_source_refs": [
+        "web.r09"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "نطاقات ومصدر ملكية وتحقق وربط tenant",
+      "proposed_check_ar": "DNS خاطئ/نطاق قديم/إلغاء متجر لا يسمح باستحواذ.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          119,
+          119
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-03",
+      "research_id": "W07-03",
+      "section": 7,
+      "label": "TLS / HTTPS",
+      "description_ar": "تشفير الاتصالات",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s33",
+        "web.r16"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.r12"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "TLS وتجديد وتحويل واتصالات داخلية",
+      "proposed_check_ar": "شهادات منتهية أو host غير معروف يرفض بأمان.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          120,
+          120
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-04",
+      "research_id": "W07-04",
+      "section": 7,
+      "label": "CDN",
+      "description_ar": "تقديم الملفات القابلة للتوزيع من مواقع أقرب للمستخدمين",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s33",
+        "web.r16"
+      ],
+      "supporting_source_refs": [
+        "web.r07",
+        "web.r09"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "سياسة CDN/cache keys/invalidation",
+      "proposed_check_ar": "لا مشاركة محتوى خاص؛ قياس نقل وحِمل origin.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          121,
+          121
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-05",
+      "research_id": "W07-05",
+      "section": 7,
+      "label": "Load Balancing",
+      "description_ar": "توزيع الطلبات عند وجود أكثر من نسخة تشغيل",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r12",
+        "web.r20"
+      ],
+      "supporting_source_refs": [
+        "web.r16",
+        "web.s33"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "توزيع حمل وفحص صحة وسلوك جلسات",
+      "proposed_check_ar": "فشل نسخة لا يضاعف طلبًا ماليًا ولا يقطع جميع الجلسات.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          122,
+          122
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-06",
+      "research_id": "W07-06",
+      "section": 7,
+      "label": "Autoscaling",
+      "description_ar": "ضبط الموارد حسب الحمل المقاس",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r12",
+        "web.r20"
+      ],
+      "supporting_source_refs": [
+        "web.r14",
+        "web.s30"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "مقاييس توسع وحد أقصى ومهلة استقرار",
+      "proposed_check_ar": "الحمل يصعد/ينخفض بدون oscillation أو فاتورة مفتوحة.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          123,
+          123
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-07",
+      "research_id": "W07-07",
+      "section": 7,
+      "label": "Containers",
+      "description_ar": "تغليف مكونات التشغيل عندما يفيد",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s34"
+      ],
+      "supporting_source_refs": [
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "صور موثوقة وأسرار خارج الصورة وhealthchecks",
+      "proposed_check_ar": "إعادة بناء وصلاحيات محدودة ولا سر في layers.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          124,
+          124
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-08",
+      "research_id": "W07-08",
+      "section": 7,
+      "label": "Orchestration",
+      "description_ar": "إدارة حاويات متعددة إذا تطلب حجم التشغيل",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r20"
+      ],
+      "supporting_source_refs": [
+        "web.s32",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "orchestration فقط عند الحاجة وحدود خدمة",
+      "proposed_check_ar": "تعطل عقدة مع persistence وصلاحيات شبكة مضبوطة.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          125,
+          125
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-09",
+      "research_id": "W07-09",
+      "section": 7,
+      "label": "Queue Infrastructure",
+      "description_ar": "استيعاب المهام غير المتزامنة",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r19"
+      ],
+      "supporting_source_refs": [
+        "web.s23",
+        "web.s24",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "وسيط/طابور بسعة وإعادة محاولة وDLQ",
+      "proposed_check_ar": "ضغط خلفي ورسالة سامة وإعادة تسليم دون أثر مكرر.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          126,
+          126
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-10",
+      "research_id": "W07-10",
+      "section": 7,
+      "label": "Object Storage",
+      "description_ar": "تخزين الملفات الكبيرة بعيدًا عن الخوادم التطبيقية",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r15"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": "object-storage",
+      "output_ar": "خدمة object storage وسعة ونسخ وحذف",
+      "proposed_check_ar": "عزل وعودة كائن وحذف وإذن download منتهي.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          127,
+          127
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-11",
+      "research_id": "W07-11",
+      "section": 7,
+      "label": "Infrastructure as Code",
+      "description_ar": "تسجيل البنية التحتية وإعادة إنشائها بصورة مضبوطة",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s32"
+      ],
+      "supporting_source_refs": [
+        "web.r17"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "Infrastructure as Code وخطة reviewed",
+      "proposed_check_ar": "لا apply ضمن إذن قراءة؛ diff/state آمن واختبار مبرر.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          128,
+          128
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-12",
+      "research_id": "W07-12",
+      "section": 7,
+      "label": "Environments",
+      "description_ar": "فصل التطوير والاختبار والإنتاج",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s34"
+      ],
+      "supporting_source_refs": [
+        "web.r17",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "تطوير واختبار وstaging وإنتاج منفصلة",
+      "proposed_check_ar": "لا أسرار أو بيانات إنتاج في fixtures، واختلاف الإعداد واضح.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          129,
+          129
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-13",
+      "research_id": "W07-13",
+      "section": 7,
+      "label": "High Availability",
+      "description_ar": "تقليل نقاط الفشل ورفع استمرارية الخدمة",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r12"
+      ],
+      "supporting_source_refs": [
+        "web.r20",
+        "web.r16",
+        "web.s33"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "نقاط فشل ونسخ وتوازن حسب SLO",
+      "proposed_check_ar": "failover مع بيانات متسقة ومؤشر نجاح من منظور المستخدم.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          130,
+          130
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w07-14",
+      "research_id": "W07-14",
+      "section": 7,
+      "label": "Disaster Recovery",
+      "description_ar": "تحديد كيفية الاستعادة بعد عطل كبير",
+      "capability_ids": [
+        "operations.deployment"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r12"
+      ],
+      "supporting_source_refs": [
+        "web.r10",
+        "web.s32"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "خطة كارثة وخطوات ومالكون وزمن مستهدف",
+      "proposed_check_ar": "تدريب restore/failover بمقياس فعلي لا وثيقة فقط.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          131,
+          131
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-01",
+      "research_id": "W08-01",
+      "section": 8,
+      "label": "Threat Modeling",
+      "description_ar": "نموذج التهديد",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.s28",
+        "web.r01"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "أصول وحدود ثقة ومخاطر وضوابط",
+      "proposed_check_ar": "كل خطر مهم له منع أو اكتشاف أو قبول موثق.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-02",
+      "research_id": "W08-02",
+      "section": 8,
+      "label": "Identity & Access Security",
+      "description_ar": "أمن المصادقة والصلاحيات",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.s15",
+        "web.s16",
+        "web.r18"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": "identity",
+      "output_ar": "هوية وجلسات وتفويض وعمليات حساسة",
+      "proposed_check_ar": "اختبارات منع أدوار/حقول وكائنات ومؤسسات.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-03",
+      "research_id": "W08-03",
+      "section": 8,
+      "label": "API Protection",
+      "description_ar": "حماية واجهات API",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r04",
+        "web.t03"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "حماية عقود وtokens/inputs/rates",
+      "proposed_check_ar": "اختبارات سلبية وتوقيع وهوية عميل ونطاق وصول.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-04",
+      "research_id": "W08-04",
+      "section": 8,
+      "label": "Encryption",
+      "description_ar": "تشفير البيانات",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r15",
+        "web.r16",
+        "web.s33"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "قرارات نقل/تخزين وإدارة مفاتيح",
+      "proposed_check_ar": "لا تشفير منزلي؛ خدمات موثوقة وسياسة تدوير واستعادة.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-05",
+      "research_id": "W08-05",
+      "section": 8,
+      "label": "Secrets Management",
+      "description_ar": "إدارة الأسرار",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.t06",
+        "web.r17"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "نطاق أسرار وحق وصول وتدوير",
+      "proposed_check_ar": "لا secrets في الكود أو logs أو حزم المتصفح.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-06",
+      "research_id": "W08-06",
+      "section": 8,
+      "label": "Dependency Security",
+      "description_ar": "فحص الاعتماديات",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t06"
+      ],
+      "supporting_source_refs": [
+        "web.t05",
+        "web.r17"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "قفل تبعيات وفحص واستثناءات محدودة",
+      "proposed_check_ar": "حزمة خطرة مثبتة لا تتجاوز gate بالاسم.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-07",
+      "research_id": "W08-07",
+      "section": 8,
+      "label": "Input & Upload Validation",
+      "description_ar": "مراجعة المدخلات ورفع الملفات",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r15",
+        "web.t03"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "حدود وأنواع ومسارات حجر وتعقيم",
+      "proposed_check_ar": "رفع مضلل/ضخم/اسم مسار خطير مرفوض.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-08",
+      "research_id": "W08-08",
+      "section": 8,
+      "label": "Abuse Prevention",
+      "description_ar": "مكافحة إساءة الاستخدام",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.s19",
+        "web.s30"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "نموذج إساءة وحصص وقرارات منع",
+      "proposed_check_ar": "عميل مسيء لا يستهلك موارد بقية العملاء.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-09",
+      "research_id": "W08-09",
+      "section": 8,
+      "label": "Vulnerability Management",
+      "description_ar": "إدارة الثغرات",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.s28",
+        "web.t05",
+        "web.t06"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "فرز وتأثير ومواعيد معالجة وأدلة",
+      "proposed_check_ar": "إغلاق ثغرة مرتبط بإعادة اختبار لا تغيير وصفها.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-10",
+      "research_id": "W08-10",
+      "section": 8,
+      "label": "Supply Chain Security",
+      "description_ar": "حماية سلسلة التوريد",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r17"
+      ],
+      "supporting_source_refs": [
+        "web.t06",
+        "web.t05"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مصادر/نسخ/صلاحيات وبناء موثوق",
+      "proposed_check_ar": "لا PR أو script خارجي يسرق مفتاح نشر.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-11",
+      "research_id": "W08-11",
+      "section": 8,
+      "label": "Logging & Monitoring Security",
+      "description_ar": "أمن التسجيل والمراقبة",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r13"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "سياسة redaction/retention/access",
+      "proposed_check_ar": "لا tokens/PII في تقارير قابلة للنشر ولا logger قابل للحقن.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          142,
+          142
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w08-12",
+      "research_id": "W08-12",
+      "section": 8,
+      "label": "Privacy & Legal Requirements",
+      "description_ar": "الخصوصية والمتطلبات القانونية والتنظيمية",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r14"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "بلدان وأنواع بيانات والتزامات يراجعها مختص",
+      "proposed_check_ar": "كل بند قانوني له مصدر اختصاص صحيح؛ لا شهادة آلية.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          143,
+          143
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-01",
+      "research_id": "W09-01",
+      "section": 9,
+      "label": "Unit Testing",
+      "description_ar": "صحة الوحدات والمنطق المنفصل",
+      "capability_ids": [
+        "testing.unit"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t08"
+      ],
+      "supporting_source_refs": [
+        "web.s04",
+        "web.s31"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "اختبارات منطق وحالات حدودية",
+      "proposed_check_ar": "طفرة خطأ مقصودة تفشل، لا اختبارات تكرر ناتج التنفيذ.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          152,
+          152
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-02",
+      "research_id": "W09-02",
+      "section": 9,
+      "label": "Integration Testing",
+      "description_ar": "صحة التفاعل بين المكونات",
+      "capability_ids": [
+        "testing.integration"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t04"
+      ],
+      "supporting_source_refs": [
+        "web.t08",
+        "web.s31"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "اختبارات مكونات مع تبعيات حقيقية مناسبة",
+      "proposed_check_ar": "الانتظار للجاهزية وتنظيف الموارد وعزل البيانات.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          153,
+          153
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-03",
+      "research_id": "W09-03",
+      "section": 9,
+      "label": "API Contract Testing",
+      "description_ar": "توافق الطلبات والاستجابات",
+      "capability_ids": [
+        "api.contract"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t03",
+        "web.t02"
+      ],
+      "supporting_source_refs": [
+        "web.r03"
+      ],
+      "source_relation": "complements",
+      "shared_contract_id": null,
+      "output_ar": "اختبارات شكل وعملية وتوافق المستهلك",
+      "proposed_check_ar": "schema صالح لا يخفي حالة HTTP خاطئة أو breaking change.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          154,
+          154
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-04",
+      "research_id": "W09-04",
+      "section": 9,
+      "label": "End-to-End Testing",
+      "description_ar": "نجاح رحلات المستخدم الأساسية",
+      "capability_ids": [
+        "testing.web"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s29"
+      ],
+      "supporting_source_refs": [
+        "web.t01",
+        "web.s31"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "رحلات مشتري/بائع/مشرف متكاملة",
+      "proposed_check_ar": "نتائج فعلية من البيانات لا صور نجاح فقط.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          155,
+          155
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-05",
+      "research_id": "W09-05",
+      "section": 9,
+      "label": "Database Testing",
+      "description_ar": "صحة القيود والمعاملات والترحيلات",
+      "capability_ids": [
+        "testing.integration"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t04"
+      ],
+      "supporting_source_refs": [
+        "web.s17",
+        "web.s18",
+        "web.r10"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "قيود ومعاملات وترحيلات وتزامن",
+      "proposed_check_ar": "مستخدمان يعدلان نفس القيد، وترحيل لا يفقد بيانات.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          156,
+          156
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-06",
+      "research_id": "W09-06",
+      "section": 9,
+      "label": "Authorization Testing",
+      "description_ar": "عدم الوصول إلى بيانات أو عمليات غير مصرح بها",
+      "capability_ids": [
+        "testing.strategy"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r08"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.t03"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مصفوفة اختبارات رفض وصول",
+      "proposed_check_ar": "كل دور × مورد × عملية × tenant، بما في ذلك حقول حساسة.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          157,
+          157
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-07",
+      "research_id": "W09-07",
+      "section": 9,
+      "label": "Security Testing",
+      "description_ar": "فحص ثغرات ونقاط ضعف وفق نطاق محدد",
+      "capability_ids": [
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s28"
+      ],
+      "supporting_source_refs": [
+        "web.t05",
+        "web.t06",
+        "web.t09",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مراجعة وSAST/SCA/DAST حسب النطاق",
+      "proposed_check_ar": "تقرير scope ودليل وfalse positives، لا ضمان خلو كامل.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          158,
+          158
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-08",
+      "research_id": "W09-08",
+      "section": 9,
+      "label": "Load Testing",
+      "description_ar": "أداء النظام تحت الحمل المتوقع",
+      "capability_ids": [
+        "testing.performance"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s30"
+      ],
+      "supporting_source_refs": [
+        "web.r12",
+        "web.r14"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "سيناريو حمل متوقع ببيانات وحصص",
+      "proposed_check_ar": "p95/p99/errors والموارد وصحة العمليات والتكلفة.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          159,
+          159
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-09",
+      "research_id": "W09-09",
+      "section": 9,
+      "label": "Stress / Spike Testing",
+      "description_ar": "حدود النظام والتعامل مع الزيادات المفاجئة",
+      "capability_ids": [
+        "testing.performance"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s30"
+      ],
+      "supporting_source_refs": [
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "stress/spike وحدود توقف وتعافٍ",
+      "proposed_check_ar": "الحدود موثقة ولا ضغط على طرف ثالث.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          160,
+          160
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-10",
+      "research_id": "W09-10",
+      "section": 9,
+      "label": "Soak Testing",
+      "description_ar": "الاستقرار خلال تشغيل طويل",
+      "capability_ids": [
+        "testing.performance"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s30"
+      ],
+      "supporting_source_refs": [
+        "web.r12",
+        "web.r13"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "soak وقياس تراكم memory/jobs/connections",
+      "proposed_check_ar": "فترة/حمل معلومان مع اتجاهات موارد واستقرار بيانات.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          161,
+          161
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-11",
+      "research_id": "W09-11",
+      "section": 9,
+      "label": "Failure & Recovery Testing",
+      "description_ar": "سلوك النظام عند تعطل المكونات واستعادتها",
+      "capability_ids": [
+        "testing.strategy"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r12"
+      ],
+      "supporting_source_refs": [
+        "web.r19",
+        "web.t04"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "فشل خدمة وشبكة وعامل وخطة تعافٍ",
+      "proposed_check_ar": "لا فقد صامت أو مضاعفة، والدليل من بيئة اختبار.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          162,
+          162
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-12",
+      "research_id": "W09-12",
+      "section": 9,
+      "label": "Accessibility Testing",
+      "description_ar": "قابلية استخدام الواجهة لفئات مختلفة",
+      "capability_ids": [
+        "ui.accessibility"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r05"
+      ],
+      "supporting_source_refs": [
+        "web.t01"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "خطة إتاحة آلية وبشرية",
+      "proposed_check_ar": "تدفق كامل بالكيبورد وقارئ شاشة واختبار تكبير.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          163,
+          163
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-13",
+      "research_id": "W09-13",
+      "section": 9,
+      "label": "Visual Regression Testing",
+      "description_ar": "اكتشاف الاختلافات البصرية غير المقصودة",
+      "capability_ids": [
+        "testing.web"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t01"
+      ],
+      "supporting_source_refs": [
+        "web.s05",
+        "web.s35"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "صور مرجعية ومقارنات بحالات ثابتة",
+      "proposed_check_ar": "لا update-snapshots تلقائي لإخفاء فرق؛ جودة التصميم مراجعة منفصلة.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          164,
+          164
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-14",
+      "research_id": "W09-14",
+      "section": 9,
+      "label": "Backup Restore Testing",
+      "description_ar": "إمكانية استعادة البيانات فعليًا",
+      "capability_ids": [
+        "testing.strategy"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r10"
+      ],
+      "supporting_source_refs": [
+        "web.t04",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "سيناريو restore وتحقق تشغيل",
+      "proposed_check_ar": "نسخة منفصلة تعود بمحتواها وعلاقاتها ضمن الهدف.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          165,
+          165
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w09-15",
+      "research_id": "W09-15",
+      "section": 9,
+      "label": "Upgrade & Migration Testing",
+      "description_ar": "سلامة التحديثات والتوافق مع الإصدارات",
+      "capability_ids": [
+        "testing.strategy"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.t04"
+      ],
+      "supporting_source_refs": [
+        "web.s17",
+        "web.s12",
+        "web.s13",
+        "web.r17"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "ترقية تطبيق ومخطط وتوافق نسخ",
+      "proposed_check_ar": "العمل أثناء النشر وخطة رجوع أو forward fix مثبتة.",
+      "coverage_mode": "executor-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          166,
+          166
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w10-01",
+      "research_id": "W10-01",
+      "section": 10,
+      "label": "Observability",
+      "description_ar": "المراقبة وربط المقاييس والسجلات والتتبعات",
+      "capability_ids": [
+        "operations.observability"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r13"
+      ],
+      "supporting_source_refs": [
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "إشارات ولوحات وتنبيهات مرتبطة بالرحلة",
+      "proposed_check_ar": "سبب الطلب البطيء معروف بلا كشف بيانات.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          171,
+          171
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w10-02",
+      "research_id": "W10-02",
+      "section": 10,
+      "label": "SRE & Reliability",
+      "description_ar": "الاعتمادية والحوادث وأهداف الخدمة",
+      "capability_ids": [
+        "operations.observability"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r12"
+      ],
+      "supporting_source_refs": [
+        "web.s30",
+        "web.r13"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "SLO/ميزانية خطأ/runbooks/ملكية حادث",
+      "proposed_check_ar": "تمرين حادث واستعادة وملخص تعلم قابل للتنفيذ.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          177,
+          177
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w10-03",
+      "research_id": "W10-03",
+      "section": 10,
+      "label": "DevOps",
+      "description_ar": "CI/CD وإصدارات ونشر ورجوع وإعدادات",
+      "capability_ids": [
+        "operations.observability"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r17"
+      ],
+      "supporting_source_refs": [
+        "web.s32",
+        "web.s34",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "pipeline وثقة وإصدارات وrollout/rollback",
+      "proposed_check_ar": "تغيير غير معتمد لا ينشر؛ rollback لا يفسد المخطط.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          178,
+          178
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w10-04",
+      "research_id": "W10-04",
+      "section": 10,
+      "label": "FinOps",
+      "description_ar": "تكاليف العميل والعملية والميزة والخدمات",
+      "capability_ids": [
+        "operations.observability"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r14"
+      ],
+      "supporting_source_refs": [
+        "web.r12",
+        "web.r13"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "تكلفة وحدة وقيمة وقياسات وسقوف",
+      "proposed_check_ar": "الفاتورة المقاسة منفصلة عن التوقعات وtenant الأعلى استهلاكًا معروف.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          179,
+          179
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w10-05",
+      "research_id": "W10-05",
+      "section": 10,
+      "label": "Documentation",
+      "description_ar": "خرائط وقرارات وعقود وأدلة تشغيل واستعادة",
+      "capability_ids": [
+        "operations.observability"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r01"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.s02",
+        "web.s03",
+        "web.t10"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "فهرس معرفة ومعرفات وقرارات ودليل تشغيل",
+      "proposed_check_ar": "وكيل جديد يقرأ الجزء المتأثر ويدرك القِدم والمجهول.",
+      "coverage_mode": "reference-led",
+      "original_provenance": {
+        "source_kind": "analyst_split_of_source_prose",
+        "source_lines": [
+          180,
+          180
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-01",
+      "research_id": "W11-01",
+      "section": 11,
+      "label": "Platform Super Admin",
+      "description_ar": "إدارة المنصة كلها",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s12",
+        "web.s13"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.r09"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "إدارة منصة ونطاق عمليات support حساس",
+      "proposed_check_ar": "صلاحيات super admin واضحة ومراجعة/سجل لأي انتحال دعم.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          185,
+          185
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-02",
+      "research_id": "W11-02",
+      "section": 11,
+      "label": "Tenant Management",
+      "description_ar": "إنشاء وإيقاف وإدارة المؤسسات أو البائعين",
+      "capability_ids": [
+        "auth.identity",
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r09"
+      ],
+      "supporting_source_refs": [
+        "web.s15",
+        "web.s16"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "إنشاء/تعليق/حذف وترقية tenant",
+      "proposed_check_ar": "كل انتقال حالة يصل الوصول والفواتير والjobs.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          186,
+          186
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-03",
+      "research_id": "W11-03",
+      "section": 11,
+      "label": "Tenant Isolation",
+      "description_ar": "منع اختلاط بيانات العملاء",
+      "capability_ids": [
+        "auth.identity",
+        "security.review"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r09"
+      ],
+      "supporting_source_refs": [
+        "web.r08",
+        "web.t03",
+        "web.t04"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "عزل شامل وحدود موارد واختبارات",
+      "proposed_check_ar": "DB/cache/search/files/exports/jobs/domains؛ لا tenant_id وحده.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          187,
+          187
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-04",
+      "research_id": "W11-04",
+      "section": 11,
+      "label": "Seller Dashboard",
+      "description_ar": "إدارة متجر ومنتجات وطلبات كل بائع",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s09",
+        "web.s12",
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r08",
+        "web.s05"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": "seller-dashboard",
+      "output_ar": "لوحة البائع وإدارة فريقه ونطاقه",
+      "proposed_check_ar": "لا وصول لبائع آخر حتى مع ID أو export/بحث مباشر.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          188,
+          188
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-05",
+      "research_id": "W11-05",
+      "section": 11,
+      "label": "Storefront Engine",
+      "description_ar": "عرض متجر كل بائع بهويته ومحتواه",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.s05",
+        "web.r09",
+        "web.r07"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "محرك متجر وهوية وربط catalog/tenant",
+      "proposed_check_ar": "tenant صحيح لكل host/cache/session والطلب.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          189,
+          189
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-06",
+      "research_id": "W11-06",
+      "section": 11,
+      "label": "Custom Domains",
+      "description_ar": "دعم نطاق أو نطاق فرعي لكل متجر",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s33"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "إثبات نطاق وTLS وتوجيه وإزالة ملكية",
+      "proposed_check_ar": "تسجيل host غير مملوك وتغيير tenant لا يمران.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          190,
+          190
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-07",
+      "research_id": "W11-07",
+      "section": 11,
+      "label": "Themes & Customization",
+      "description_ar": "تخصيص شكل المتجر ضمن حدود مضبوطة",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s05",
+        "web.s07"
+      ],
+      "supporting_source_refs": [
+        "web.s27",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "نظام themes وتخصيص محدود آمن",
+      "proposed_check_ar": "قالب/HTML غير موثوق لا يصل أسرارًا أو يكسر العزل.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          191,
+          191
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-08",
+      "research_id": "W11-08",
+      "section": 11,
+      "label": "Plans & Subscriptions",
+      "description_ar": "الباقات والاشتراكات وحدود الاستخدام",
+      "capability_ids": [
+        "business.payments"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s26"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "باقات وentitlements وقيود استخدام ودورة اشتراك",
+      "proposed_check_ar": "خفض باقة وتأخر webhook وحدود حصص مطبقة بالخادم.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          192,
+          192
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-09",
+      "research_id": "W11-09",
+      "section": 11,
+      "label": "Billing & Invoicing",
+      "description_ar": "فوترة البائعين للمنصة",
+      "capability_ids": [
+        "business.payments"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s26"
+      ],
+      "supporting_source_refs": [
+        "web.r14",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "فوترة اشتراك البائع وتسويات وفواتير",
+      "proposed_check_ar": "فشل تحصيل/refund وتباين webhook بدون تكرار أو تضارب.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          193,
+          193
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-10",
+      "research_id": "W11-10",
+      "section": 11,
+      "label": "Product & Inventory",
+      "description_ar": "إدارة الكتالوج والمخزون والخيارات",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.s17",
+        "web.r09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "منتجات وخيارات ومخزون وحجز وحدات",
+      "proposed_check_ar": "مشتريان لآخر وحدة لا يؤديان لمخزون سالب/بيع زائد.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          194,
+          194
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-11",
+      "research_id": "W11-11",
+      "section": 11,
+      "label": "Orders & Checkout",
+      "description_ar": "الطلبات والسلة والدفع والمرتجعات",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.s26",
+        "web.r19"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "حالات طلب وسلة ودفع وشحن وإرجاع",
+      "proposed_check_ar": "فشل مرحلة/تكرار تأكيد لا يضاعف التحصيل أو الشحن.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          195,
+          195
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-12",
+      "research_id": "W11-12",
+      "section": 11,
+      "label": "Payment Integration",
+      "description_ar": "الاتصال بمزودي الدفع",
+      "capability_ids": [
+        "business.payments"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s26"
+      ],
+      "supporting_source_refs": [
+        "web.r04",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مزود مؤهل وعقد دفع وأحداث وحالة",
+      "proposed_check_ar": "sandbox وتوقيع/replay/amount/عملة ومراجعة دعم البلد.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          196,
+          196
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-13",
+      "research_id": "W11-13",
+      "section": 11,
+      "label": "Seller Payouts",
+      "description_ar": "تحويل مستحقات البائعين إذا كانت المنصة تجمع الأموال نيابة عنهم",
+      "capability_ids": [
+        "business.payments"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s26"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r14"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "مستحقات وعمولات وتسوية وتحويلات ونزاع",
+      "proposed_check_ar": "refund جزئي بعد payout وعدم أرصدة مستحيلة.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          197,
+          197
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-14",
+      "research_id": "W11-14",
+      "section": 11,
+      "label": "Shipping & Fulfillment",
+      "description_ar": "الشحن والتتبع والإرجاع عند الحاجة",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.r19",
+        "web.r03"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "عقد مزود شحن وحالات fulfillment وreturns",
+      "proposed_check_ar": "retry لا يصدر بوليصتين؛ عنوان وفشل وإلغاء وحجز.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          198,
+          198
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-15",
+      "research_id": "W11-15",
+      "section": 11,
+      "label": "Promotions & Coupons",
+      "description_ar": "الخصومات والعروض",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.s17",
+        "web.r08"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "حساب خصم وقواعد جمع واستثناء وسقف",
+      "proposed_check_ar": "تزامن كوبون محدود وعدم تجاوز حدود/تكرار الاستخدام.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          199,
+          199
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-16",
+      "research_id": "W11-16",
+      "section": 11,
+      "label": "Customer Accounts",
+      "description_ar": "حسابات المشترين وسجل الطلبات",
+      "capability_ids": [
+        "auth.identity"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s15",
+        "web.s16",
+        "web.s27"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r08"
+      ],
+      "source_relation": "alternatives",
+      "shared_contract_id": null,
+      "output_ar": "هوية مشتري مستقلة/مشتركة حسب نموذج المنصة",
+      "proposed_check_ar": "لا خلط حسابات المشترين بالبائعين أو كشف مشتريات متجر آخر.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          200,
+          200
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-17",
+      "research_id": "W11-17",
+      "section": 11,
+      "label": "Support & Disputes",
+      "description_ar": "الدعم والشكاوى والنزاعات",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r01"
+      ],
+      "supporting_source_refs": [
+        "web.s26",
+        "web.r08",
+        "web.r12"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "دعم وتذاكر وموافقات ووثائق نزاع",
+      "proposed_check_ar": "لا وصول فريق دعم لبيانات بلا صلاحية وسجل.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          201,
+          201
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-18",
+      "research_id": "W11-18",
+      "section": 11,
+      "label": "Analytics per Tenant",
+      "description_ar": "تقارير كل بائع دون كشف بيانات الآخرين",
+      "capability_ids": [
+        "data.warehouse",
+        "data.transformations"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.s21",
+        "web.s22"
+      ],
+      "supporting_source_refs": [
+        "web.r09",
+        "web.r13"
+      ],
+      "source_relation": "complements",
+      "shared_contract_id": null,
+      "output_ar": "مقاييس وتقارير tenant مع تأخر معروف",
+      "proposed_check_ar": "إجماليات صحيحة ولا تسرب عبر تجميع أو cache أو export.",
+      "coverage_mode": "skill-supported",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          202,
+          202
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    },
+    {
+      "id": "web.w11-19",
+      "research_id": "W11-19",
+      "section": 11,
+      "label": "App & Integration Ecosystem",
+      "description_ar": "ربط البائعين بخدمات وتطبيقات خارجية",
+      "capability_ids": [
+        "business.commerce"
+      ],
+      "capability_mapping": "routing_candidates_not_mandatory_stack",
+      "applicability": "unknown",
+      "implementation_status": "research_mapping_only",
+      "proposed_source_refs": [
+        "web.r02"
+      ],
+      "supporting_source_refs": [
+        "web.r03",
+        "web.r04",
+        "web.r08",
+        "web.r09"
+      ],
+      "source_relation": "single",
+      "shared_contract_id": null,
+      "output_ar": "منظومة تطبيقات وشركاء/scopes وwebhooks",
+      "proposed_check_ar": "تثبيت/إلغاء تطبيق وسحب أسرار وعزل تحميله واستهلاكه.",
+      "coverage_mode": "specialist-plus-gap",
+      "original_provenance": {
+        "source_kind": "original_table_row",
+        "source_lines": [
+          203,
+          203
+        ],
+        "source_line_namespace": "user-provided parsed attachment, 207 lines"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "id": "web.g01",
+      "topics": [
+        "web.w01-07",
+        "web.w01-08",
+        "web.w04-02"
+      ],
+      "gap_ar": "لم تثبت هذه الجولة مهارة عامة تتخذ قرارات العمارة أو قواعد العمل لكل المنتجات بدل فهم المتطلبات.",
+      "route_ar": "R01/R11 مع ADR وتجربة للمخاطر ومعايير قبول من المستخدم؛ لا اختراع قيود تجارية.",
+      "research_id": "G01"
+    },
+    {
+      "id": "web.g02",
+      "topics": [
+        "web.w04-05",
+        "web.w11-02",
+        "web.w11-03",
+        "web.w11-18"
+      ],
+      "gap_ar": "لا مصدر مراجع هنا يثبت عزل المستأجرين عبر جميع طبقات منصة متعددة البائعين منفردًا.",
+      "route_ar": "R09 مع مصفوفة بيانات/أدوار، namespace موحد، اختبارات سلبية وتسرب عبر الوظائف والبحث والتقارير.",
+      "research_id": "G02"
+    },
+    {
+      "id": "web.g03",
+      "topics": [
+        "web.w11-08",
+        "web.w11-09",
+        "web.w11-12",
+        "web.w11-13"
+      ],
+      "gap_ar": "مهارة الدفع لا تحسم الكيان القانوني والبلد والعملات والضرائب والمستحقات والمطابقة المالية.",
+      "route_ar": "اختيار بوابة مناسبة بعد تحقق رسمي حديث؛ دفتر مالي ومعادلات مصالحة واختبارات refund/dispute/duplicate، ومراجعة مختص عند الحاجة.",
+      "research_id": "G03"
+    },
+    {
+      "id": "web.g04",
+      "topics": [
+        "web.w02-08",
+        "web.w02-09"
+      ],
+      "gap_ar": "ملف تصميم واحد أو فحص آلي لا يثبت تكافؤ العربية أو اكتمال إتاحة الاستخدام.",
+      "route_ar": "W3C وإرشادات الإطار، مع لوحة مفاتيح وقارئ شاشة ونص مختلط وتواريخ وعملات واختبار يدوي موثق.",
+      "research_id": "G04"
+    },
+    {
+      "id": "web.g05",
+      "topics": [
+        "web.w06-07"
+      ],
+      "gap_ar": "ES|QL guidance ليس استراتيجية كاملة لصلة البحث العربية أو كل محركات البحث.",
+      "route_ar": "مجموعة استعلامات مقيمة ومرادفات وصلاحيات ومقاييس صلة وتأخير؛ اختر المحرك بعد احتياج مثبت.",
+      "research_id": "G05"
+    },
+    {
+      "id": "web.g06",
+      "topics": [
+        "web.w06-09"
+      ],
+      "gap_ar": "مراجع sharp/S3 لا تغطي كامل الفيديو والبث والتحويل أو حماية كل أنواع الملفات.",
+      "route_ar": "بحث فرعي خاص بالوسائط والبروتوكول مع bounds للحجم والمعالجة ومزود ملائم؛ لا ادعاء تغطية مكتملة.",
+      "research_id": "G06"
+    },
+    {
+      "id": "web.g07",
+      "topics": [
+        "web.w06-13",
+        "web.w08-12"
+      ],
+      "gap_ar": "ضوابط الأمن ليست استشارة قانونية شاملة أو شهادة امتثال لكل دولة.",
+      "route_ar": "حدد البيانات والدول والعقود والاحتفاظ والحذف؛ اطلب مراجعة قانونية متخصصة عند تطبيق المتطلبات.",
+      "research_id": "G07"
+    },
+    {
+      "id": "web.g08",
+      "topics": [
+        "web.w07-01",
+        "web.w07-02",
+        "web.w07-03",
+        "web.w07-04"
+      ],
+      "gap_ar": "توجيه AWS إلى Toolkit حديث موثق، لكن مداخل التخصصات المطلوبة لم تُراجع كاملة هنا؛ لا دليل شامل لكل سحابة.",
+      "route_ar": "قراءة canonical skill الحالية ومراجعة IAM والنسخة والرخصة قبل الاعتماد. مزود آخر يستدعي بحثًا خاصًا لا إسقاط قواعد AWS عليه.",
+      "research_id": "G08"
+    },
+    {
+      "id": "web.g09",
+      "topics": [
+        "web.w11-05",
+        "web.w11-07",
+        "web.w11-19"
+      ],
+      "gap_ar": "ثيمات/plugins غير موثوقة تحتاج حدود تنفيذ وأذونات وتوقيع/تحديث؛ مهارة UI وحدها لا توفر sandbox.",
+      "route_ar": "عقود extensibility ومراجعة أمان وعزل الملفات والشبكة؛ owner واحد لقواعد نظام التصميم.",
+      "research_id": "G09"
+    },
+    {
+      "id": "web.g10",
+      "topics": [
+        "web.w11-14",
+        "web.w11-17"
+      ],
+      "gap_ar": "لم تثبت الجولة مهارة واحدة قوية عامة لكل مزودي الشحن أو منظومات الدعم والنزاعات.",
+      "route_ar": "مصادر مزود الخدمة المختار وشروط السوق، واختبارات تكامل وفشل وتعويض؛ لا اختيار أداة لمجرد سد صف.",
+      "research_id": "G10"
+    },
+    {
+      "id": "web.g11",
+      "topics": [
+        "web.w05-13",
+        "web.w05-03"
+      ],
+      "gap_ar": "مواصفة OpenAPI ليست بوابة مطورين جاهزة بحسابات ومفاتيح وحصص وتحليلات.",
+      "route_ar": "منتج مطورين مستقل بمتطلبات وصلاحيات ومقياس استخدام وتجربة مفاتيح revoke/rotate.",
+      "research_id": "G11"
+    },
+    {
+      "id": "web.g12",
+      "topics": [
+        "web.w04-11"
+      ],
+      "gap_ar": "Resend يغطي البريد؛ لا يثبت وحده push/SMS/WhatsApp أو سياسات الاتصال لكل بلد.",
+      "route_ar": "تفضيلات وopt-out وسجل موافقة وتسليم ومزود قناة متحقق منه؛ retries لا تسبب رسائل غير مرغوبة.",
+      "research_id": "G12"
+    }
+  ],
+  "conflict_rules": [
+    {
+      "id": "web.c01",
+      "scope": "specification",
+      "sources": [
+        "web.s02",
+        "web.s03"
+      ],
+      "relation": "alternatives",
+      "rule_ar": "مزود مواصفات واحد لكل تغيير؛ لا ملفا PRD/مهام مرجعيان ولا تبديل خفي عند الفشل.",
+      "research_id": "C01"
+    },
+    {
+      "id": "web.c02",
+      "scope": "visual-design",
+      "sources": [
+        "web.s05",
+        "web.s06",
+        "web.s07"
+      ],
+      "relation": "alternatives",
+      "rule_ar": "صاحب اتجاه بصري واحد لكل منتج/مرحلة. البيانات البحثية من بديل لا تمنحه سلطة تغيير التصميم.",
+      "research_id": "C02"
+    },
+    {
+      "id": "web.c03",
+      "scope": "visual-review",
+      "sources": [
+        "web.s05",
+        "web.s35",
+        "web.t01"
+      ],
+      "relation": "scoped-complements",
+      "rule_ar": "المصمم يحدد الاتفاق، المراجع يبلغ فروقًا، وأداة الصور تكشف اختلافًا. لا يكتب المراجع في الملفات أو يعتمد snapshot صامتًا.",
+      "research_id": "C03"
+    },
+    {
+      "id": "web.c04",
+      "scope": "frontend-implementation",
+      "sources": [
+        "web.s08",
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s36"
+      ],
+      "relation": "profile-routed",
+      "rule_ar": "اختيار بحسب إطار المكون وإصداره؛ إرشادات المتصفح مرجع توافق وليست مصدر جماليات منافسًا.",
+      "research_id": "C04"
+    },
+    {
+      "id": "web.c05",
+      "scope": "identity",
+      "sources": [
+        "web.s15",
+        "web.s16",
+        "web.r18"
+      ],
+      "relation": "alternatives-or-explicit-federation",
+      "rule_ar": "صاحب هوية واحد للنطاق، وإضافة تفويض علاقات قرار منفصل. federation لا تُفترض دون عقد ومخطط.",
+      "research_id": "C05"
+    },
+    {
+      "id": "web.c06",
+      "scope": "database",
+      "sources": [
+        "web.s17",
+        "web.s18",
+        "web.s19",
+        "web.s21"
+      ],
+      "relation": "technology-scoped",
+      "rule_ar": "قواعد كل محرك داخل حدوده. cache والتحليلات لا يصبحان مصدر حقيقة بديلًا دون سياسة اتساق.",
+      "research_id": "C06"
+    },
+    {
+      "id": "web.c07",
+      "scope": "durable-jobs",
+      "sources": [
+        "web.s23",
+        "web.s24",
+        "web.r19"
+      ],
+      "relation": "alternatives-per-job-family",
+      "rule_ar": "لا محركي مهام مالكين لنفس المهمة؛ التكامل مع broker منفصل يحدد التسليم والتكرار وإعادة المعالجة.",
+      "research_id": "C07"
+    },
+    {
+      "id": "web.c08",
+      "scope": "commerce-api-payments",
+      "sources": [
+        "web.s27",
+        "web.s26",
+        "web.r02"
+      ],
+      "relation": "boundary-contract",
+      "rule_ar": "قواعد HTTP والمبالغ الخاصة بالمزود لا تعمم على عقد المنصة. وثق محول أسعار/عملات ومسؤولية ledger.",
+      "research_id": "C08"
+    },
+    {
+      "id": "web.c09",
+      "scope": "test-strategy",
+      "sources": [
+        "web.s31",
+        "web.s29",
+        "web.s30",
+        "web.t01"
+      ],
+      "relation": "scoped-complements",
+      "rule_ar": "استراتيجية اختبار واحدة؛ مولد الواجهة ومصمم الحمل ينفذان نطاقيهما، ولا يغيران معايير القبول لتجاوز الفشل.",
+      "research_id": "C09"
+    },
+    {
+      "id": "web.c10",
+      "scope": "host-workflow",
+      "sources": [
+        "web.s04",
+        "web.s12",
+        "web.s31",
+        "web.s34",
+        "web.s35"
+      ],
+      "relation": "activation-review-required",
+      "rule_ar": "راجع hooks والتفعيل العام والاعتماديات. لا يكفي ملف registry لتعطيل تعليمات حمّلها المضيف. لا تعطل إعدادات المستخدم خفية.",
+      "research_id": "C10"
+    },
+    {
+      "id": "web.c11",
+      "scope": "cloud-choice",
+      "sources": [
+        "web.s33",
+        "web.r16",
+        "web.s32",
+        "web.s34"
+      ],
+      "relation": "architecture-before-provider",
+      "rule_ar": "اختر الاستضافة حسب المنتج أولًا؛ Terraform/Docker أدوات لتنفيذ القرار وليسا سببًا لفرض سحابة أو Kubernetes.",
+      "research_id": "C11"
+    },
+    {
+      "id": "web.c12",
+      "scope": "authorization-and-tenancy",
+      "sources": [
+        "web.r08",
+        "web.r09",
+        "web.s15",
+        "web.s16",
+        "web.s17",
+        "web.s18",
+        "web.t03"
+      ],
+      "relation": "cross-cutting-contract",
+      "rule_ar": "عزل المستأجر ليس تعليمة ضمن ملف auth فقط. عقد tenant موحد واختبارات عبر DB/cache/search/files/jobs/reports.",
+      "research_id": "C12"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "web.e01",
+      "title_ar": "تجربة المنتج والمنافسين",
+      "sources": [
+        "web.s01"
+      ],
+      "procedure_ar": "نفس brief ومصادر المنافسين؛ رصد الأسئلة الناقصة والادعاءات بلا دليل ومميزات لا تخدم المشكلة.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E01"
+    },
+    {
+      "id": "web.e02",
+      "title_ar": "مقارنة مزود المواصفات",
+      "sources": [
+        "web.s02",
+        "web.s03"
+      ],
+      "procedure_ar": "مهمة جديدة وتغيير قائم؛ قياس التتبع والتكرار وتجاوز الموافقة وحجم السياق.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E02"
+    },
+    {
+      "id": "web.e03",
+      "title_ar": "مقارنة تصميم عمياء",
+      "sources": [
+        "web.s05",
+        "web.s06",
+        "web.s07"
+      ],
+      "procedure_ar": "نفس brief عربي للوحة بائع وصفحة عامة؛ تقييم المهام والهوية والإتاحة والحالات بواسطة مراجعين لا يعرفون المزود.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E03"
+    },
+    {
+      "id": "web.e04",
+      "title_ar": "سلامة تعديل قائم",
+      "sources": [
+        "web.s04",
+        "web.s09",
+        "web.s12",
+        "web.s13"
+      ],
+      "procedure_ar": "خلل صغير بكود قائم؛ اختبار يعيد الخطأ ثم إصلاح محدود دون ترحيل أو حذف غير مطلوب.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E04"
+    },
+    {
+      "id": "web.e05",
+      "title_ar": "توافق الإطار والنسخة",
+      "sources": [
+        "web.s08",
+        "web.s09",
+        "web.s10",
+        "web.s11",
+        "web.s36"
+      ],
+      "procedure_ar": "نسخة قديمة ومكون حديث؛ يجب ألا يستدعي API غير متاحة أو يرقّي المنظومة دون قرار.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E05"
+    },
+    {
+      "id": "web.e06",
+      "title_ar": "تفويض وعزل مستأجر",
+      "sources": [
+        "web.s15",
+        "web.s16",
+        "web.s17",
+        "web.r09"
+      ],
+      "procedure_ar": "معرف مورد مستأجر آخر عبر API وcache وjob وتقرير؛ يجب رفض كل وصول غير مصرح.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E06"
+    },
+    {
+      "id": "web.e07",
+      "title_ar": "اختبار قواعد البيانات",
+      "sources": [
+        "web.s17",
+        "web.s18",
+        "web.s19"
+      ],
+      "procedure_ar": "حمل وبيانات ممثلة؛ صحة القيود والتزامن والفهارس، دون افتراض أن كل Seq Scan سيئ أو كل شيء يحتاج cache.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E07"
+    },
+    {
+      "id": "web.e08",
+      "title_ar": "موثوقية مهام وأحداث",
+      "sources": [
+        "web.s23",
+        "web.s24",
+        "web.r19"
+      ],
+      "procedure_ar": "تكرار ورسالة متأخرة وانقطاع أثناء side effect؛ لا دفعة أو إرسال مكرر غير مسموح، مع مسار إعادة معالجة.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E08"
+    },
+    {
+      "id": "web.e09",
+      "title_ar": "مبالغ ومدفوعات ومخزون",
+      "sources": [
+        "web.s26",
+        "web.s27"
+      ],
+      "procedure_ar": "عمليتا شراء آخر وحدة مع webhook مكرر وrefund جزئي؛ صحة المبالغ والمخزون والمصالحة.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E09"
+    },
+    {
+      "id": "web.e10",
+      "title_ar": "منع التلاعب بالاختبار",
+      "sources": [
+        "web.s29",
+        "web.s31",
+        "web.t01"
+      ],
+      "procedure_ar": "زر أساسي مكسور؛ لا skip/assertion أضعف/snapshot جديد يحول عيب المنتج إلى نجاح.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E10"
+    },
+    {
+      "id": "web.e11",
+      "title_ar": "خطة حمل مع حدود",
+      "sources": [
+        "web.s30",
+        "web.r12",
+        "web.r14"
+      ],
+      "procedure_ar": "مزيج طلبات مع arrival rate وp95/errors والموارد؛ test target مأذون، توقف تلقائي عند الحد المسموح إن توفرت آليته.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E11"
+    },
+    {
+      "id": "web.e12",
+      "title_ar": "مراجعة أمنية تفاضلية",
+      "sources": [
+        "web.s28",
+        "web.t05",
+        "web.r08"
+      ],
+      "procedure_ar": "تغيير صلاحيات قابل للإثبات؛ تتبع السبب والملفات بلا ادعاء أمن شامل أو توسع هجومي.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E12"
+    },
+    {
+      "id": "web.e13",
+      "title_ar": "البنية والتكلفة",
+      "sources": [
+        "web.s32",
+        "web.s33",
+        "web.s34"
+      ],
+      "procedure_ar": "plan قبل التنفيذ، موارد محدودة، تنظيف موثق، لا أسرار في logs ولا أمر apply من قراءة فقط.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E13"
+    },
+    {
+      "id": "web.e14",
+      "title_ar": "تعارض التفعيل والسياق",
+      "sources": [
+        "web.s04",
+        "web.s05",
+        "web.s07",
+        "web.s31"
+      ],
+      "procedure_ar": "مصدران يملكان نفس المخرج أو hook عام؛ اكتشاف التعارض والبيان لا تعطيل إعداد المستخدم خفية.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E14"
+    },
+    {
+      "id": "web.e15",
+      "title_ar": "العربية والتوافق بين المضيفين",
+      "sources": [
+        "web.s01",
+        "web.s05",
+        "web.s29"
+      ],
+      "procedure_ar": "الأمر العربي والإنجليزي ينشئان نفس المقصد؛ سجل المضيف والنموذج والإصدار والصلاحيات؛ المتعذر يبقى blocked.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E15"
+    },
+    {
+      "id": "web.e16",
+      "title_ar": "الرخص والإصدار والتحديث",
+      "sources": [
+        "web.s06",
+        "web.s14",
+        "web.s27",
+        "web.s28",
+        "web.r16"
+      ],
+      "procedure_ar": "فقد الرخصة أو pin أو تغير صلاحيات المصدر يمنع التفعيل/التوزيع غير المعتمد؛ لا latest عائم.",
+      "status": "not_run",
+      "result": null,
+      "evidence_paths": [],
+      "benchmark_scope": "proposed; no execution in this research",
+      "research_id": "E16"
+    }
+  ]
+}

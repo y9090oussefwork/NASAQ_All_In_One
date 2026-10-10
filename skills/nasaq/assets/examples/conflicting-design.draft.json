@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "example_only": true,
+  "components": {
+    "web": {
+      "tags": [
+        "web",
+        "react",
+        "nextjs",
+        "typescript"
+      ]
+    },
+    "api": {
+      "tags": [
+        "backend",
+        "api",
+        "dotnet"
+      ]
+    },
+    "data": {
+      "tags": [
+        "backend",
+        "postgres"
+      ]
+    }
+  },
+  "required_slots": [
+    {
+      "capability": "process.specification",
+      "component": "web",
+      "phase": "planning",
+      "role": "primary"
+    },
+    {
+      "capability": "ui.direction",
+      "component": "web",
+      "phase": "design",
+      "role": "primary"
+    },
+    {
+      "capability": "frontend.react",
+      "component": "web",
+      "phase": "implementation",
+      "role": "primary"
+    },
+    {
+      "capability": "backend.dotnet",
+      "component": "api",
+      "phase": "implementation",
+      "role": "primary"
+    },
+    {
+      "capability": "data.postgres",
+      "component": "data",
+      "phase": "planning",
+      "role": "primary"
+    },
+    {
+      "capability": "api.contract",
+      "component": "api",
+      "phase": "planning",
+      "role": "primary"
+    },
+    {
+      "capability": "testing.strategy",
+      "component": "web",
+      "phase": "planning",
+      "role": "primary"
+    },
+    {
+      "capability": "testing.web",
+      "component": "web",
+      "phase": "verification",
+      "role": "primary"
+    },
+    {
+      "capability": "testing.performance",
+      "component": "api",
+      "phase": "verification",
+      "role": "primary"
+    }
+  ],
+  "activation_conflicts": [],
+  "bindings": [
+    {
+      "id": "spec-owner",
+      "provider": "openspec",
+      "capability": "process.specification",
+      "component": "web",
+      "phase": "planning",
+      "role": "primary",
+      "writes": [
+        "openspec/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "design-owner",
+      "provider": "impeccable",
+      "capability": "ui.direction",
+      "component": "web",
+      "phase": "design",
+      "role": "primary",
+      "writes": [
+        "docs/design/DESIGN.md"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "react-owner",
+      "provider": "vercel-react",
+      "capability": "frontend.react",
+      "component": "web",
+      "phase": "implementation",
+      "role": "primary",
+      "writes": [
+        "apps/web/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "api-owner",
+      "provider": "dotnet",
+      "capability": "backend.dotnet",
+      "component": "api",
+      "phase": "implementation",
+      "role": "primary",
+      "writes": [
+        "apps/api/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "data-owner",
+      "provider": "postgres",
+      "capability": "data.postgres",
+      "component": "data",
+      "phase": "planning",
+      "role": "primary",
+      "writes": [
+        "docs/data/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "api-contract",
+      "provider": "nasaq-core",
+      "capability": "api.contract",
+      "component": "api",
+      "phase": "planning",
+      "role": "primary",
+      "writes": [
+        "docs/api/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "builtin"
+    },
+    {
+      "id": "test-strategy",
+      "provider": "nasaq-core",
+      "capability": "testing.strategy",
+      "component": "web",
+      "phase": "planning",
+      "role": "primary",
+      "writes": [
+        "docs/tests/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "builtin"
+    },
+    {
+      "id": "web-tests",
+      "provider": "playwright-agents",
+      "capability": "testing.web",
+      "component": "web",
+      "phase": "verification",
+      "role": "primary",
+      "writes": [
+        "tests/e2e/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "web-browser",
+      "provider": "playwright-cli",
+      "capability": "testing.web",
+      "component": "web",
+      "phase": "verification",
+      "role": "executor",
+      "writes": [
+        "docs/evidence/web/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "reviewed-cli"
+    },
+    {
+      "id": "load-plan",
+      "provider": "k6",
+      "capability": "testing.performance",
+      "component": "api",
+      "phase": "verification",
+      "role": "primary",
+      "writes": [
+        "tests/load/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    },
+    {
+      "id": "second-designer",
+      "provider": "frontend-design",
+      "capability": "ui.direction",
+      "component": "web",
+      "phase": "design",
+      "role": "primary",
+      "writes": [
+        "docs/design/"
+      ],
+      "scope_contract": "Example boundary; replace with approved project-specific contract.",
+      "activation_mode": "workflow-reference"
+    }
+  ]
+}

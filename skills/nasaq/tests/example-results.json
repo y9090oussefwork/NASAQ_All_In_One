@@ -1,0 +1,103 @@
+{
+  "web-selection.draft.json": {
+    "exit_code": 0,
+    "result": {
+      "status": "declared_constraints_passed",
+      "ready_fields_checked": false,
+      "issues": [],
+      "limitation": "هذا فحص ثابت للبيانات فقط؛ لا يثبت توافق التعليمات دلاليًا أو عزل المضيف أو هوية صاحب الاعتماد أو تشغيل التكاملات أو جودة التطبيق."
+    }
+  },
+  "conflicting-design.draft.json": {
+    "exit_code": 1,
+    "result": {
+      "status": "invalid",
+      "ready_fields_checked": false,
+      "issues": [
+        {
+          "code": "duplicate_primary",
+          "location": "bindings[10]",
+          "severity": "error",
+          "message": "يوجد مالكان رئيسيان لنفس المسؤولية والمكون والمرحلة."
+        },
+        {
+          "code": "duplicate_lineage",
+          "location": "bindings[10]",
+          "severity": "error",
+          "message": "تكرار مصدر تعليمات مشتق في نفس المكون والمرحلة."
+        },
+        {
+          "code": "output_overlap",
+          "location": "bindings[10]",
+          "severity": "error",
+          "message": "أكثر من ربط يملك ملفات متداخلة في المرحلة نفسها."
+        }
+      ],
+      "limitation": "هذا فحص ثابت للبيانات فقط؛ لا يثبت توافق التعليمات دلاليًا أو عزل المضيف أو هوية صاحب الاعتماد أو تشغيل التكاملات أو جودة التطبيق."
+    }
+  },
+  "web-selection.draft.json ready": {
+    "exit_code": 1,
+    "result": {
+      "status": "invalid",
+      "ready_fields_checked": true,
+      "issues": [
+        {
+          "code": "unresolved_source",
+          "location": "bindings[0]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[1]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[2]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[3]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[4]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[7]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[8]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "unresolved_source",
+          "location": "bindings[9]",
+          "severity": "error",
+          "message": "المصدر الخارجي لم يرتبط بنسخة وبيانات مراجعة محددة."
+        },
+        {
+          "code": "stale_or_missing_approval",
+          "location": "approval",
+          "severity": "error",
+          "message": "الاعتماد غائب أو لا يطابق بصمة الخطة الحالية."
+        }
+      ],
+      "limitation": "هذا فحص ثابت للبيانات فقط؛ لا يثبت توافق التعليمات دلاليًا أو عزل المضيف أو هوية صاحب الاعتماد أو تشغيل التكاملات أو جودة التطبيق."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+.nasaq-local/
+
+# Generated/private runtime data
+node_modules/
+.nasaq/
+*.db
+*.sqlite3
+*.log
+# Local sessions and historical machine-specific working notes
+docs/WORK_STATE_AR.md

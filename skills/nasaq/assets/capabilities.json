@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "capabilities": [
+    {
+      "id": "product.discovery",
+      "name_ar": "اكتشاف المنتج والمنافسين وترتيب الاحتياجات",
+      "primary_candidates": [
+        "pm-skills",
+        "bmad",
+        "nasaq-core"
+      ],
+      "complements": [
+        "context7"
+      ],
+      "selection_rule_ar": "ابدأ بإجراء PM محدد مع بحث فعلي؛ استخدم BMAD هنا فقط إذا اختير مزود العملية الأوسع؛ لا تنشئ PRD آخر مستقلًا",
+      "required_outputs_ar": "مشكلة وجمهور ورحلات ومميزات مرتبة ومقارنة موثقة وافتراضات",
+      "acceptance_ar": "المصادر بتاريخها؛ الميزة غير المرصودة مجهولة لا غائبة؛ عدم اختلاق مقابلات أو أرقام سوق",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "process.specification",
+      "name_ar": "المواصفات والخطة والمهام",
+      "primary_candidates": [
+        "openspec",
+        "spec-kit",
+        "bmad"
+      ],
+      "complements": [
+        "superpowers"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ OpenSpec للتغييرات المرنة وSpec Kit للعملية المنظمة وBMAD للعمل الأوسع؛ ترتيب حسب المشروع لا جديد/قديم فقط",
+      "required_outputs_ar": "مصدر مواصفات واحد ومعرفات وربط قرارات ومهام ومعايير قبول",
+      "acceptance_ar": "لا ملفان مرجعيان لنفس المتطلب؛ أوامر نَسَق فقط؛ لا تخطي الموافقة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "architecture.system",
+      "name_ar": "اختيار التقنية والمعمارية وتصميم الحدود",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "arc42",
+        "c4",
+        "context7"
+      ],
+      "selection_rule_ar": "قيود المنتج أولًا ثم مقارنة 2–3 تقنيات وتجربة نقطة الخطر؛ الوثائق مدخل وليست منسقًا آخر",
+      "required_outputs_ar": "ADR ونموذج بيانات وحدود وحدات ومخطط نشر وتقدير موارد",
+      "acceptance_ar": "تبرير البنية وعدم فرض microservices أو استضافة مرتبطة بمهارة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "knowledge.mapping",
+      "name_ar": "فهم المشروع والخرائط والمعرفة المستمرة",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "serena",
+        "codeboarding",
+        "mermaid",
+        "repomix"
+      ],
+      "selection_rule_ar": "ابدأ بفهرس وقراءة الكود ثم أضف استرجاع الرموز أو توليد الخرائط عند فائدة مثبتة؛ تصدير انتقائي فقط",
+      "required_outputs_ar": "خريطة مميزات ومكونات وبيانات ومسارات مهمة ومصدر كل استنتاج",
+      "acceptance_ar": "provenance وبصمة نسخة ومجهول واضح؛ تحديث الأثر فقط لا مسح شامل كل جلسة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "ui.direction",
+      "name_ar": "هوية الواجهة وتجربة الاستخدام ونظام التصميم",
+      "primary_candidates": [
+        "impeccable",
+        "frontend-design",
+        "ui-ux-pro-max"
+      ],
+      "complements": [
+        "agency-ui-review"
+      ],
+      "selection_rule_ar": "لمشروع ويب بلا هوية: أميل لتجربة Impeccable أولًا؛ frontend-design أخف؛ UI UX Pro Max عندما يلزم بحث أنماط موسع؛ اختر مصممًا واحدًا",
+      "required_outputs_ar": "اتفاق تصميم ورحلات وشاشة ممثلة وtokens وألوان وخطوط وحالات",
+      "acceptance_ar": "مراجعة تصميم بعينة فعلية؛ احترام هوية موجودة؛ لا كتابة tokens من موجهين معًا",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "ui.accessibility",
+      "name_ar": "العربية وRTL وإتاحة الاستخدام",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "wcag",
+        "axe"
+      ],
+      "selection_rule_ar": "المتطلبات قيود قبول لا ذوق منافس؛ استخدم إرشادات المنصة مع WCAG للويب",
+      "required_outputs_ar": "خريطة حالات RTL ونص مختلط وتكبير ولوحة مفاتيح وقارئ شاشة",
+      "acceptance_ar": "اختبار آلي وجولة يدوية؛ عدم الادعاء بامتثال شامل من scanner",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "frontend.react",
+      "name_ar": "تنفيذ واجهة React وNext.js",
+      "primary_candidates": [
+        "vercel-react"
+      ],
+      "complements": [
+        "context7",
+        "playwright-cli"
+      ],
+      "selection_rule_ar": "التقنية مختارة مسبقًا؛ هذه إرشادات تنفيذ وأداء لا مصدر ثان للألوان أو الهوية",
+      "required_outputs_ar": "مكونات وعقود بيانات وإدارة حالة وميزانية حزم وطلبات",
+      "acceptance_ar": "قياس waterfall وحجم الحزمة واختبارات الرحلات؛ قواعد تطابق النسخة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "frontend.angular",
+      "name_ar": "تنفيذ Angular",
+      "primary_candidates": [
+        "angular"
+      ],
+      "complements": [
+        "context7",
+        "playwright-cli"
+      ],
+      "selection_rule_ar": "أولوية لإرشادات Angular الرسمية المتوافقة مع إصدار المشروع",
+      "required_outputs_ar": "قواعد مكونات وحالة واختبارات وأداء حسب الإصدار",
+      "acceptance_ar": "عدم نقل افتراضات change detection بين إصدارات مختلفة دون تحقق",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "frontend.vue",
+      "name_ar": "تنفيذ Vue",
+      "primary_candidates": [
+        "nasaq-core",
+        "vue-community",
+        "antfu-vue"
+      ],
+      "complements": [
+        "context7",
+        "playwright-cli"
+      ],
+      "selection_rule_ar": "الافتراضي مرجع Vue الرسمي عبر بحث مطابق للنسخة؛ المرشحان المجتمعيان للتجربة المحدودة لا رسميان",
+      "required_outputs_ar": "قواعد Vue وإدارة حالة وعقود ومكونات",
+      "acceptance_ar": "اختبر مهارة مجتمع قبل ترقيتها؛ لا تفرض مدير حزم أو conventions غير معتمدة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "backend.laravel",
+      "name_ar": "الخادم في Laravel",
+      "primary_candidates": [
+        "laravel-boost"
+      ],
+      "complements": [
+        "context7",
+        "testcontainers"
+      ],
+      "selection_rule_ar": "اختر Boost إذا Laravel هو قرار المشروع؛ راجع اكتشافه وMCP والملفات التي ينشئها",
+      "required_outputs_ar": "وحدات وصلاحيات ومعاملات وjobs واختبارات وعقود",
+      "acceptance_ar": "لا تكرار تعليمات قاعدة البيانات ولا تشغيل migrations دون اعتماد",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "backend.dotnet",
+      "name_ar": "الخادم في ASP.NET Core و.NET",
+      "primary_candidates": [
+        "dotnet"
+      ],
+      "complements": [
+        "context7",
+        "testcontainers"
+      ],
+      "selection_rule_ar": "حمّل إجراءات .NET الفعلية للـAPI والبيانات والأداء فقط",
+      "required_outputs_ar": "حدود وتفويض وتزامن واتصالات وأخطاء واختبارات",
+      "acceptance_ar": "مطابقة runtime؛ اختبارات تفويض وعزل ومعاملات وأداء",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "backend.python",
+      "name_ar": "خادم Python",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "context7",
+        "testcontainers",
+        "fastapi-docs",
+        "django-docs"
+      ],
+      "selection_rule_ar": "المنافسة بين تقنيات تحدد قبل المهارة؛ وثائق FastAPI لمشروعه وDjango لمشروعه؛ لا توجد هنا مهارة عامة مثبتة لكل Python",
+      "required_outputs_ar": "خطة workers وذاكرة واتصالات وتهيئة واختبارات وصلاحيات",
+      "acceptance_ar": "ميزانية عمليات وذاكرة؛ اختيار أدوات اللغة؛ لا قواعد Django على FastAPI",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Consult the existing version-matched source as reference; document an ADR-001 exception before replacing suitable upstream functionality."
+    },
+    {
+      "id": "backend.node",
+      "name_ar": "خادم Node.js",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "context7",
+        "testcontainers",
+        "nestjs-docs"
+      ],
+      "selection_rule_ar": "استخدم NestJS فقط إذا كان اختيار المشروع؛ غيره يحتاج توثيق إطاره الرسمي بدل فرض Nest",
+      "required_outputs_ar": "عقود ووحدات وصلاحيات وتزامن وتحديد معدلات",
+      "acceptance_ar": "اختبار event loop والأخطاء والمهلات والتحميل الحقيقي",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Consult the existing version-matched source as reference; document an ADR-001 exception before replacing suitable upstream functionality."
+    },
+    {
+      "id": "mobile.android",
+      "name_ar": "Android الأصلي",
+      "primary_candidates": [
+        "android"
+      ],
+      "complements": [
+        "masvs",
+        "maestro"
+      ],
+      "selection_rule_ar": "المهارات الرسمية للمناطق المتاحة مع وثائق Android/Compose وقياس native",
+      "required_outputs_ar": "تنقل وحالة وصلاحيات وتخزين وتزامن وخلفية وحجم حزمة",
+      "acceptance_ar": "أجهزة ممثلة وتشغيل بارد وذاكرة وطاقة وبيانات؛ ليست E2E وحدها قياس أداء",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "mobile.flutter",
+      "name_ar": "Flutter وDart",
+      "primary_candidates": [
+        "flutter"
+      ],
+      "complements": [
+        "maestro",
+        "context7"
+      ],
+      "selection_rule_ar": "اختر مهارات Dart/Flutter الرسمية والأداة المناسبة للمضيف بعد قرار التقنية",
+      "required_outputs_ar": "بنية وحالة وإتاحة ومنصات واختبارات وprofiling",
+      "acceptance_ar": "النتائج على كل منصة مستهدفة؛ دعم plugin لا يثبت كل host",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "mobile.expo",
+      "name_ar": "Expo وReact Native",
+      "primary_candidates": [
+        "expo"
+      ],
+      "complements": [
+        "maestro",
+        "context7"
+      ],
+      "selection_rule_ar": "إرشادات Expo الرسمية إن انطبقت نسخة المشروع ونمطه؛ لا تضف EAS إلا عند حاجة واعتماد",
+      "required_outputs_ar": "تنقل وأداء وتجميع وصلاحيات واختبارات وتحديثات",
+      "acceptance_ar": "لا اعتبار نجاح web preview نجاحًا على جهاز الهاتف",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "mobile.swiftui",
+      "name_ar": "SwiftUI وiOS",
+      "primary_candidates": [
+        "swiftui",
+        "nasaq-core"
+      ],
+      "complements": [
+        "masvs",
+        "context7"
+      ],
+      "selection_rule_ar": "مرشح متخصص مجتمعي مع وثائق Apple الرسمية وSDK؛ النواة مع الوثائق عند عدم اعتماده",
+      "required_outputs_ar": "حالة وتنقل وتزامن وإتاحة وأداء وتوزيع",
+      "acceptance_ar": "اختبار على أدوات Apple فعلية؛ غير المتاح not_run",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "desktop.windows",
+      "name_ar": "ويندوز وسطح المكتب",
+      "primary_candidates": [
+        "dotnet",
+        "nasaq-core"
+      ],
+      "complements": [
+        "flaui",
+        "context7"
+      ],
+      "selection_rule_ar": "اختر .NET skills للأطر المشمولة؛ WPF/WinUI/Tauri/Electron حسب تقنية المشروع ووثائقها لا بالاسم العام",
+      "required_outputs_ar": "نوافذ واختصارات وDPI وتثبيت وتحديث وملفات وعمليات طويلة",
+      "acceptance_ar": "اختبار أصلي على Windows؛ واجهة لا تتجمد؛ حساب موارد runtime والتثبيت",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "bots.telegram",
+      "name_ar": "بوتات تليجرام",
+      "primary_candidates": [
+        "aiogram-docs",
+        "grammy-docs",
+        "nasaq-core"
+      ],
+      "complements": [
+        "context7"
+      ],
+      "selection_rule_ar": "إرشادات مكتبة البوت المختارة؛ لا تضف خدمات جانبية لمجرد اسم المهارة",
+      "required_outputs_ar": "تصميم محادثة وحالة وتحديثات وتكرار وحدود ومهلات وطابور",
+      "acceptance_ar": "مضاعفات API للاختبار؛ لا ضغط على Telegram؛ منع آثار مزدوجة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "data.postgres",
+      "name_ar": "تصميم PostgreSQL وتحسينه",
+      "primary_candidates": [
+        "postgres"
+      ],
+      "complements": [
+        "context7",
+        "testcontainers"
+      ],
+      "selection_rule_ar": "مهارة Supabase الرسمية لإرشادات Postgres مع وثائق النسخة؛ لا يلزم Supabase hosting",
+      "required_outputs_ar": "كيانات وقيود وفهارس وأمان صفوف وخطة ترحيل واستعادة",
+      "acceptance_ar": "EXPLAIN حسب الحالة لا قاعدة scan جيد/سيئ مطلقة؛ اختبارات معاملات وعزل",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "data.mongodb",
+      "name_ar": "MongoDB",
+      "primary_candidates": [
+        "mongodb"
+      ],
+      "complements": [
+        "context7",
+        "testcontainers"
+      ],
+      "selection_rule_ar": "عند اختيار نموذج مستندات مناسب؛ المهارة لا تقرر ضرورة MongoDB",
+      "required_outputs_ar": "نمط وصول ومخطط مستند وفهارس وحدود أحجام واتساق",
+      "acceptance_ar": "اختبارات الاستعلامات والقيود والمهاجرة؛ لا Atlas إجباري",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "data.local-relational",
+      "name_ar": "SQLite أو MySQL",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "context7",
+        "sqlite-docs",
+        "mysql-docs"
+      ],
+      "selection_rule_ar": "اختَر توثيق المحرك الفعلي؛ ليسا بديلين متساويين لكل مشروع؛ دون مهارة عامة مخترعة",
+      "required_outputs_ar": "نموذج ومعاملات وترحيل ونسخ واستعادة ومزامنة عند الحاجة",
+      "acceptance_ar": "اختبارات التزامن والأقفال وفقد الاتصال وسلامة البيانات",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Consult the existing version-matched source as reference; document an ADR-001 exception before replacing suitable upstream functionality."
+    },
+    {
+      "id": "api.contract",
+      "name_ar": "تصميم API وعقوده",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "spectral",
+        "schemathesis"
+      ],
+      "selection_rule_ar": "حدد مالك OpenAPI/AsyncAPI ومصدر توليده ثم تحقق static وruntime؛ المهارات التنفيذية تتبع العقد",
+      "required_outputs_ar": "أخطاء وصلاحيات وإصدارات وتقسيم وidempotency وإلغاء وwebhooks",
+      "acceptance_ar": "اختبارات عقد وتوافق وتفويض وحالات سلبية؛ المخطط وحده لا يثبت منطق العمل",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "auth.identity",
+      "name_ar": "المصادقة والتفويض والعزل",
+      "primary_candidates": [
+        "nasaq-core",
+        "better-auth"
+      ],
+      "complements": [
+        "asvs",
+        "masvs"
+      ],
+      "selection_rule_ar": "اختر حل الهوية حسب المخاطر والمنصة ثم فعّل مرجع المزود؛ Better Auth لمنتج اختاره بالفعل",
+      "required_outputs_ar": "مصفوفة صلاحيات وجلسات واسترجاع حساب وtenant isolation",
+      "acceptance_ar": "اختبار الرفض والانتهاء والإلغاء والتسريب؛ لا تفويض على الواجهة فقط",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "backend.cache-jobs",
+      "name_ar": "التخزين المؤقت والطلبات والطوابير",
+      "primary_candidates": [
+        "redis",
+        "nasaq-core"
+      ],
+      "complements": [
+        "context7"
+      ],
+      "selection_rule_ar": "أضف Redis عند دليل احتياج؛ وإلا مرجع runtime/queue الفعلي؛ هذه القدرة لا تتطلب Redis",
+      "required_outputs_ar": "cache invalidation وTTL وbackpressure وتحديد التوازي وDLQ",
+      "acceptance_ar": "اختبار retry storms وتكرار الرسائل وlimits؛ لا cache لمعلومات حساسة بلا عزل",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "testing.strategy",
+      "name_ar": "تخطيط منظومة الاختبارات",
+      "primary_candidates": [
+        "nasaq-core",
+        "tea"
+      ],
+      "complements": [
+        "superpowers"
+      ],
+      "selection_rule_ar": "الخفيف بالخطة القائمة؛ TEA مرشح deep للمخاطر والتتبع عندما يضيف قيمة؛ مصدر خطة اختبار واحد",
+      "required_outputs_ar": "متطلب إلى اختبار وأولوية وبيئة وبيانات ودليل وحدود",
+      "acceptance_ar": "اختبارات نجاح وفشل وتوصيف وproperty/fuzz/mutation عند الحاجة؛ رفض التغطية الشكلية",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "testing.web",
+      "name_ar": "تنفيذ اختبارات الويب",
+      "primary_candidates": [
+        "playwright-agents",
+        "nasaq-core"
+      ],
+      "complements": [
+        "playwright-cli",
+        "axe"
+      ],
+      "selection_rule_ar": "أدوار Playwright planner/generator/healer تتبع الخطة المعتمدة ولا تعيد تعريف النجاح",
+      "required_outputs_ar": "حالات E2E وبصرية وإتاحة وfixtures معزولة",
+      "acceptance_ar": "التخطي أو إعادة كتابة assertions ليس نجاحًا؛ reviewer يوافق على snapshot الجديد",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "testing.native",
+      "name_ar": "اختبارات واجهات الهاتف وويندوز",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "maestro",
+        "flaui"
+      ],
+      "selection_rule_ar": "اختر أداة المنصة المناسبة واختبارات الإطار الأصلية؛ الأداة لا تنشئ اعتماد إنتاج",
+      "required_outputs_ar": "رحلات أصلية واختبارات جهاز وتثبيت وترقية وإزالة",
+      "acceptance_ar": "سجل الأجهزة وOS والبناء؛ لا تحوّل عدم توفر البيئة إلى pass",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "testing.integration",
+      "name_ar": "تكامل البيانات والخدمات",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "testcontainers",
+        "schemathesis"
+      ],
+      "selection_rule_ar": "اختبارات اللغة مع تبعيات فعلية معزولة حيث يتاح runtime حاويات",
+      "required_outputs_ar": "بيانات اختبار ومهاجرات وعقود وفشل خدمات",
+      "acceptance_ar": "عدم ربط الاختبارات بقاعدة إنتاج أو اعتماد نتيجة mock كتكامل حقيقي",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "testing.performance",
+      "name_ar": "الحمل والتحمل وكفاءة الموارد",
+      "primary_candidates": [
+        "k6",
+        "nasaq-core"
+      ],
+      "complements": [
+        "web-vitals"
+      ],
+      "selection_rule_ar": "Grafana k6 لخطة الحمل التي يناسبها؛ قياسات native لكل منصة؛ لا تفرض أداة واحدة لكل نوع قياس",
+      "required_outputs_ar": "أهداف p95 وطلب/ث وbytes/action وCPU/RAM وبيئة وحدود توقف",
+      "acceptance_ar": "حمل وطفرة واستمرار وتعافي وسلامة بيانات؛ ذكر ما قيس لا ادعاء مستخدمين مطلق",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "security.review",
+      "name_ar": "مراجعة الأمان",
+      "primary_candidates": [
+        "trail-of-bits",
+        "nasaq-core"
+      ],
+      "complements": [
+        "semgrep",
+        "osv",
+        "zap",
+        "asvs",
+        "masvs"
+      ],
+      "selection_rule_ar": "إجراء Trail of Bits مطابق للمرحلة ثم أدوات متكاملة للتغطية؛ لا bootstrap شامل",
+      "required_outputs_ar": "نموذج تهديد وفروق ومخاطر وأدلة وتوصيات",
+      "acceptance_ar": "تفويض واختبارات سلبية؛ لا تشغيل DAST على المنافسين؛ لا ضمان صفر ثغرات",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "security.secrets",
+      "name_ar": "كشف الأسرار",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "gitleaks",
+        "betterleaks",
+        "trufflehog"
+      ],
+      "selection_rule_ar": "احتفظ بـGitleaks إن مناسب؛ قيّم Betterleaks لتغيير جديد؛ TruffleHog للمصادر والتحقق المتقدم بعد إذن",
+      "required_outputs_ar": "تقرير منقح ومسار إصلاح وتدوير أسرار عند الانكشاف",
+      "acceptance_ar": "اختبار corpus آمن؛ التحقق الحي من secret ممنوع دون اعتماد؛ لا طباعة السر",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "quality.static",
+      "name_ar": "النظافة والاعتماديات وحدود الوحدات",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "knip",
+        "dependency-cruiser",
+        "renovate"
+      ],
+      "selection_rule_ar": " أدوات اللغة الفعلية؛ مدقق تنسيق واحد لكل نطاق وقواعد مشتركة مع CI",
+      "required_outputs_ar": "ميزانية دين تقني وbaseline وحدود معمارية ومرشحات حذف",
+      "acceptance_ar": "لا حذف ديناميكي بلا دليل؛ لا duplicate formatters متعارضين؛ لا إخفاء تحذير لتنجح البوابة",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "operations.deployment",
+      "name_ar": "التشغيل والبنية والتوزيع",
+      "primary_candidates": [
+        "nasaq-core",
+        "hashicorp",
+        "cloudflare"
+      ],
+      "complements": [
+        "renovate"
+      ],
+      "selection_rule_ar": "مزود التشغيل يختار بعد قرار البيئة؛ مهارات HashiCorp أو Cloudflare لا تختار البيئة لنفسها",
+      "required_outputs_ar": "خطة بيئات وأسرار وCI ونشر وترحيل وrollback وتوقيع",
+      "acceptance_ar": "اختبار تثبيت وترقية واستعادة ومراقبة؛ فصل plan عن apply وإنتاج عن staging",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "operations.observability",
+      "name_ar": "المراقبة والتكلفة والتعافي",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "otel"
+      ],
+      "selection_rule_ar": "OpenTelemetry مدخل instrumentation؛ اختر backend دون فرض خدمة إضافية",
+      "required_outputs_ar": "SLO ومقاييس وتنبيهات واحتفاظ وعينات وخطة حوادث",
+      "acceptance_ar": "اختبر وصول الإشارة والإنذار واسترجاع نسخة؛ راقب كلفة البيانات وحمايتها",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "business.payments",
+      "name_ar": "الدفع والاشتراكات والعمليات التجارية",
+      "primary_candidates": [
+        "nasaq-core",
+        "stripe"
+      ],
+      "complements": [
+        "asvs"
+      ],
+      "selection_rule_ar": "مرجع مزود الدفع المختار؛ Stripe مشروط بتوفر الخدمة والبلد والقرار؛ بقية المزودين بحث رسمي",
+      "required_outputs_ar": "webhook وتوقيع وidempotency وتسوية واسترداد وحساب نقدي سليم",
+      "acceptance_ar": "sandbox وسيناريوهات تكرار/فشل/تسوية؛ لا مدفوعات حقيقية دون إذن",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "ai.evaluation",
+      "name_ar": "ميزات الذكاء الاصطناعي وتقييم نَسَق",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "promptfoo"
+      ],
+      "selection_rule_ar": "فعّل فقط عند وجود نموذج/استرجاع/وكيل أو تقييم النواة؛ الأدلة قبل ترقية المزود",
+      "required_outputs_ar": "مجموعة حالات وعينات ومعايير جودة وحقن تعليمات وتكلفة",
+      "acceptance_ar": "مقارنة نفس المهمة والموديل والميزانية؛ فصل تقييم حتمي عن حكم LLM",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "public-web.discovery",
+      "name_ar": "المحتوى والفهرسة للمواقع العامة",
+      "primary_candidates": [
+        "nasaq-core"
+      ],
+      "complements": [
+        "seo-google",
+        "web-vitals"
+      ],
+      "selection_rule_ar": "للموقع العام الذي يحتاج اكتشافًا؛ لا تجبر تطبيقًا داخليًا على SEO أو تحليلات تسويقية",
+      "required_outputs_ar": "معلومات صفحات ولغات وروابط وcanonical وخصوصية القياس",
+      "acceptance_ar": "لا فهرسة صفحات حساسة؛ لا وعود بترتيب البحث؛ اختبر الأداء وإتاحة المحتوى",
+      "ranking_status": "provisional_contextual",
+      "fallback": "nasaq-core with version-matched official documentation; declare gaps"
+    },
+    {
+      "id": "frontend.svelte",
+      "name_ar": "تنفيذ واجهة Svelte",
+      "primary_candidates": [],
+      "complements": [
+        "svelte-guidance"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "backend.wordpress",
+      "name_ar": "تطوير WordPress",
+      "primary_candidates": [
+        "wordpress"
+      ],
+      "complements": [],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "communication.email",
+      "name_ar": "البريد وتسليمه",
+      "primary_candidates": [
+        "resend"
+      ],
+      "complements": [],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "business.commerce",
+      "name_ar": "التجارة والمخزون",
+      "primary_candidates": [
+        "medusa"
+      ],
+      "complements": [
+        "stripe"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "data.search",
+      "name_ar": "البحث وقياس صلته",
+      "primary_candidates": [
+        "elastic-esql"
+      ],
+      "complements": [
+        "postgres",
+        "mongodb"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "data.warehouse",
+      "name_ar": "التخزين التحليلي",
+      "primary_candidates": [
+        "clickhouse"
+      ],
+      "complements": [
+        "dbt"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "data.transformations",
+      "name_ar": "تحويل البيانات التحليلية",
+      "primary_candidates": [
+        "dbt"
+      ],
+      "complements": [
+        "clickhouse"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "backend.durable-jobs",
+      "name_ar": "مهام المنتج المستمرة",
+      "primary_candidates": [
+        "inngest",
+        "trigger-dev"
+      ],
+      "complements": [
+        "celery-docs",
+        "rabbitmq-docs"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    },
+    {
+      "id": "testing.unit",
+      "name_ar": "اختبارات وحدات التطبيق",
+      "primary_candidates": [],
+      "complements": [
+        "vitest",
+        "pytest"
+      ],
+      "selection_rule_ar": "احتفظ بالمناسب الموجود؛ هذه ترشيحات مشروطة بالتقنية والنطاق وليست تفعيلًا.",
+      "required_outputs_ar": "مخرج التخصص ومعايير القبول ذات الصلة في web-coverage.json.",
+      "acceptance_ar": "دليل استخدام المصدر وفائدة المخرج؛ نجاح فاحص البيانات لا يثبت التشغيل.",
+      "ranking_status": "provisional_contextual",
+      "fallback": "Document why an existing source is unsuitable before implementing a substitute; ADR-001."
+    }
+  ]
+}

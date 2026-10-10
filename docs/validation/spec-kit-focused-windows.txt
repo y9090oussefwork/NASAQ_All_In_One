@@ -1,0 +1,21 @@
+test_cannot_skip_prerequisites (test_spec_kit_bridge.BridgeStateTests.test_cannot_skip_prerequisites) ... ok
+test_changed_request_blocks_resume (test_spec_kit_bridge.BridgeStateTests.test_changed_request_blocks_resume) ... ok
+test_changed_selection_blocks_resume (test_spec_kit_bridge.BridgeStateTests.test_changed_selection_blocks_resume) ... ok
+test_changed_template_blocks_resume (test_spec_kit_bridge.BridgeStateTests.test_changed_template_blocks_resume) ... ok
+test_changed_upstream_blocks_resume (test_spec_kit_bridge.BridgeStateTests.test_changed_upstream_blocks_resume) ... ok
+test_hooks_cannot_be_silently_executed (test_spec_kit_bridge.BridgeStateTests.test_hooks_cannot_be_silently_executed) ... ok
+test_implementation_not_routable (test_spec_kit_bridge.BridgeStateTests.test_implementation_not_routable) ... ok
+test_missing_artifact_cannot_complete (test_spec_kit_bridge.BridgeStateTests.test_missing_artifact_cannot_complete) ... ok
+test_modified_completed_output_not_reused (test_spec_kit_bridge.BridgeStateTests.test_modified_completed_output_not_reused) ... ok
+test_partial_stage_requires_recovery (test_spec_kit_bridge.BridgeStateTests.test_partial_stage_requires_recovery) ... ok
+test_path_escape_rejected (test_spec_kit_bridge.BridgeStateTests.test_path_escape_rejected) ... ok
+test_pause_resume_preserves_completed_output (test_spec_kit_bridge.BridgeStateTests.test_pause_resume_preserves_completed_output) ... ok
+test_both_runs_complete_with_real_upstream_scripts (test_spec_kit_bridge.LivePilotEvidenceTests.test_both_runs_complete_with_real_upstream_scripts) ... ok
+test_equivalent_requirement_ids_and_unexecuted_tasks (test_spec_kit_bridge.LivePilotEvidenceTests.test_equivalent_requirement_ids_and_unexecuted_tasks) ... ok
+test_ordered_handoff_before_completion (test_spec_kit_bridge.LivePilotEvidenceTests.test_ordered_handoff_before_completion) ... ok
+test_pause_resume_kept_bytes_and_mtimes (test_spec_kit_bridge.LivePilotEvidenceTests.test_pause_resume_kept_bytes_and_mtimes) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.575s
+
+OK

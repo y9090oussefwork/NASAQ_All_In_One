@@ -1,0 +1,82 @@
+test_adapter_not_tested (test_selection.SelectionTests.test_adapter_not_tested) ... ok
+test_arabic_write_path (test_selection.SelectionTests.test_arabic_write_path) ... ok
+test_bad_components (test_selection.SelectionTests.test_bad_components) ... ok
+test_bad_digest (test_selection.SelectionTests.test_bad_digest) ... ok
+test_bad_registry (test_selection.SelectionTests.test_bad_registry) ... ok
+test_boolean_schema_not_integer (test_selection.SelectionTests.test_boolean_schema_not_integer) ... ok
+test_catalog_integrity (test_selection.SelectionTests.test_catalog_integrity) ... ok
+test_changed_plan_invalidates_approval (test_selection.SelectionTests.test_changed_plan_invalidates_approval) ... ok
+test_cli_ar_and_en_and_exit_codes (test_selection.SelectionTests.test_cli_ar_and_en_and_exit_codes) ... ok
+test_cli_does_not_modify_input (test_selection.SelectionTests.test_cli_does_not_modify_input) ... ok
+test_conflict_resolution_requires_evidence (test_selection.SelectionTests.test_conflict_resolution_requires_evidence) ... ok
+test_declared_conflict_evidence (test_selection.SelectionTests.test_declared_conflict_evidence) ... ok
+test_different_phases_do_not_imply_simultaneous_writes (test_selection.SelectionTests.test_different_phases_do_not_imply_simultaneous_writes) ... ok
+test_draft_not_ready (test_selection.SelectionTests.test_draft_not_ready) ... ok
+test_duplicate_id (test_selection.SelectionTests.test_duplicate_id) ... ok
+test_duplicate_json_keys_rejected (test_selection.SelectionTests.test_duplicate_json_keys_rejected) ... ok
+test_duplicate_primary (test_selection.SelectionTests.test_duplicate_primary) ... ok
+test_false_and_integer_are_not_approval (test_selection.SelectionTests.test_false_and_integer_are_not_approval) ... ok
+test_float_pin_rejected (test_selection.SelectionTests.test_float_pin_rejected) ... ok
+test_invalid_mode_type (test_selection.SelectionTests.test_invalid_mode_type) ... ok
+test_locale_keys_match (test_selection.SelectionTests.test_locale_keys_match) ... ok
+test_missing_contract (test_selection.SelectionTests.test_missing_contract) ... ok
+test_missing_required_owner (test_selection.SelectionTests.test_missing_required_owner) ... ok
+test_nonfinite_json_rejected (test_selection.SelectionTests.test_nonfinite_json_rejected) ... ok
+test_output_overlap_exact_and_directory_and_case (test_selection.SelectionTests.test_output_overlap_exact_and_directory_and_case) ... ok
+test_ready_checks_declared_fields_only (test_selection.SelectionTests.test_ready_checks_declared_fields_only) ... ok
+test_reference_needs_adaptation (test_selection.SelectionTests.test_reference_needs_adaptation) ... ok
+test_related_designers (test_selection.SelectionTests.test_related_designers) ... ok
+test_reviewer_cannot_be_primary (test_selection.SelectionTests.test_reviewer_cannot_be_primary) ... ok
+test_reviewer_read_only (test_selection.SelectionTests.test_reviewer_read_only) ... ok
+test_size_bounded (test_selection.SelectionTests.test_size_bounded) ... ok
+test_stack_mismatch (test_selection.SelectionTests.test_stack_mismatch) ... ok
+test_tool_not_policy_owner (test_selection.SelectionTests.test_tool_not_policy_owner) ... ok
+test_unknown_provider (test_selection.SelectionTests.test_unknown_provider) ... ok
+test_unresolved_activation_conflict (test_selection.SelectionTests.test_unresolved_activation_conflict) ... ok
+test_unsafe_path_variants (test_selection.SelectionTests.test_unsafe_path_variants) ... ok
+test_unsupported_capability (test_selection.SelectionTests.test_unsupported_capability) ... ok
+test_valid_example (test_selection.SelectionTests.test_valid_example) ... ok
+test_cli_locales_invalid_input_and_no_writes (test_web_catalog.WebCatalogTests.test_cli_locales_invalid_input_and_no_writes) ... ok
+test_complementary_api_tools_can_coexist (test_web_catalog.WebCatalogTests.test_complementary_api_tools_can_coexist) ... FAIL
+test_data_transform_and_storage_have_distinct_responsibilities (test_web_catalog.WebCatalogTests.test_data_transform_and_storage_have_distinct_responsibilities) ... ok
+test_gap_cannot_reference_nonexistent_coverage (test_web_catalog.WebCatalogTests.test_gap_cannot_reference_nonexistent_coverage) ... ok
+test_grouped_identity_and_authorization_are_separate (test_web_catalog.WebCatalogTests.test_grouped_identity_and_authorization_are_separate) ... ok
+test_grouped_tools_cannot_be_promoted_to_owners (test_web_catalog.WebCatalogTests.test_grouped_tools_cannot_be_promoted_to_owners) ... ok
+test_malformed_applicability_and_relation_return_errors (test_web_catalog.WebCatalogTests.test_malformed_applicability_and_relation_return_errors) ... ok
+test_missing_or_duplicate_mapping_id_is_rejected (test_web_catalog.WebCatalogTests.test_missing_or_duplicate_mapping_id_is_rejected) ... ok
+test_no_original_provider_was_removed (test_web_catalog.WebCatalogTests.test_no_original_provider_was_removed) ... ok
+test_non_namespaced_coverage_is_rejected (test_web_catalog.WebCatalogTests.test_non_namespaced_coverage_is_rejected) ... ok
+test_prepared_data_is_consistent_without_activation (test_web_catalog.WebCatalogTests.test_prepared_data_is_consistent_without_activation) ... ok
+test_proposed_evaluation_cannot_claim_a_run (test_web_catalog.WebCatalogTests.test_proposed_evaluation_cannot_claim_a_run) ... ok
+test_reference_cannot_own_execution (test_web_catalog.WebCatalogTests.test_reference_cannot_own_execution) ... ok
+test_research_cannot_be_used_as_runtime_registry (test_web_catalog.WebCatalogTests.test_research_cannot_be_used_as_runtime_registry) ... ok
+test_research_cannot_enable_installation (test_web_catalog.WebCatalogTests.test_research_cannot_enable_installation) ... ok
+test_role_alias_cannot_bypass_selection_guard (test_web_catalog.WebCatalogTests.test_role_alias_cannot_bypass_selection_guard) ... ok
+test_shared_contract_keeps_distinct_requirement_ids (test_web_catalog.WebCatalogTests.test_shared_contract_keeps_distinct_requirement_ids) ... ok
+test_source_cannot_declare_unknown_capability (test_web_catalog.WebCatalogTests.test_source_cannot_declare_unknown_capability) ... ok
+test_supplied_research_snapshot_when_workspace_available (test_web_catalog.WebCatalogTests.test_supplied_research_snapshot_when_workspace_available) ... ok
+test_unknown_capability_reference_is_rejected (test_web_catalog.WebCatalogTests.test_unknown_capability_reference_is_rejected) ... ok
+test_unknown_source_reference_is_rejected (test_web_catalog.WebCatalogTests.test_unknown_source_reference_is_rejected) ... ok
+test_unverified_source_cannot_be_marked_tested (test_web_catalog.WebCatalogTests.test_unverified_source_cannot_be_marked_tested) ... ok
+test_visual_reviewer_remains_reviewer (test_web_catalog.WebCatalogTests.test_visual_reviewer_remains_reviewer) ... ok
+
+======================================================================
+FAIL: test_complementary_api_tools_can_coexist (test_web_catalog.WebCatalogTests.test_complementary_api_tools_can_coexist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Projects\NASAQ_All_In_One\skills\nasaq\tests\test_web_catalog.py", line 122, in test_complementary_api_tools_can_coexist
+    self.assertEqual([], selection.validate_selection(plan, REG, CAP))
+AssertionError: Lists differ: [] != [{'code': 'stack_mismatch', 'location': 'b[105 chars]or'}]
+
+Second list contains 2 additional elements.
+First extra element 0:
+{'code': 'stack_mismatch', 'location': 'bindings[0]', 'severity': 'error'}
+
+- []
++ [{'code': 'stack_mismatch', 'location': 'bindings[0]', 'severity': 'error'},
++  {'code': 'stack_mismatch', 'location': 'bindings[1]', 'severity': 'error'}]
+
+----------------------------------------------------------------------
+Ran 61 tests in 3.738s
+
+FAILED (failures=1)

@@ -1,0 +1,3869 @@
+{
+  "schema_version": 1,
+  "edition": "0.2.0-instructional-preview",
+  "research_date": "2026-10-09",
+  "ranking_type": "contextual_recommendation_not_measured_leaderboard",
+  "automatic_installation": false,
+  "providers": [
+    {
+      "id": "nasaq-core",
+      "name": "Nasaq core",
+      "kind": "builtin",
+      "source_url": "local:SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "التنسيق والأوامر والعقود ومعايير القبول وحفظ الحالة، وليس بديلًا مزعومًا لكل تخصص",
+      "limitations_ar": "الجزء الإرشادي يعمل بواسطة الوكيل المضيف؛ التكاملات الآلية الكاملة ما زالت تكليف بناء",
+      "review": {
+        "date": "2026-10-09",
+        "level": "local_instructions",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "product.discovery",
+        "process.specification",
+        "architecture.system",
+        "knowledge.mapping",
+        "ui.direction",
+        "ui.accessibility",
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node",
+        "mobile.android",
+        "mobile.flutter",
+        "mobile.expo",
+        "mobile.swiftui",
+        "desktop.windows",
+        "bots.telegram",
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational",
+        "api.contract",
+        "auth.identity",
+        "backend.cache-jobs",
+        "testing.strategy",
+        "testing.web",
+        "testing.native",
+        "testing.integration",
+        "testing.performance",
+        "security.review",
+        "security.secrets",
+        "quality.static",
+        "operations.deployment",
+        "operations.observability",
+        "business.payments",
+        "ai.evaluation",
+        "public-web.discovery"
+      ],
+      "lineage_group": "nasaq-core"
+    },
+    {
+      "id": "pm-skills",
+      "name": "PM Skills — phuryn",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/phuryn/pm-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "اكتشاف المشكلة وتحليل المنافسين والمتطلبات؛ اختر إجراءً محددًا لا المكتبة كاملة",
+      "limitations_ar": "مصدر مجتمعي؛ ادعم الاستنتاجات بأبحاث فعلية ولا تختلق سوقًا أو مقابلات؛ بعض الأوامر تخص مضيفًا معينًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "product.discovery"
+      ],
+      "lineage_group": "pm-skills",
+      "research_refs": [
+        "web.s01"
+      ]
+    },
+    {
+      "id": "spec-kit",
+      "name": "GitHub Spec Kit",
+      "kind": "workflow",
+      "source_url": "https://github.com/github/spec-kit",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "مزود مواصفات وخطط ومهام وتحقق لعملية منظمة قابلة للتخصيص",
+      "limitations_ar": "بديل لـOpenSpec وBMAD على نفس التغيير؛ لا تخلط أوامر المحادثة والطرفية",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "process.specification"
+      ],
+      "lineage_group": "spec-kit",
+      "research_refs": [
+        "web.s02"
+      ]
+    },
+    {
+      "id": "openspec",
+      "name": "OpenSpec",
+      "kind": "workflow",
+      "source_url": "https://github.com/Fission-AI/OpenSpec",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "مواصفات وتغييرات وتصميم ومهام مرتبطة بالمشروع",
+      "limitations_ar": "اختره لمرونة التغييرات واستمرار المعرفة؛ لا تحوله إلى مزود ثان لنفس المواصفات",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "process.specification"
+      ],
+      "lineage_group": "openspec",
+      "research_refs": [
+        "web.s03"
+      ]
+    },
+    {
+      "id": "bmad",
+      "name": "BMAD Method",
+      "kind": "workflow",
+      "source_url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "مسار أوسع لاكتشاف المنتج والتخطيط والأدوار عند الحاجة",
+      "limitations_ar": "أثقل من سير عمل صغير؛ لا تثبت كل الوحدات ولا تشغله منسقًا منافسًا لنَسَق",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "product.discovery",
+        "process.specification"
+      ],
+      "lineage_group": "bmad"
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers — selected procedures",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/obra/superpowers",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "إجراءات محددة للتخطيط المصغر وTDD وتصحيح الأخطاء والتحقق",
+      "limitations_ar": "افحص تعليمات التفعيل وhooks؛ تجنب استيراد bootstrap شامل يغير مدير العملية",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "process.specification",
+        "testing.strategy"
+      ],
+      "lineage_group": "superpowers",
+      "research_refs": [
+        "web.s04"
+      ]
+    },
+    {
+      "id": "arc42",
+      "name": "arc42",
+      "kind": "official-reference",
+      "source_url": "https://arc42.org/overview/",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "تنظيم وصف المعمارية والقيود وقراراتها ومخاطرها",
+      "limitations_ar": "مرجع توثيق لا محرك بناء؛ حجم التوثيق حسب المشروع؛ راجع ترخيص أي نص يُنسخ",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "architecture.system"
+      ],
+      "lineage_group": "arc42",
+      "research_refs": [
+        "web.r01"
+      ]
+    },
+    {
+      "id": "c4",
+      "name": "C4 model",
+      "kind": "official-reference",
+      "source_url": "https://c4model.com/",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "مستويات خرائط السياق والمكونات والتشغيل والنشر",
+      "limitations_ar": "الخرائط تحتاج مصدرًا من الكود أو خطة معتمدة؛ الرسم لا يثبت التنفيذ",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "architecture.system"
+      ],
+      "lineage_group": "c4",
+      "research_refs": [
+        "web.r01"
+      ]
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "kind": "tool",
+      "source_url": "https://github.com/oraios/serena",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "استرجاع الرموز والعلاقات والتحرير عند اعتماد صلاحياته",
+      "limitations_ar": "تحقق من دعم اللغة؛ README الحالي يفرق GPL للتطبيق وMIT لـSolidLSP؛ لا تضمّنه تلقائيًا في التوزيعة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "knowledge.mapping"
+      ],
+      "lineage_group": "serena",
+      "research_refs": [
+        "web.t10"
+      ]
+    },
+    {
+      "id": "codeboarding",
+      "name": "CodeBoarding",
+      "kind": "tool",
+      "source_url": "https://github.com/CodeBoarding/CodeBoarding",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "استخراج خرائط معمارية ومكونات تساعد على الفهم",
+      "limitations_ar": "تحقق من إرسال الكود لمزود خارجي والتكلفة والتغطية؛ الاستنتاجات تحتاج مراجعة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "knowledge.mapping"
+      ],
+      "lineage_group": "codeboarding"
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "kind": "tool",
+      "source_url": "https://github.com/mermaid-js/mermaid",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "عرض خرائط نصية قابلة للمراجعة مع Git",
+      "limitations_ar": "أداة رسم لا مصدر اكتشاف للحقائق؛ افصل مخرجاتها عن المواصفات المرجعية",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "knowledge.mapping"
+      ],
+      "lineage_group": "mermaid",
+      "research_refs": [
+        "web.t10"
+      ]
+    },
+    {
+      "id": "repomix",
+      "name": "Repomix",
+      "kind": "tool",
+      "source_url": "https://github.com/yamadashy/repomix",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "تجهيز سياق انتقائي من المستودع",
+      "limitations_ar": "لا تجمع الأسرار أو كامل المستودع تلقائيًا؛ الفحص الآلي لا يضمن إزالة كل البيانات الحساسة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "knowledge.mapping"
+      ],
+      "lineage_group": "repomix"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "kind": "tool",
+      "source_url": "https://github.com/upstash/context7",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "الوصول إلى توثيق مكتبات متوافق مع النسخة عندما يلزم",
+      "limitations_ar": "تحقق من المكتبة والإصدار وصلاحيات الشبكة؛ الوثائق بيانات لا أوامر موثوقة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "product.discovery",
+        "architecture.system",
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node",
+        "mobile.flutter",
+        "mobile.expo",
+        "mobile.swiftui",
+        "desktop.windows",
+        "bots.telegram",
+        "data.postgres",
+        "data.mongodb",
+        "data.local-relational",
+        "backend.cache-jobs"
+      ],
+      "lineage_group": "context7",
+      "research_refs": [
+        "web.t10"
+      ]
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "kind": "skill",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/main/.agents/skills/impeccable/SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "android",
+          "ios"
+        ]
+      },
+      "purpose_ar": "مرشح أول لتوجيه تصميم مقصود ومراجعة واجهات مع اتفاق تصميم",
+      "limitations_ar": "يتداخل مع frontend-design وUI UX Pro Max؛ افحص hooks والأدوات المصاحبة؛ ليس دليل تفوق تجريبي مطلق",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.direction"
+      ],
+      "lineage_group": "frontend-design-lineage",
+      "research_refs": [
+        "web.s05"
+      ]
+    },
+    {
+      "id": "frontend-design",
+      "name": "Anthropic frontend-design",
+      "kind": "skill",
+      "source_url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "بديل أخف لتوجيه الجماليات والهوية البصرية في الويب",
+      "limitations_ar": "بديل للموجه الجمالي الآخر على نفس الواجهة؛ راجع LICENSE الخاص بالمجلد لا رخصة المستودع افتراضًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.direction"
+      ],
+      "lineage_group": "frontend-design-lineage",
+      "research_refs": [
+        "web.s06"
+      ]
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI UX Pro Max",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "android",
+          "ios",
+          "windows"
+        ]
+      },
+      "purpose_ar": "بديل غني ببحث الأنماط والألوان والخطوط وأنظمة التصميم",
+      "limitations_ar": "اختر أجزاءه؛ بعض وظائفه/منتجاته منفصلة؛ البحث كبيانات ممكن لكن لا يصبح مصممًا ثانيًا خفيًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.direction"
+      ],
+      "lineage_group": "ui-ux-pro-max",
+      "research_refs": [
+        "web.s07"
+      ]
+    },
+    {
+      "id": "agency-ui-review",
+      "name": "Agency UI Finish-Gate Reviewer",
+      "kind": "review-instructions",
+      "source_url": "https://github.com/msitarzewski/agency-agents/blob/main/design/design-ui-finish-gate-reviewer.md",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "android",
+          "ios",
+          "windows"
+        ]
+      },
+      "purpose_ar": "مراجعة الواجهة مقابل اتفاق التصميم المعتمد",
+      "limitations_ar": "اختياري فقط عند فجوة مراجعة؛ قراءة وإصدار ملاحظات بلا تغيير الذوق أو الرموز تلقائيًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.direction"
+      ],
+      "lineage_group": "agency-ui-review",
+      "research_refs": [
+        "web.s35"
+      ]
+    },
+    {
+      "id": "wcag",
+      "name": "W3C WCAG",
+      "kind": "standard",
+      "source_url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "مرجع متطلبات إتاحة الاستخدام",
+      "limitations_ar": "ليس Scanner ولا شهادة امتثال؛ يلزم فحص يدوي ومراعاة متطلبات المنصة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.accessibility"
+      ],
+      "lineage_group": "wcag",
+      "research_refs": [
+        "web.r05"
+      ]
+    },
+    {
+      "id": "axe",
+      "name": "axe-core",
+      "kind": "tool",
+      "source_url": "https://github.com/dequelabs/axe-core",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "فحوصات آلية لإتاحة الواجهات",
+      "limitations_ar": "لا تغطي كل المتطلبات؛ لا تعادل اختبار قارئ الشاشة والتفاعل اليدوي",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.accessibility",
+        "testing.web"
+      ],
+      "lineage_group": "axe",
+      "research_refs": [
+        "web.t01"
+      ]
+    },
+    {
+      "id": "vercel-react",
+      "name": "Vercel React best practices",
+      "kind": "skill",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-best-practices/SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "react",
+          "nextjs"
+        ]
+      },
+      "purpose_ar": "تحسين بنية وأداء React وNext.js وتقليل تسلسل الطلبات والحزم",
+      "limitations_ar": "لا يختار الهوية البصرية؛ طبّق قواعد النسخة والسياق فقط؛ لا تفعّل نشر Vercel ضمنيًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.react"
+      ],
+      "lineage_group": "vercel-react",
+      "research_refs": [
+        "web.s09"
+      ]
+    },
+    {
+      "id": "angular",
+      "name": "Angular official skills",
+      "kind": "instruction-library",
+      "source_url": "https://angular.dev/ai/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "angular"
+        ]
+      },
+      "purpose_ar": "إرشادات تطوير Angular المطابقة للإصدار",
+      "limitations_ar": "لا تنقل قواعد إصدار حديث إلى مشروع أقدم؛ لا تستخدمها في React أو Vue",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.angular"
+      ],
+      "lineage_group": "angular",
+      "research_refs": [
+        "web.s10"
+      ]
+    },
+    {
+      "id": "vue-community",
+      "name": "Vue AI skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/vuejs-ai/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "vue"
+        ]
+      },
+      "purpose_ar": "بديل تجريبي متخصص في Vue",
+      "limitations_ar": "المصدر يصف نفسه مشروعًا مجتمعيًا مبكرًا وليس رسميًا؛ راجع كل قاعدة مع توثيق Vue",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.vue"
+      ],
+      "lineage_group": "vue-community",
+      "research_refs": [
+        "web.s11"
+      ]
+    },
+    {
+      "id": "antfu-vue",
+      "name": "antfu skills — selected Vue procedures",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/antfu/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "vue"
+        ]
+      },
+      "purpose_ar": "بديل مجتمعي انتقائي لعمل Vue ومنظومته",
+      "limitations_ar": "ليس معيار Vue رسميًا؛ افصل آراء مدير الحزم والتنسيق عن قواعد المشروع",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.vue"
+      ],
+      "lineage_group": "antfu-vue"
+    },
+    {
+      "id": "laravel-boost",
+      "name": "Laravel Boost",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/laravel/boost",
+      "eligibility": {
+        "any_of_tags": [
+          "laravel"
+        ]
+      },
+      "purpose_ar": "إرشادات Laravel وسياق الحزم وتوثيقها وإجراءات متخصصة",
+      "limitations_ar": "قد يضيف MCP وتعليمات اكتشاف؛ راجع الآثار ولا تكرر توجيهات متضاربة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.laravel"
+      ],
+      "lineage_group": "laravel-boost",
+      "research_refs": [
+        "web.s12"
+      ]
+    },
+    {
+      "id": "dotnet",
+      "name": "dotnet/skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/dotnet/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "dotnet",
+          "aspnet",
+          "winforms",
+          "maui",
+          "blazor"
+        ]
+      },
+      "purpose_ar": "مهارات .NET الرسمية للبيانات والأداء والاختبارات والويب وواجهات مدعومة",
+      "limitations_ar": "اختر مهارة الإطار الفعلي؛ وجود WinForms أو MAUI لا يثبت تغطية WPF أو WinUI بالكامل",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.dotnet",
+        "desktop.windows"
+      ],
+      "lineage_group": "dotnet",
+      "research_refs": [
+        "web.s13"
+      ]
+    },
+    {
+      "id": "fastapi-docs",
+      "name": "FastAPI official documentation",
+      "kind": "official-reference",
+      "source_url": "https://fastapi.tiangolo.com/deployment/concepts/",
+      "eligibility": {
+        "any_of_tags": [
+          "fastapi"
+        ]
+      },
+      "purpose_ar": "مرجع FastAPI للتشغيل والموارد والتزامن وعمليات التهيئة",
+      "limitations_ar": "لا توجد في هذا البحث مهارة عامة مثبتة تتفوق على المرجع؛ لا تعِد بعدد workers ثابت",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.python"
+      ],
+      "lineage_group": "fastapi-docs",
+      "research_refs": [
+        "web.r11"
+      ]
+    },
+    {
+      "id": "django-docs",
+      "name": "Django official documentation",
+      "kind": "official-reference",
+      "source_url": "https://docs.djangoproject.com/",
+      "eligibility": {
+        "any_of_tags": [
+          "django"
+        ]
+      },
+      "purpose_ar": "مرجع Django الرسمي وفق نسخة المشروع",
+      "limitations_ar": "اختر نسخة التوثيق من lockfile ولا تفترض أن latest مناسب",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.python"
+      ],
+      "lineage_group": "django-docs",
+      "research_refs": [
+        "web.r11"
+      ]
+    },
+    {
+      "id": "nestjs-docs",
+      "name": "NestJS official documentation",
+      "kind": "official-reference",
+      "source_url": "https://docs.nestjs.com/",
+      "eligibility": {
+        "any_of_tags": [
+          "nestjs"
+        ]
+      },
+      "purpose_ar": "مرجع NestJS لوحدات الخادم والعقود والاختبارات",
+      "limitations_ar": "مرجع تقني لا اختيار تلقائي للمنصة؛ لا تفرض NestJS على كل Backend",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.node"
+      ],
+      "lineage_group": "nestjs-docs",
+      "research_refs": [
+        "web.r11"
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android official skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/android/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "android",
+          "kotlin"
+        ]
+      },
+      "purpose_ar": "مهارات Android الرسمية في مجالات محددة مثل الأداء والاختبار والأمان والتحسين",
+      "limitations_ar": "ليست تغطية تلقائية لكل Android؛ اربطها بإصدار SDK والأجهزة وإرشادات المنصة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "mobile.android"
+      ],
+      "lineage_group": "android"
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter and Dart official AI tools",
+      "kind": "instruction-library",
+      "source_url": "https://docs.flutter.dev/ai/tools",
+      "eligibility": {
+        "any_of_tags": [
+          "flutter",
+          "dart"
+        ]
+      },
+      "purpose_ar": "مهارات وإضافات Flutter وDart والأدوات الرسمية ذات الصلة",
+      "limitations_ar": "اختر plugin أو MCP المناسب للمضيف؛ بعض الميزات خاصة بأداة معينة؛ لا تثبت الكل",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "mobile.flutter"
+      ],
+      "lineage_group": "flutter"
+    },
+    {
+      "id": "expo",
+      "name": "Expo official skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/expo/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "expo",
+          "react-native"
+        ]
+      },
+      "purpose_ar": "إرشادات بناء وتحديث Expo وReact Native",
+      "limitations_ar": "راجع التوافق مع مشروع bare React Native؛ لا تضف حساب EAS أو نشرًا مدفوعًا تلقائيًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "mobile.expo"
+      ],
+      "lineage_group": "expo"
+    },
+    {
+      "id": "swiftui",
+      "name": "SwiftUI Agent Skill — AvdLee",
+      "kind": "skill",
+      "source_url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+      "eligibility": {
+        "any_of_tags": [
+          "swiftui"
+        ]
+      },
+      "purpose_ar": "مرشح مجتمعي متخصص لحالة SwiftUI وبنيته وأدائه",
+      "limitations_ar": "ليس مهارة رسمية من Apple؛ يجب تحقق SDK واختبارات على أدوات Apple فعلية",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "mobile.swiftui"
+      ],
+      "lineage_group": "swiftui"
+    },
+    {
+      "id": "aiogram-docs",
+      "name": "aiogram official documentation",
+      "kind": "official-reference",
+      "source_url": "https://docs.aiogram.dev/en/latest/dispatcher/long_polling.html",
+      "eligibility": {
+        "any_of_tags": [
+          "aiogram"
+        ]
+      },
+      "purpose_ar": "إرشادات بوتات Python وإدارة التحديثات والتشغيل",
+      "limitations_ar": "قاعدة عملية polling واحدة لكل token هنا خاصة بالمنظومة؛ لا تضغط على Telegram لاختبار خادمك",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "bots.telegram"
+      ],
+      "lineage_group": "aiogram-docs"
+    },
+    {
+      "id": "grammy-docs",
+      "name": "grammY official documentation",
+      "kind": "official-reference",
+      "source_url": "https://grammy.dev/advanced/deployment",
+      "eligibility": {
+        "any_of_tags": [
+          "grammy"
+        ]
+      },
+      "purpose_ar": "بوتات TypeScript والتوازي والتشغيل والwebhooks",
+      "limitations_ar": "راجع القيد على الجلسات والتكرار والمهلات؛ لا تفترض أن webhook أفضل دائمًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "bots.telegram"
+      ],
+      "lineage_group": "grammy-docs"
+    },
+    {
+      "id": "postgres",
+      "name": "Supabase Postgres best practices",
+      "kind": "skill",
+      "source_url": "https://github.com/supabase/agent-skills/blob/main/skills/supabase-postgres-best-practices/SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "postgres"
+        ]
+      },
+      "purpose_ar": "تخطيط PostgreSQL واستعلاماته وفهارسه وأمانه وقواعده",
+      "limitations_ar": "يصلح للإرشاد حول Postgres دون فرض استضافة Supabase؛ تحقق من الإصدار والقياس الفعلي",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.postgres"
+      ],
+      "lineage_group": "postgres",
+      "research_refs": [
+        "web.s17"
+      ]
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB official agent skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/mongodb/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "mongodb"
+        ]
+      },
+      "purpose_ar": "تصميم بيانات MongoDB واستعلاماتها وتحسينها",
+      "limitations_ar": "لا تضف Atlas أو MCP cloud ضمنيًا؛ مرجع فقط إن لم تختر MongoDB",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.mongodb"
+      ],
+      "lineage_group": "mongodb",
+      "research_refs": [
+        "web.s18"
+      ]
+    },
+    {
+      "id": "redis",
+      "name": "Redis official agent skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/redis/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "redis"
+        ]
+      },
+      "purpose_ar": "TTL والذاكرة والاتصالات والعمليات عند وجود حاجة لـRedis",
+      "limitations_ar": "لا يقرر هذا المرجع ضرورة إضافة Redis؛ رخصة المهارة تختلف عن المنتج أو الخدمة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.cache-jobs"
+      ],
+      "lineage_group": "redis",
+      "research_refs": [
+        "web.s19"
+      ]
+    },
+    {
+      "id": "sqlite-docs",
+      "name": "SQLite official documentation",
+      "kind": "official-reference",
+      "source_url": "https://sqlite.org/docs.html",
+      "eligibility": {
+        "any_of_tags": [
+          "sqlite"
+        ]
+      },
+      "purpose_ar": "التخزين المحلي والمعاملات والتزامن وفق SQLite",
+      "limitations_ar": "قاعدة محلية لا تعني تعافيًا أو مزامنة تلقائيين؛ صمم conflict resolution عند الحاجة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.local-relational"
+      ],
+      "lineage_group": "sqlite-docs"
+    },
+    {
+      "id": "mysql-docs",
+      "name": "MySQL official documentation",
+      "kind": "official-reference",
+      "source_url": "https://dev.mysql.com/doc/",
+      "eligibility": {
+        "any_of_tags": [
+          "mysql"
+        ]
+      },
+      "purpose_ar": "المعاملات والفهارس والنسخ والتخطيط وفق نسخة MySQL",
+      "limitations_ar": "لا تطبق قواعد Postgres أو أرقام فهارس عمياء عليها",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.local-relational"
+      ],
+      "lineage_group": "mysql-docs"
+    },
+    {
+      "id": "spectral",
+      "name": "Spectral",
+      "kind": "tool",
+      "source_url": "https://github.com/stoplightio/spectral",
+      "eligibility": {
+        "any_of_tags": [
+          "openapi",
+          "asyncapi"
+        ]
+      },
+      "purpose_ar": "تحقق آلي من قواعد عقود API واتساقها",
+      "limitations_ar": "لا يثبت أمان التفويض أو سلوك التنفيذ؛ صاحب عقد واحد يملك تعديله",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "api.contract"
+      ],
+      "lineage_group": "spectral",
+      "research_refs": [
+        "web.t02"
+      ]
+    },
+    {
+      "id": "schemathesis",
+      "name": "Schemathesis",
+      "kind": "tool",
+      "source_url": "https://github.com/schemathesis/schemathesis",
+      "eligibility": {
+        "any_of_tags": [
+          "openapi",
+          "graphql"
+        ]
+      },
+      "purpose_ar": "اختبارات مشتقة من مخطط API وحالات حدودية وتسلسلية",
+      "limitations_ar": "لا يغطي منطق العمل أو كل حالات الصلاحيات من المخطط وحده؛ استهدف بيئة مأذونة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "api.contract",
+        "testing.integration"
+      ],
+      "lineage_group": "schemathesis",
+      "research_refs": [
+        "web.t03"
+      ]
+    },
+    {
+      "id": "better-auth",
+      "name": "Better Auth best practices",
+      "kind": "skill",
+      "source_url": "https://github.com/better-auth/skills/blob/main/better-auth/best-practices/SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "better-auth"
+        ]
+      },
+      "purpose_ar": "إرشادات تنفيذ المصادقة عند اختيار Better Auth مسبقًا",
+      "limitations_ar": "لا يختار مزود الهوية عن المشروع؛ لا تنفذ migrations أو @latest دون مراجعة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "auth.identity"
+      ],
+      "lineage_group": "better-auth",
+      "research_refs": [
+        "web.s15"
+      ]
+    },
+    {
+      "id": "tea",
+      "name": "BMAD Test Engineering Architect",
+      "kind": "workflow",
+      "source_url": "https://github.com/bmad-code-org/bmad-method-test-architecture-enterprise",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "استراتيجية اختبار قائمة على المخاطر والتتبع والقرار للمشاريع المعقدة",
+      "limitations_ar": "اختياري كمالك خطة الاختبار فقط؛ لا تضف دورة BMAD كاملة أو خطة اختبار مرجعية ثانية",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.strategy"
+      ],
+      "lineage_group": "tea",
+      "research_refs": [
+        "web.s31"
+      ]
+    },
+    {
+      "id": "playwright-agents",
+      "name": "Playwright test agents",
+      "kind": "instruction-library",
+      "source_url": "https://playwright.dev/docs/test-agents",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "تخطيط اختبارات الويب وتوليدها والتحقيق في إخفاقاتها",
+      "limitations_ar": "healer قد يقترح تخطي اختبار عند عطل المنتج؛ المنع افتراضي ولا يُحتسب التخطي نجاحًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.web"
+      ],
+      "lineage_group": "playwright-agents",
+      "research_refs": [
+        "web.s29"
+      ]
+    },
+    {
+      "id": "playwright-cli",
+      "name": "Playwright CLI for agents",
+      "kind": "tool",
+      "source_url": "https://github.com/microsoft/playwright-cli",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "قيادة المتصفح وتسجيل الأدلة واختبارات الويب",
+      "limitations_ar": "اختر قناة تحكم واحدة للجلسة؛ ادعاءات توفير السياق ليست benchmark خاصًا بنَسَق",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "testing.web"
+      ],
+      "lineage_group": "playwright-cli"
+    },
+    {
+      "id": "maestro",
+      "name": "Maestro",
+      "kind": "tool",
+      "source_url": "https://github.com/mobile-dev-inc/maestro",
+      "eligibility": {
+        "any_of_tags": [
+          "android",
+          "ios",
+          "react-native",
+          "flutter"
+        ]
+      },
+      "purpose_ar": "اختبارات رحلات الهاتف وتفاعلات واجهته",
+      "limitations_ar": "اختبار السلوك لا يقيس الطاقة والأداء الأصليين؛ CLI وStudio وCloud منتجات مختلفة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "mobile.android",
+        "mobile.flutter",
+        "mobile.expo",
+        "testing.native"
+      ],
+      "lineage_group": "maestro"
+    },
+    {
+      "id": "flaui",
+      "name": "FlaUI",
+      "kind": "tool",
+      "source_url": "https://github.com/FlaUI/FlaUI",
+      "eligibility": {
+        "any_of_tags": [
+          "windows",
+          "dotnet"
+        ]
+      },
+      "purpose_ar": "اختبارات واجهة ويندوز عند توافق تقنية الواجهة",
+      "limitations_ar": "تحتاج بيئة Windows مناسبة فعلًا؛ لا يُستنتج تشغيلها من Linux",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "desktop.windows",
+        "testing.native"
+      ],
+      "lineage_group": "flaui"
+    },
+    {
+      "id": "testcontainers",
+      "name": "Testcontainers",
+      "kind": "tool",
+      "source_url": "https://testcontainers.com/",
+      "eligibility": {
+        "any_of_tags": [
+          "backend",
+          "api"
+        ]
+      },
+      "purpose_ar": "تبعيات تكامل اختبارية فعلية حسب لغة المشروع",
+      "limitations_ar": "تحتاج runtime حاويات وصلاحيات وموارد؛ لا تستخدم بيانات الإنتاج",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.laravel",
+        "backend.dotnet",
+        "backend.python",
+        "backend.node",
+        "data.postgres",
+        "data.mongodb",
+        "testing.integration"
+      ],
+      "lineage_group": "testcontainers",
+      "research_refs": [
+        "web.t04"
+      ]
+    },
+    {
+      "id": "k6",
+      "name": "Grafana k6 skill",
+      "kind": "skill",
+      "source_url": "https://github.com/grafana/skills/blob/main/skills/grafana-k6/k6/SKILL.md",
+      "eligibility": {
+        "any_of_tags": [
+          "backend",
+          "api",
+          "web"
+        ]
+      },
+      "purpose_ar": "كتابة ومراجعة اختبارات الحمل بمعايير وبيانات واضحة",
+      "limitations_ar": "المهارة ليست تنفيذ الحمل؛ يلزم k6 وبيئة وحدود توقف؛ cloud اختياري",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.performance"
+      ],
+      "lineage_group": "k6",
+      "research_refs": [
+        "web.s30"
+      ]
+    },
+    {
+      "id": "web-vitals",
+      "name": "Web Vitals official reference",
+      "kind": "official-reference",
+      "source_url": "https://web.dev/articles/vitals",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "قياس تجربة الويب بمؤشرات حالية مع فصل المختبر عن الواقع",
+      "limitations_ar": "لا تنقل FID من ملفات قديمة؛ استخدم القياسات الحالية والبيئة المناسبة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.performance",
+        "public-web.discovery"
+      ],
+      "lineage_group": "web-vitals"
+    },
+    {
+      "id": "trail-of-bits",
+      "name": "Trail of Bits selected security skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/trailofbits/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "مراجعة الأمان وبناء سياق التدقيق والاختبار المتخصص",
+      "limitations_ar": "اختر المهارة المناسبة؛ differential-review يحتاج baseline؛ ليست شهادة خلو من الثغرات",
+      "review": {
+        "date": "2026-10-09",
+        "level": "selected_entrypoints",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.review"
+      ],
+      "lineage_group": "trail-of-bits",
+      "research_refs": [
+        "web.s28"
+      ]
+    },
+    {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "kind": "tool",
+      "source_url": "https://github.com/semgrep/semgrep",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "تحليل ثابت حسب اللغة والقواعد المناسبة",
+      "limitations_ar": "تحقق من لغة المشروع ورخصة المحرك والقواعد والإضافات؛ false positives وfalse negatives ممكنة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.review"
+      ],
+      "lineage_group": "semgrep",
+      "research_refs": [
+        "web.t05"
+      ]
+    },
+    {
+      "id": "osv",
+      "name": "OSV-Scanner",
+      "kind": "tool",
+      "source_url": "https://github.com/google/osv-scanner",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "فحص ثغرات الاعتماديات وفق بياناتها",
+      "limitations_ar": "لا يراجع منطق العمل؛ فحص توفر بيانات الثغرات ووقت تحديثها",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.review"
+      ],
+      "lineage_group": "osv",
+      "research_refs": [
+        "web.t06"
+      ]
+    },
+    {
+      "id": "gitleaks",
+      "name": "Gitleaks",
+      "kind": "tool",
+      "source_url": "https://github.com/gitleaks/gitleaks",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "كشف الأسرار في المشاريع ذات الإعدادات القائمة",
+      "limitations_ar": "README يعلن التحديثات الأمنية فقط ويوجه إلى Betterleaks؛ احتفظ بالمناسب ولا تبدل تلقائيًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.secrets"
+      ],
+      "lineage_group": "gitleaks",
+      "research_refs": [
+        "web.t06"
+      ]
+    },
+    {
+      "id": "betterleaks",
+      "name": "Betterleaks",
+      "kind": "tool",
+      "source_url": "https://github.com/betterleaks/betterleaks",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "مرشح لفحص الأسرار بعد انتقال تركيز مطور Gitleaks",
+      "limitations_ar": "مرشح يحتاج مقارنة على corpus اختبار آمن؛ ليس تفوقًا مثبتًا بسبب الاسم أو الإعلان",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.secrets"
+      ],
+      "lineage_group": "betterleaks"
+    },
+    {
+      "id": "trufflehog",
+      "name": "TruffleHog",
+      "kind": "tool",
+      "source_url": "https://github.com/trufflesecurity/trufflehog",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "بديل لكشف الأسرار من مصادر متعددة والتحقق منها عند الإذن",
+      "limitations_ar": "التحقق قد يرسل طلبات باستخدام السر الحقيقي؛ عطله افتراضيًا أو اطلب إذنًا مستقلًا؛ راجع AGPL",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.secrets"
+      ],
+      "lineage_group": "trufflehog"
+    },
+    {
+      "id": "zap",
+      "name": "ZAP",
+      "kind": "tool",
+      "source_url": "https://www.zaproxy.org/",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "api"
+        ]
+      },
+      "purpose_ar": "اختبارات أمان ديناميكية مأذونة",
+      "limitations_ar": "لا تفحص منافسين؛ خطط المصادقة وحدود الاختبار والبيانات والآثار",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.review"
+      ],
+      "lineage_group": "zap",
+      "research_refs": [
+        "web.t09"
+      ]
+    },
+    {
+      "id": "asvs",
+      "name": "OWASP ASVS",
+      "kind": "standard",
+      "source_url": "https://owasp.org/projects/asvs",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "backend",
+          "api"
+        ]
+      },
+      "purpose_ar": "متطلبات تحقق أمنية للتطبيقات",
+      "limitations_ar": "اختر ضوابط وإصدارًا؛ ليست أداة تشغيل أو شهادة امتثال",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "auth.identity",
+        "security.review",
+        "business.payments"
+      ],
+      "lineage_group": "asvs",
+      "research_refs": [
+        "web.r08"
+      ]
+    },
+    {
+      "id": "masvs",
+      "name": "OWASP MASVS and MASTG",
+      "kind": "standard",
+      "source_url": "https://mas.owasp.org/",
+      "eligibility": {
+        "any_of_tags": [
+          "android",
+          "ios"
+        ]
+      },
+      "purpose_ar": "متطلبات واختبارات أمن الموبايل",
+      "limitations_ar": "اربط البنود بأدلة جهاز وتطبيق مناسبين؛ لا تعتمد اسم المعيار وحده",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "mobile.android",
+        "mobile.swiftui",
+        "auth.identity",
+        "security.review"
+      ],
+      "lineage_group": "masvs"
+    },
+    {
+      "id": "knip",
+      "name": "Knip",
+      "kind": "tool",
+      "source_url": "https://github.com/webpro-nl/knip",
+      "eligibility": {
+        "any_of_tags": [
+          "javascript",
+          "typescript",
+          "react",
+          "nextjs",
+          "vue",
+          "angular"
+        ]
+      },
+      "purpose_ar": "كشف مرشحات الملفات والاعتماديات والصادرات غير المستخدمة",
+      "limitations_ar": "لا تحذف تلقائيًا؛ افحص الاستدعاءات الديناميكية وواجهات الحزمة العامة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "quality.static"
+      ],
+      "lineage_group": "knip",
+      "research_refs": [
+        "web.t07"
+      ]
+    },
+    {
+      "id": "dependency-cruiser",
+      "name": "dependency-cruiser",
+      "kind": "tool",
+      "source_url": "https://github.com/sverweij/dependency-cruiser",
+      "eligibility": {
+        "any_of_tags": [
+          "javascript",
+          "typescript",
+          "react",
+          "nextjs",
+          "vue",
+          "angular"
+        ]
+      },
+      "purpose_ar": "قواعد حدود الوحدات والاعتماديات وتمثيلها",
+      "limitations_ar": "قواعد المشروع هي المرجع؛ ليس سببًا لإعادة تقسيم المشروع اعتباطًا",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "quality.static"
+      ],
+      "lineage_group": "dependency-cruiser",
+      "research_refs": [
+        "web.t07"
+      ]
+    },
+    {
+      "id": "otel",
+      "name": "OpenTelemetry",
+      "kind": "official-reference",
+      "source_url": "https://opentelemetry.io/docs/",
+      "eligibility": {
+        "any_of_tags": [
+          "backend",
+          "api",
+          "web"
+        ]
+      },
+      "purpose_ar": "تخطيط وإضافة traces وmetrics وlogs وفق اللغة",
+      "limitations_ar": "ليس منصة تخزين للمراقبة؛ حدد exporter والاحتفاظ والعينات والخصوصية والتكلفة",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.observability"
+      ],
+      "lineage_group": "otel",
+      "research_refs": [
+        "web.r13"
+      ]
+    },
+    {
+      "id": "hashicorp",
+      "name": "HashiCorp agent skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/hashicorp/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "terraform",
+          "packer"
+        ]
+      },
+      "purpose_ar": "إرشادات IaC عندما يختار المشروع Terraform أو Packer",
+      "limitations_ar": "لا تفرض IaC؛ رخصة المهارات لا تحسم رخصة المحرك؛ خطط state والأسرار والموافقة على apply",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment"
+      ],
+      "lineage_group": "hashicorp",
+      "research_refs": [
+        "web.s32"
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare official skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/cloudflare/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "cloudflare",
+          "workers"
+        ]
+      },
+      "purpose_ar": "إرشادات منصة Cloudflare عندما يعتمدها القرار التقني",
+      "limitations_ar": "لا تجعل مهارة المزود تختار الاستضافة لصالحه؛ راجع حدود الخدمة والكلفة والبيانات",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment"
+      ],
+      "lineage_group": "cloudflare",
+      "research_refs": [
+        "web.s33"
+      ]
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe AI skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/stripe/ai",
+      "eligibility": {
+        "any_of_tags": [
+          "stripe"
+        ]
+      },
+      "purpose_ar": "تنفيذ تكامل Stripe بعد اختيار مزود الدفع وتحقق ملاءمته",
+      "limitations_ar": "تأكد من البلد والعملات والمتطلبات؛ sandbox فقط للتجارب؛ اختبر التكرار والتسوية والاسترداد",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "business.payments"
+      ],
+      "lineage_group": "stripe",
+      "research_refs": [
+        "web.s26"
+      ]
+    },
+    {
+      "id": "promptfoo",
+      "name": "Promptfoo",
+      "kind": "tool",
+      "source_url": "https://github.com/promptfoo/promptfoo",
+      "eligibility": {
+        "any_of_tags": [
+          "ai"
+        ]
+      },
+      "purpose_ar": "تقييم مخرجات LLM وسلامتها وتكلفتها في المنتج أو نَسَق",
+      "limitations_ar": "التشغيل المحلي لا يعني أن النماذج البعيدة لا تستقبل البيانات؛ راجع المزود وحدود الاختبار",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ai.evaluation"
+      ],
+      "lineage_group": "promptfoo"
+    },
+    {
+      "id": "renovate",
+      "name": "Renovate",
+      "kind": "tool",
+      "source_url": "https://github.com/renovatebot/renovate",
+      "eligibility": {
+        "any_of_tags": [
+          "any"
+        ]
+      },
+      "purpose_ar": "اقتراح تحديثات تبعيات مضبوطة مع CI",
+      "limitations_ar": "لا دمج تلقائي لتغيير رخصة أو صلاحية أو major؛ لا تنشر أسرارًا إلى PR غير موثوق",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "quality.static",
+        "operations.deployment"
+      ],
+      "lineage_group": "renovate"
+    },
+    {
+      "id": "seo-google",
+      "name": "Google Search Central",
+      "kind": "official-reference",
+      "source_url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "eligibility": {
+        "any_of_tags": [
+          "public-web"
+        ]
+      },
+      "purpose_ar": "مرجع فهرسة ومحتوى وروابط للمواقع العامة",
+      "limitations_ar": "لا تحتاجه لوحة داخلية؛ لا وعود بالتصدر أو بنسخ محتوى المنافسين",
+      "review": {
+        "date": "2026-10-09",
+        "level": "primary_docs",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "public-web.discovery"
+      ],
+      "lineage_group": "seo-google",
+      "research_refs": [
+        "web.r07"
+      ]
+    },
+    {
+      "id": "chrome-web-guidance",
+      "name": "GoogleChrome Modern Web Guidance",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "إرشادات HTML/CSS/JavaScript الحديثة وتوافق المتصفحات.",
+      "limitations_ar": "لا تنفذ @latest الوارد في الأمثلة بلا تثبيت إصدار وموافقة. راجع الشبكة والقياسات ووسيلة تعطيلها. دعم Baseline لا يلغي قائمة المتصفحات المطلوبة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.react",
+        "frontend.angular",
+        "frontend.vue",
+        "frontend.svelte",
+        "testing.performance"
+      ],
+      "lineage_group": "chrome-web-guidance",
+      "research_refs": [
+        "web.s08"
+      ]
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress Agent Skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/WordPress/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "wordpress"
+        ]
+      },
+      "purpose_ar": "WordPress: تحديد نوع المشروع، الكتل والقوالب والإضافات وREST.",
+      "limitations_ar": "GPL-2.0-or-later مذكورة: لا تعِد ترخيص الملفات المنسوخة تحت MIT. وجود multisite ليس بمفرده إثبات عزل SaaS المطلوب. افحص العمليات الواسعة في WP-CLI.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.wordpress"
+      ],
+      "lineage_group": "wordpress",
+      "research_refs": [
+        "web.s14"
+      ]
+    },
+    {
+      "id": "auth0",
+      "name": "Auth0 Agent Skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/auth0/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "auth0"
+        ]
+      },
+      "purpose_ar": "تكامل Auth0 مع أطر الويب وطرق الدخول والجلسات.",
+      "limitations_ar": "اقصر trigger على المكونات المعتمدة. راجع تكلفة الخدمة ومكان البيانات ومتطلبات CLI. لا تستنتج انتهاء تفويض بيانات النظام من اكتمال تسجيل الدخول.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "auth.identity"
+      ],
+      "lineage_group": "auth0",
+      "research_refs": [
+        "web.s16"
+      ]
+    },
+    {
+      "id": "elastic-esql",
+      "name": "Elastic ES|QL guidance",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/elastic/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "elasticsearch"
+        ]
+      },
+      "purpose_ar": "Elasticsearch: استكشاف المخطط وES|QL والبحث والتحليل ضمن دعم الإصدار.",
+      "limitations_ar": "لا تتجاوز فلتر tenant لأنه غير مذكور في استعلام المستخدم. لا تعتبر كل ميزة preview مدعومة بإطلاق. استرجاع schema/queries محكوم بالصلاحيات والتكلفة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.search"
+      ],
+      "lineage_group": "elastic-esql",
+      "research_refs": [
+        "web.s20"
+      ]
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse Best Practices",
+      "kind": "skill",
+      "source_url": "https://github.com/ClickHouse/agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "clickhouse"
+        ]
+      },
+      "purpose_ar": "التخزين التحليلي وتصميم الجداول والاستيعاب والاستعلامات في ClickHouse.",
+      "limitations_ar": "خطط اتساق/تأخر التقارير وحقوق الحذف والعزل. لا تطبق صياغة أو قواعد Postgres عليه مباشرة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.warehouse"
+      ],
+      "lineage_group": "clickhouse",
+      "research_refs": [
+        "web.s21"
+      ]
+    },
+    {
+      "id": "dbt",
+      "name": "dbt Analytics Engineering",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/dbt-labs/dbt-agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "dbt"
+        ]
+      },
+      "purpose_ar": "نماذج التحليلات وتحويل البيانات ومراجعة التعريفات والاعتماديات.",
+      "limitations_ar": "queries وdbt show قد ينفذان على warehouse مدفوع. افصل read permission والميزانية. لا تحمل مهارات dbt الأخرى لمجرد الإحالة دون مراجعة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.transformations"
+      ],
+      "lineage_group": "dbt",
+      "research_refs": [
+        "web.s22"
+      ]
+    },
+    {
+      "id": "inngest",
+      "name": "Inngest Skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/inngest/inngest-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "inngest"
+        ]
+      },
+      "purpose_ar": "مهام التطبيق الخلفية والخطوات المستمرة عند اختيار Inngest.",
+      "limitations_ar": "ضمانات runtime لا تكفي لمنع تكرار سحب خارجي. لا تُفعّل خدمة أخرى بسبب skill وحدها. طابق SDK ولا تدّع دعم لغة غير مقروءة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.durable-jobs"
+      ],
+      "lineage_group": "inngest",
+      "research_refs": [
+        "web.s23"
+      ]
+    },
+    {
+      "id": "trigger-dev",
+      "name": "Trigger.dev Skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/triggerdotdev/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "trigger.dev"
+        ]
+      },
+      "purpose_ar": "إعداد وتشغيل مهام طويلة/retries وحدود التوازي عبر Trigger.dev.",
+      "limitations_ar": "لا تطلب لصق مفاتيح سرية في المحادثة. راجع billing/quotas والشبكة. أمثلة SDK في الملف تحتاج مطابقة الإصدار المثبت.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.durable-jobs"
+      ],
+      "lineage_group": "trigger-dev",
+      "research_refs": [
+        "web.s24"
+      ]
+    },
+    {
+      "id": "resend",
+      "name": "Resend Email Guidance",
+      "kind": "skill",
+      "source_url": "https://github.com/resend/resend-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "resend",
+          "email"
+        ]
+      },
+      "purpose_ar": "هندسة البريد والقوالب والتسليم والتكرار والتعامل مع أحداث البريد.",
+      "limitations_ar": "لا تحول نافذة idempotency الخاصة بالمزود إلى ضمان دائم. لا ترسل بريدًا حقيقيًا أثناء الاختبار. المحتوى التسويقي/الموافقة والحذف له متطلبات محلية مستقلة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "communication.email"
+      ],
+      "lineage_group": "resend",
+      "research_refs": [
+        "web.s25"
+      ]
+    },
+    {
+      "id": "medusa",
+      "name": "Medusa Agent Skills",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/medusajs/medusa-agent-skills",
+      "eligibility": {
+        "any_of_tags": [
+          "medusa"
+        ]
+      },
+      "purpose_ar": "Medusa backend/admin، وممارسات storefront تجارية أوسع.",
+      "limitations_ar": "لا تعمم منع PUT/PATCH على كل APIs. ثبّت تحويلات المبالغ بين الأنظمة. storefront يتداخل مع التصميم، فقيده بالسلوك والعقد البصري. build وحده ليس تحقق وظائف.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "business.commerce"
+      ],
+      "lineage_group": "medusa",
+      "research_refs": [
+        "web.s27"
+      ]
+    },
+    {
+      "id": "docker-guidance",
+      "name": "Docker Build and Compose Guidance",
+      "kind": "instruction-library",
+      "source_url": "https://github.com/docker/skills",
+      "eligibility": {
+        "any_of_tags": [
+          "docker"
+        ]
+      },
+      "purpose_ar": "بناء صور التطبيقات وإعداد Compose وطبقات التشغيل.",
+      "limitations_ar": "لا تستورد docker-agent-run كمدير لنَسَق. لا أوضاع تجاوز الصلاحيات. راجع volumes والأسرار وsocket وصور الأساس وuser غير الجذر.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment"
+      ],
+      "lineage_group": "docker-guidance",
+      "research_refs": [
+        "web.s34"
+      ]
+    },
+    {
+      "id": "agency-code-onboarding",
+      "name": "Agency Codebase Onboarding",
+      "kind": "instruction-library",
+      "source_url": "https://raw.githubusercontent.com/msitarzewski/agency-agents/main/engineering/engineering-codebase-onboarding-engineer.md",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "فهم المشروع عبر مدخل onboarding المحدد؛ ليس مراجع الواجهة.",
+      "limitations_ar": "النصوص شخصيات/تعليمات وليست محرك وكلاء مستقلًا. وحّد اللغة مع نَسَق. فهم الكود ليس تحليلًا كاملًا لجدوى المنتج، والمراجعة لا تمنح كتابة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "knowledge.mapping"
+      ],
+      "lineage_group": "agency-code-onboarding",
+      "research_refs": [
+        "web.s35"
+      ]
+    },
+    {
+      "id": "svelte-guidance",
+      "name": "Svelte Official AI Tools",
+      "kind": "official-reference",
+      "source_url": "https://svelte.dev/docs/cli/ai-tools",
+      "eligibility": {
+        "any_of_tags": [
+          "svelte"
+        ]
+      },
+      "purpose_ar": "Svelte/SvelteKit: حزم إرشاد وMCP ومهارات منفردة وفق المضيف.",
+      "limitations_ar": "اختر أدوات فردية عندما نحتاج ضبط التفعيل. لا تنفذ إعدادًا يعدل settings.json تلقائيًا دون diff. تحقق من المصدر المستقر بدل روابط preview.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "frontend.svelte"
+      ],
+      "lineage_group": "svelte-guidance",
+      "research_refs": [
+        "web.s36"
+      ]
+    },
+    {
+      "id": "zalando-api-guidelines",
+      "name": "Zalando REST Guidelines",
+      "kind": "official-reference",
+      "source_url": "https://opensource.zalando.com/restful-api-guidelines/",
+      "eligibility": {
+        "any_of_tags": [
+          "api"
+        ]
+      },
+      "purpose_ar": "تصميم REST والاتساق والإصدارات والأخطاء وتصفية النتائج والأحداث.",
+      "limitations_ar": "هذه إرشادات مؤسسات وليست بروتوكولًا ملزمًا للجميع. احترم الإطار المختار، خصوصًا APIs خاصة مثل Medusa، ولا تقل إن وجود spec يثبت التفويض.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "api.contract"
+      ],
+      "lineage_group": "zalando-api-guidelines",
+      "research_refs": [
+        "web.r02"
+      ]
+    },
+    {
+      "id": "microsoft-api-guidelines",
+      "name": "Microsoft API Guidelines",
+      "kind": "official-reference",
+      "source_url": "https://github.com/microsoft/api-guidelines",
+      "eligibility": {
+        "any_of_tags": [
+          "api"
+        ]
+      },
+      "purpose_ar": "تصميم REST والاتساق والإصدارات والأخطاء وتصفية النتائج والأحداث.",
+      "limitations_ar": "هذه إرشادات مؤسسات وليست بروتوكولًا ملزمًا للجميع. احترم الإطار المختار، خصوصًا APIs خاصة مثل Medusa، ولا تقل إن وجود spec يثبت التفويض.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "api.contract"
+      ],
+      "lineage_group": "microsoft-api-guidelines",
+      "research_refs": [
+        "web.r02"
+      ]
+    },
+    {
+      "id": "openapi",
+      "name": "OpenAPI Specification",
+      "kind": "standard",
+      "source_url": "https://spec.openapis.org/oas/latest.html",
+      "eligibility": {
+        "any_of_tags": [
+          "api"
+        ]
+      },
+      "purpose_ar": "عقود HTTP API والرسائل والأحداث.",
+      "limitations_ar": "ثبت نسخة تدعمها أدوات المشروع؛ latest في رابط الاكتشاف لا يساوي ترقية تلقائية. العقود لا تصف كل قواعد العمل بذاتها.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "api.contract"
+      ],
+      "lineage_group": "openapi",
+      "research_refs": [
+        "web.r03"
+      ]
+    },
+    {
+      "id": "asyncapi",
+      "name": "AsyncAPI Specification",
+      "kind": "standard",
+      "source_url": "https://www.asyncapi.com/docs/reference/specification/latest",
+      "eligibility": {
+        "any_of_tags": [
+          "events"
+        ]
+      },
+      "purpose_ar": "عقود HTTP API والرسائل والأحداث.",
+      "limitations_ar": "ثبت نسخة تدعمها أدوات المشروع؛ latest في رابط الاكتشاف لا يساوي ترقية تلقائية. العقود لا تصف كل قواعد العمل بذاتها.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "api.contract",
+        "backend.cache-jobs"
+      ],
+      "lineage_group": "asyncapi",
+      "research_refs": [
+        "web.r03"
+      ]
+    },
+    {
+      "id": "oauth-bcp",
+      "name": "OAuth Security BCP RFC 9700",
+      "kind": "standard",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "eligibility": {
+        "any_of_tags": [
+          "oauth",
+          "auth"
+        ]
+      },
+      "purpose_ar": "أمن تفويض العملاء الخارجيين وتدفقات OAuth.",
+      "limitations_ar": "ميّز تطبيق مستخدم عن service-to-service وعن session للمتصفح. API key ليس بديلًا لكل حالات تفويض المستخدم.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "auth.identity",
+        "security.review"
+      ],
+      "lineage_group": "oauth-bcp",
+      "research_refs": [
+        "web.r04"
+      ]
+    },
+    {
+      "id": "w3c-bidi",
+      "name": "W3C Bidi Guidance",
+      "kind": "official-reference",
+      "source_url": "https://www.w3.org/International/articles/inline-bidi-markup/",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "العربية وRTL والنصوص المختلطة.",
+      "limitations_ar": "لا تغير identifiers أو URLs أو الأكواد بتطبيع اللغة. افصل لغة الحساب عن لغة المتجر ولغة تفاعل نَسَق.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "ui.accessibility"
+      ],
+      "lineage_group": "w3c-bidi",
+      "research_refs": [
+        "web.r06"
+      ]
+    },
+    {
+      "id": "owasp-cheatsheets",
+      "name": "OWASP Cheat Sheets",
+      "kind": "official-reference",
+      "source_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "api"
+        ]
+      },
+      "purpose_ar": "متطلبات الأمن، التفويض، المدخلات والملفات؛ مرجع للتهديدات والتحقق.",
+      "limitations_ar": "اختر ضوابط فعلية لها دليل. عدم اكتشاف scanner لا ينفي خلل منطق العمل. الخصوصية والضرائب والقوانين تحتاج اختصاصًا وبلدًا محددين.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.review",
+        "auth.identity"
+      ],
+      "lineage_group": "owasp-cheatsheets",
+      "research_refs": [
+        "web.r08"
+      ]
+    },
+    {
+      "id": "multitenancy-guidance",
+      "name": "Microsoft Multitenant Guidance",
+      "kind": "official-reference",
+      "source_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview",
+      "eligibility": {
+        "any_of_tags": [
+          "multitenant"
+        ]
+      },
+      "purpose_ar": "قرار تعدد المستأجرين والعزل والموارد المشتركة والتوسع.",
+      "limitations_ar": "لا توجد مهارة في هذه القائمة ثبت أنها تغطي عزل قاعدة+cache+بحث+ملفات+jobs+domains+تقارير كاملًا. القرار يحتاج نموذج تهديد واختبارات خاصة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "architecture.system",
+        "auth.identity",
+        "security.review"
+      ],
+      "lineage_group": "multitenancy-guidance",
+      "research_refs": [
+        "web.r09"
+      ]
+    },
+    {
+      "id": "postgres-manual",
+      "name": "PostgreSQL Manual",
+      "kind": "official-reference",
+      "source_url": "https://www.postgresql.org/docs/current/using-explain.html",
+      "eligibility": {
+        "any_of_tags": [
+          "postgres"
+        ]
+      },
+      "purpose_ar": "تحليل خطط SQL والنسخ والاستعادة.",
+      "limitations_ar": "EXPLAIN ANALYZE ينفذ الاستعلام. لا تجعل Seq Scan فشلًا دائمًا. نجاح backup ليس اختبار restore.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "data.postgres"
+      ],
+      "lineage_group": "postgres-manual",
+      "research_refs": [
+        "web.r10"
+      ]
+    },
+    {
+      "id": "google-sre",
+      "name": "Google SRE",
+      "kind": "official-reference",
+      "source_url": "https://sre.google/workbook/implementing-slos/",
+      "eligibility": {
+        "any_of_tags": [
+          "web",
+          "backend"
+        ]
+      },
+      "purpose_ar": "SLO والاعتمادية والعمليات ومراجعة المعمارية.",
+      "limitations_ar": "لا تفترض حاجة multi-region أو SLO شديد الكلفة. اربط RTO/RPO وerror budget بميزانية وعملية استجابة فعلية.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.observability",
+        "testing.performance"
+      ],
+      "lineage_group": "google-sre",
+      "research_refs": [
+        "web.r12"
+      ]
+    },
+    {
+      "id": "aws-well-architected",
+      "name": "AWS Well-Architected",
+      "kind": "official-reference",
+      "source_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+      "eligibility": {
+        "any_of_tags": [
+          "aws"
+        ]
+      },
+      "purpose_ar": "SLO والاعتمادية والعمليات ومراجعة المعمارية.",
+      "limitations_ar": "لا تفترض حاجة multi-region أو SLO شديد الكلفة. اربط RTO/RPO وerror budget بميزانية وعملية استجابة فعلية.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "architecture.system",
+        "operations.deployment"
+      ],
+      "lineage_group": "aws-well-architected",
+      "research_refs": [
+        "web.r12"
+      ]
+    },
+    {
+      "id": "finops",
+      "name": "FinOps Framework",
+      "kind": "official-reference",
+      "source_url": "https://www.finops.org/framework/",
+      "eligibility": {
+        "any_of_tags": [
+          "cloud"
+        ]
+      },
+      "purpose_ar": "إدارة التكلفة وربطها بالاستخدام والقيمة.",
+      "limitations_ar": "لا تخترع أسعارًا أو usage forecasts كأنها فواتير. احسب تكلفة tenant/عملية والتخزين والنقل والنسخ والعمال والبريد والمراقبة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment",
+        "operations.observability"
+      ],
+      "lineage_group": "finops",
+      "research_refs": [
+        "web.r14"
+      ]
+    },
+    {
+      "id": "s3-guidance",
+      "name": "S3 Security Guidance",
+      "kind": "official-reference",
+      "source_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html",
+      "eligibility": {
+        "any_of_tags": [
+          "s3"
+        ]
+      },
+      "purpose_ar": "تخزين ملفات وحقوقها وتحويل صور عندما نختار هذه الأدوات.",
+      "limitations_ar": "خطط حجر الرفع والحجم والضغط وعدد البكسلات وexpiry وعدم كشف metadata. معالجة الفيديو تحتاج مزود/توثيق متخصص إضافي؛ هذه الصفحات لا تغطيها.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment",
+        "security.review"
+      ],
+      "lineage_group": "s3-guidance",
+      "research_refs": [
+        "web.r15"
+      ]
+    },
+    {
+      "id": "sharp-docs",
+      "name": "sharp Media Documentation",
+      "kind": "official-reference",
+      "source_url": "https://sharp.pixelplumbing.com/api-output/",
+      "eligibility": {
+        "any_of_tags": [
+          "sharp",
+          "node"
+        ]
+      },
+      "purpose_ar": "تخزين ملفات وحقوقها وتحويل صور عندما نختار هذه الأدوات.",
+      "limitations_ar": "خطط حجر الرفع والحجم والضغط وعدد البكسلات وexpiry وعدم كشف metadata. معالجة الفيديو تحتاج مزود/توثيق متخصص إضافي؛ هذه الصفحات لا تغطيها.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.node"
+      ],
+      "lineage_group": "sharp-docs",
+      "research_refs": [
+        "web.r15"
+      ]
+    },
+    {
+      "id": "aws-toolkit-research",
+      "name": "AWS Agent Toolkit Research",
+      "kind": "official-reference",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/",
+      "eligibility": {
+        "any_of_tags": [
+          "aws"
+        ]
+      },
+      "purpose_ar": "تكامل أدوات ومهارات AWS عندما تختار المنصة AWS.",
+      "limitations_ar": "اقرأ مدخل المهارة المحددة والرخصة والصلاحيات وIAM والتكلفة قبل إضافتها. هذه الفجوة معلنة ولا تُخفى وراء اسم AWS.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment"
+      ],
+      "lineage_group": "aws-toolkit-research",
+      "research_refs": [
+        "web.r16"
+      ]
+    },
+    {
+      "id": "github-actions-security",
+      "name": "GitHub Actions Security",
+      "kind": "official-reference",
+      "source_url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "eligibility": {
+        "any_of_tags": [
+          "github-actions"
+        ]
+      },
+      "purpose_ar": "أمن CI/CD وتدرج إطلاق المميزات.",
+      "limitations_ar": "PR غير موثوق لا يحصل على secrets. لا تخلط نجاح tests بإذن نشر. لكل flag دورة حياة وتنظيف، ولا تعطيل أمني دائم تحت اسم feature flag.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment",
+        "security.review"
+      ],
+      "lineage_group": "github-actions-security",
+      "research_refs": [
+        "web.r17"
+      ]
+    },
+    {
+      "id": "openfeature",
+      "name": "OpenFeature Documentation",
+      "kind": "official-reference",
+      "source_url": "https://openfeature.dev/docs/reference/intro/",
+      "eligibility": {
+        "any_of_tags": [
+          "feature-flags"
+        ]
+      },
+      "purpose_ar": "أمن CI/CD وتدرج إطلاق المميزات.",
+      "limitations_ar": "PR غير موثوق لا يحصل على secrets. لا تخلط نجاح tests بإذن نشر. لكل flag دورة حياة وتنظيف، ولا تعطيل أمني دائم تحت اسم feature flag.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "architecture.system"
+      ],
+      "lineage_group": "openfeature",
+      "research_refs": [
+        "web.r17"
+      ]
+    },
+    {
+      "id": "keycloak-docs",
+      "name": "Keycloak Identity Documentation",
+      "kind": "official-reference",
+      "source_url": "https://www.keycloak.org/securing-apps/overview",
+      "eligibility": {
+        "any_of_tags": [
+          "keycloak"
+        ]
+      },
+      "purpose_ar": "بدائل الهوية والتفويض المعتمد على علاقات البيانات.",
+      "limitations_ar": "لا تجمع مزودين primary لنفس الهوية. R09 لعزل المستأجرين يظل مطلوبًا؛ هذه الأنظمة لا تقرر نموذج الملكية التجاري وحدها.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "auth.identity"
+      ],
+      "lineage_group": "keycloak-docs",
+      "research_refs": [
+        "web.r18"
+      ]
+    },
+    {
+      "id": "openfga-docs",
+      "name": "OpenFGA Authorization Documentation",
+      "kind": "official-reference",
+      "source_url": "https://openfga.dev/docs/modeling/getting-started",
+      "eligibility": {
+        "any_of_tags": [
+          "openfga"
+        ]
+      },
+      "purpose_ar": "بدائل الهوية والتفويض المعتمد على علاقات البيانات.",
+      "limitations_ar": "لا تجمع مزودين primary لنفس الهوية. R09 لعزل المستأجرين يظل مطلوبًا؛ هذه الأنظمة لا تقرر نموذج الملكية التجاري وحدها.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "auth.identity"
+      ],
+      "lineage_group": "openfga-docs",
+      "research_refs": [
+        "web.r18"
+      ]
+    },
+    {
+      "id": "celery-docs",
+      "name": "Celery Task Documentation",
+      "kind": "official-reference",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/tasks.html",
+      "eligibility": {
+        "any_of_tags": [
+          "python",
+          "celery"
+        ]
+      },
+      "purpose_ar": "موثوقية jobs والرسائل وإعادة الاتصال الفوري.",
+      "limitations_ar": "عامل الرسائل قابلة للتكرار أو الفقد بحسب الآلية الفعلية. حدد dedup/outbox/replay والمهلات، ولا تعتمد اتصال websocket بدل مخزن الحقيقة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.durable-jobs"
+      ],
+      "lineage_group": "celery-docs",
+      "research_refs": [
+        "web.r19"
+      ]
+    },
+    {
+      "id": "rabbitmq-docs",
+      "name": "RabbitMQ Reliability",
+      "kind": "official-reference",
+      "source_url": "https://www.rabbitmq.com/docs/reliability",
+      "eligibility": {
+        "any_of_tags": [
+          "rabbitmq"
+        ]
+      },
+      "purpose_ar": "موثوقية jobs والرسائل وإعادة الاتصال الفوري.",
+      "limitations_ar": "عامل الرسائل قابلة للتكرار أو الفقد بحسب الآلية الفعلية. حدد dedup/outbox/replay والمهلات، ولا تعتمد اتصال websocket بدل مخزن الحقيقة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.cache-jobs"
+      ],
+      "lineage_group": "rabbitmq-docs",
+      "research_refs": [
+        "web.r19"
+      ]
+    },
+    {
+      "id": "socketio-docs",
+      "name": "Socket.IO Delivery Guarantees",
+      "kind": "official-reference",
+      "source_url": "https://socket.io/docs/v4/delivery-guarantees",
+      "eligibility": {
+        "any_of_tags": [
+          "socket.io"
+        ]
+      },
+      "purpose_ar": "موثوقية jobs والرسائل وإعادة الاتصال الفوري.",
+      "limitations_ar": "عامل الرسائل قابلة للتكرار أو الفقد بحسب الآلية الفعلية. حدد dedup/outbox/replay والمهلات، ولا تعتمد اتصال websocket بدل مخزن الحقيقة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "backend.node"
+      ],
+      "lineage_group": "socketio-docs",
+      "research_refs": [
+        "web.r19"
+      ]
+    },
+    {
+      "id": "kubernetes-docs",
+      "name": "Kubernetes Production Guidance",
+      "kind": "official-reference",
+      "source_url": "https://kubernetes.io/docs/setup/production-environment/",
+      "eligibility": {
+        "any_of_tags": [
+          "kubernetes"
+        ]
+      },
+      "purpose_ar": "تهيئة بيئة orchestration متاحة وموثوقة عند الحاجة.",
+      "limitations_ar": "لا قدرة kubectl واسعة أو cluster-admin تلقائيًا. اختبر limits/probes/network/persistence والصلاحيات ونطاق التكلفة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "operations.deployment"
+      ],
+      "lineage_group": "kubernetes-docs",
+      "research_refs": [
+        "web.r20"
+      ]
+    },
+    {
+      "id": "playwright-test",
+      "name": "Playwright Test",
+      "kind": "tool",
+      "source_url": "https://playwright.dev/docs/accessibility-testing",
+      "eligibility": {
+        "any_of_tags": [
+          "web"
+        ]
+      },
+      "purpose_ar": "E2E وإتاحة الاستخدام عبر اختبارات المتصفح.",
+      "limitations_ar": "احفظ screenshots/traces منقحة. تغيير snapshot مراجعة مستقلة. لا تطلب من test runtime تحديد تصميم المنتج.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.web",
+        "ui.accessibility"
+      ],
+      "lineage_group": "playwright-test",
+      "research_refs": [
+        "web.t01"
+      ]
+    },
+    {
+      "id": "codeql",
+      "name": "CodeQL",
+      "kind": "tool",
+      "source_url": "https://codeql.github.com/docs/",
+      "eligibility": {
+        "any_of_tags": [
+          "codeql"
+        ]
+      },
+      "purpose_ar": "تحليل ثابت للكود وقواعد أمنية.",
+      "limitations_ar": "الربط هنا على مستوى الوثائق لا تجربة جميع القواعد. راجع شروط CodeQL للمستودع وسير العمل، وفرق CLI/السحابة في البيانات الصادرة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "security.review"
+      ],
+      "lineage_group": "codeql",
+      "research_refs": [
+        "web.t05"
+      ]
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "kind": "tool",
+      "source_url": "https://vitest.dev/guide/",
+      "eligibility": {
+        "any_of_tags": [
+          "javascript",
+          "typescript"
+        ]
+      },
+      "purpose_ar": "تشغيل اختبارات الوحدات والمنطق بحسب لغة التطبيق.",
+      "limitations_ar": "الاختبار يُشتق من المتطلب لا نسخ منطق الدالة. coverage وحده غير كافٍ. شغل كود مستودع غير موثوق فقط داخل بيئة مأذونة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.unit"
+      ],
+      "lineage_group": "vitest",
+      "research_refs": [
+        "web.t08"
+      ]
+    },
+    {
+      "id": "pytest",
+      "name": "pytest",
+      "kind": "tool",
+      "source_url": "https://docs.pytest.org/en/stable/",
+      "eligibility": {
+        "any_of_tags": [
+          "python"
+        ]
+      },
+      "purpose_ar": "تشغيل اختبارات الوحدات والمنطق بحسب لغة التطبيق.",
+      "limitations_ar": "الاختبار يُشتق من المتطلب لا نسخ منطق الدالة. coverage وحده غير كافٍ. شغل كود مستودع غير موثوق فقط داخل بيئة مأذونة.",
+      "review": {
+        "date": "2026-10-09",
+        "level": "supplied_research_mapping",
+        "benchmark_status": "not_run",
+        "full_source_audit": "not_run"
+      },
+      "binding": {
+        "integration_status": "catalog_only",
+        "pinned_ref": null,
+        "sha256": null,
+        "license_reviewed": false,
+        "scope_reviewed": false,
+        "host_tested": false,
+        "installed_by_this_delivery": false
+      },
+      "capabilities": [
+        "testing.unit"
+      ],
+      "lineage_group": "pytest",
+      "research_refs": [
+        "web.t08"
+      ]
+    }
+  ],
+  "local_revision": "web-integration-preparation-1",
+  "product_functionality_status": "external_integrations_not_implemented"
+}

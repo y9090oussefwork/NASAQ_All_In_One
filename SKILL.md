@@ -1,6 +1,6 @@
 ---
 name: nasaq
-﻿description: >-
+description: >-
   Install and use the Nasaq Arabic-first web engineering coordination skill.
   Use when the user asks to install Nasaq from the Nasaq GitHub repository or to
   start, inspect, plan, design, implement, test, review, or resume a web project
@@ -24,4 +24,5 @@ The one-line installation request is:
 > ثبّت مهارة نَسَق https://github.com/y9090oussefwork/NASAQ_All_In_One
 
 This root file is an installer entrypoint; the full skill remains under `skills/nasaq/` so the repository can also contain public documentation, tests, and release material.
+
 

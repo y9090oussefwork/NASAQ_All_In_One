@@ -1,6 +1,6 @@
 # Public release status
 
-Release candidate: nasaq-web-1.0.0-rc.1. Scope: web, Codex first.
+Release candidate: nasaq-web-1.0.0-rc.2. Scope: web, Codex first.
 
 The local stage ledger records P0–P8 and packaging checks as passed in bounded fixtures. Those aggregate statuses do not certify every capability for arbitrary projects. Raw host sessions, local databases, installed dependencies and private evidence are excluded from publication.
 
@@ -15,3 +15,4 @@ The local stage ledger records P0–P8 and packaging checks as passed in bounded
 - Historical reports preserve prior claims and counts. This document takes precedence for public readiness claims.
 
 The source is available for supervised experimentation and contribution, not as a guaranteed finished orchestration engine. No human acceptance is fabricated.
+

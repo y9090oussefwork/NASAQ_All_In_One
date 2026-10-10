@@ -8,7 +8,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'skills' / 'nasaq'
-DIST = ROOT / 'dist' / 'nasaq-web-1.0.0-rc.1'
+DIST = ROOT / 'dist' / 'nasaq-web-1.0.0-rc.2'
 ZIP = DIST / 'skill.zip'
 EXCLUDE_DIRS = {'.git', '__pycache__', 'tests'}
 EXCLUDE_SUFFIXES = {'.pyc'}
@@ -48,7 +48,7 @@ def main():
             manifest.append({'path': archive_name, 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'size': path.stat().st_size})
     if sum(1 for item in manifest if item['path'].endswith('/SKILL.md')) != 1:
         raise SystemExit('package must contain one SKILL.md')
-    result = {'schema_version': 1, 'package': 'nasaq-web-1.0.0-rc.1', 'source': 'skills/nasaq',
+    result = {'schema_version': 1, 'package': 'nasaq-web-1.0.0-rc.2', 'source': 'skills/nasaq',
               'entries': manifest, 'zip_sha256': hashlib.sha256(ZIP.read_bytes()).hexdigest(),
               'size_bytes': ZIP.stat().st_size, 'external_sources_included': False,
               'node_modules_included': False, 'private_evidence_included': False}
@@ -60,6 +60,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 

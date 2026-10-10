@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "package": "nasaq-web-1.0.0-rc.2",
+  "source": "skills/nasaq",
+  "entries": [
+    {
+      "path": "nasaq/agents/openai.yaml",
+      "sha256": "7db819d8583a3267d8f5746003232bd47b8e6932ae7d00953043f095e0191ae0",
+      "size": 343
+    },
+    {
+      "path": "nasaq/assets/capabilities.json",
+      "sha256": "b28c69df9b287f641a6a02ee19764e123efee6995378f01328ba003b5642af2b",
+      "size": 39648
+    },
+    {
+      "path": "nasaq/assets/examples/conflicting-design.draft.json",
+      "sha256": "ffe085bf956a947d097d38f4dee9fdcf2a3e55d495106ea36d44992e4fe0bb9b",
+      "size": 5770
+    },
+    {
+      "path": "nasaq/assets/examples/web-selection.draft.json",
+      "sha256": "579a532d1c4ee884422a780d55933cfc9e0819e83af86992a2fe6d5523e72ac0",
+      "size": 5387
+    },
+    {
+      "path": "nasaq/assets/NASAQ_BUILD_SPEC_AR_v1_1.md",
+      "sha256": "bf258eed8743d1febf2be4ed9ceb25485400758f992cd3ab2896acacce2ec520",
+      "size": 208337
+    },
+    {
+      "path": "nasaq/assets/providers.json",
+      "sha256": "9a5cf68d4919457e6dac839370570d2dd4cfc5062d9ca891a4ba741f6b722d62",
+      "size": 130637
+    },
+    {
+      "path": "nasaq/assets/validator_messages.json",
+      "sha256": "95c37c48af8e2116c2acb6e69f8347cc981bf8970b55834af1497e15df715c93",
+      "size": 9308
+    },
+    {
+      "path": "nasaq/assets/web-coverage.json",
+      "sha256": "22ad6861dd342b0a2624947fe28242d2e7fb2afc38c76d8a82906aa61100a772",
+      "size": 177263
+    },
+    {
+      "path": "nasaq/assets/web-source-map.json",
+      "sha256": "c2c40843fd9194c953f2acf616b782534ea4048051dce30c38d586d012a94447",
+      "size": 45264
+    },
+    {
+      "path": "nasaq/CHANGELOG.md",
+      "sha256": "cce7451e006e41ffd660e65f2ccbbc471f329b43f885bc08fd0b68741da46339",
+      "size": 2033
+    },
+    {
+      "path": "nasaq/LICENSE",
+      "sha256": "c81f4dfd5a125d6da7807b8258d8ef29b79dc68612d0c421b521681880870f9b",
+      "size": 1075
+    },
+    {
+      "path": "nasaq/README.en.md",
+      "sha256": "79311ab21ed31cc6a794d308978684d5135f7d50260d608b15fbfd13068928e0",
+      "size": 635
+    },
+    {
+      "path": "nasaq/README.md",
+      "sha256": "8e589cc7b1edd231625b54a4c88fdac347df0603c37818a4374acb118c110188",
+      "size": 948
+    },
+    {
+      "path": "nasaq/references/architecture-data-api-ar.md",
+      "sha256": "1f6381fec871051b1972ddc7fdda6dec624ba9d514be256bb3010f158a4e72ad",
+      "size": 3582
+    },
+    {
+      "path": "nasaq/references/commands-ar.md",
+      "sha256": "09281d8b69da5b301a2c51004a997ab4fb302a37ebfc83812ab04757c67938e4",
+      "size": 6503
+    },
+    {
+      "path": "nasaq/references/conversation-project.md",
+      "sha256": "89045b9f604bce6cdc0947b863b8dbce84f1a6b3871d08f1cc4e6156999208e1",
+      "size": 9285
+    },
+    {
+      "path": "nasaq/references/design-ar.md",
+      "sha256": "5410147c7b6f2b2aacbc365236cc53cd74e56eb9926db01d5ab321284b18affc",
+      "size": 3336
+    },
+    {
+      "path": "nasaq/references/gaps-and-acceptance-ar.md",
+      "sha256": "7e00789e04eb339b577dbd8170138aec4088c3c29e74547169e77d751591a0c0",
+      "size": 13307
+    },
+    {
+      "path": "nasaq/references/lifecycle-ar.md",
+      "sha256": "515b2863cc325d596258881cdbce3caa73d90bda0da31b1da610558ea6bed9de",
+      "size": 14284
+    },
+    {
+      "path": "nasaq/references/performance-ar.md",
+      "sha256": "1cb11b227e69a97c19bf69d85f32e7352364f2a2781a94727b3ebfe44d6281f7",
+      "size": 3281
+    },
+    {
+      "path": "nasaq/references/product-direction.md",
+      "sha256": "532f64d1b79e163335fbdef98fdfc1af13f5a1ddd6ab4f5632d81d4db9d1dd0b",
+      "size": 6247
+    },
+    {
+      "path": "nasaq/references/provider-catalog-ar.md",
+      "sha256": "4c1e6149457178dbd1caa99575f9f88d585f138a21097fd9053b55ad9456e395",
+      "size": 68764
+    },
+    {
+      "path": "nasaq/references/runtime-web.md",
+      "sha256": "ca57d7f4f267facbd142e8bc8c33d87a5506a90ac5f1aa76bfebfe1108bed06f",
+      "size": 3052
+    },
+    {
+      "path": "nasaq/references/security-operations-ar.md",
+      "sha256": "ff4af03d3ebd894a32755bfdfe72a254f82494b21b0eca709be178ecc574d664",
+      "size": 8495
+    },
+    {
+      "path": "nasaq/references/selection-policy-ar.md",
+      "sha256": "fa81b6d9d94cd50696a7aa0234682d4a9fcbe30eb8d8890534252d63503b6d2c",
+      "size": 15491
+    },
+    {
+      "path": "nasaq/references/target-user-system.md",
+      "sha256": "dca3ca55dc0ee0765bac9ed2b16af0ff8ed1ff653daa9c86af19b73308a9a44f",
+      "size": 7053
+    },
+    {
+      "path": "nasaq/references/testing-ar.md",
+      "sha256": "2f23c2e9da004f713bad3ce0d382afa98ce7d9a6484955c53a0a21493fb9a96b",
+      "size": 3635
+    },
+    {
+      "path": "nasaq/references/web-integration.md",
+      "sha256": "d8bfaef13e872f2d5a04dc29195389cc39d1abfe667b01da5e50f75434f19038",
+      "size": 11882
+    },
+    {
+      "path": "nasaq/scripts/check_selection.py",
+      "sha256": "02470ece6af73e5735e758a30cc6101ff1956b885f5835ec7eb6922122e31a6e",
+      "size": 13721
+    },
+    {
+      "path": "nasaq/scripts/check_web_catalog.py",
+      "sha256": "cfde542074923be81980e9a2dddc5fe4aa405d331859c7f92f621d4fc774fdb0",
+      "size": 8141
+    },
+    {
+      "path": "nasaq/scripts/nasaq.py",
+      "sha256": "b6864f89e4d7f85a8dde2b4ded22256413093421b3f05d57b4f909140c4822c9",
+      "size": 8129
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/__init__.py",
+      "sha256": "71a785d0030b9706371f829a89004b29d7412ee5f5bbfa9c817d20dc81762fb8",
+      "size": 73
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/archives.py",
+      "sha256": "31badc45ecfe7705ce1998fbfe4392d0127cd998e7dfbe6124e124961899fb71",
+      "size": 2126
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/execution.py",
+      "sha256": "2d5734afba5e3da0084d55f3c965b2b1942b73c28140745659f82e15862b9a0f",
+      "size": 11925
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/installation.py",
+      "sha256": "7be389fc80b93c734883d6dfed0c3501a4e5f8ffe0a6dfca37acbbcda749d2d4",
+      "size": 5876
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/project_inspection.py",
+      "sha256": "96b46c64691cb26f45b9c35ba76cd6abf90c2a84552e9181ed22f7d1a3564391",
+      "size": 3223
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/routing.py",
+      "sha256": "1ec4d2e4b7ebb665433eb2fe42a54d95493a06b49ec0fc45d5c2e84ecbcdf786",
+      "size": 1048
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/sources.py",
+      "sha256": "1eb5e75c096f03b932b0d7eace4f06dfe073e541491d0d2d04c69e13aa0687c1",
+      "size": 4739
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/state.py",
+      "sha256": "4741bafa3e3de6161b86721ef8cb4aa06cc7378b41185fe6f8abf2df8970fe8a",
+      "size": 4031
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/tools.py",
+      "sha256": "b38b3953789783507b9c2618218b23f2235fb2fcaa5d95c0164ab18eb4d9274f",
+      "size": 6874
+    },
+    {
+      "path": "nasaq/scripts/nasaq_core/workflows.py",
+      "sha256": "933057d14b5f06388028c0225d5921df3e3aebbfb1873b7e15d800fd7ca6a1e9",
+      "size": 3604
+    },
+    {
+      "path": "nasaq/scripts/project_session.py",
+      "sha256": "bdd772a4d8636b78116a34e9192b689676f26b392fb991c066bebd8ef9652855",
+      "size": 26180
+    },
+    {
+      "path": "nasaq/scripts/spec_kit_bridge.py",
+      "sha256": "de061384a025410bd5bd758ab5b3be5c634e10cd430e0581ed4bd3aa78271533",
+      "size": 14083
+    },
+    {
+      "path": "nasaq/SHA256SUMS.json",
+      "sha256": "f29f675654bdf1205f9ece8fedc2760b437dc61db51c2d045fab3aa65043d335",
+      "size": 4206
+    },
+    {
+      "path": "nasaq/SKILL.md",
+      "sha256": "56553930573266ffef8beb0564b89b62687602f8c46727acd86eebb5605f1b74",
+      "size": 14005
+    },
+    {
+      "path": "nasaq/THIRD_PARTY_NOTICES.md",
+      "sha256": "85a19fea53f2f95df0ee98ffa488b6b777e460885ae214bf87244bcf7af45680",
+      "size": 953
+    },
+    {
+      "path": "nasaq/VALIDATION.md",
+      "sha256": "b55d73158384ffa1a911abfafc906238d0ca461ce36cc6d80e69f8eeade1a674",
+      "size": 12828
+    }
+  ],
+  "zip_sha256": "88c6c45cf7d91c5baa9061a3a94318811a7770fef2a185c2ebdb994f7627fd81",
+  "size_bytes": 230236,
+  "external_sources_included": false,
+  "node_modules_included": false,
+  "private_evidence_included": false
+}
